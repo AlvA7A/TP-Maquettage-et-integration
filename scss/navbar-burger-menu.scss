@@ -1,5 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
 header {
-    border-bottom: 2px solid black;
     height: 70px;
 
     img {
@@ -8,15 +10,42 @@ header {
         margin-left: 10px;
     }
 
+    nav {
+        width: 100%;
+    }
+
     section {
-        margin-left: 40px;
-        background-color: aqua;
         height: 70px;
         justify-content: center;
         align-items: center;
+        flex-wrap: nowrap;
 
         a {
             margin-left: 60px;
+            text-decoration: none;
+            color: $bleunuit;
+            font-family: abel, sans-serif;
+            font-size: 24px;
+            border-bottom: 2px solid $vide;
+            padding: 15px 15px;
+            white-space: nowrap;
+            &:hover {
+                border-bottom: 2px solid $bleunuit;
+                color: $bleunuit;
+            }
+        }
+    }
+    a {
+        text-decoration: none;
+        color: $bleunuit;
+        margin-right: 40px;
+        
+
+        &::before {
+            font-size: 24px;
+            @include visually-hidden();
         }
     }
 }
+
+
