@@ -17,6 +17,7 @@
   -webkit-text-stroke: 1px #3b5ba7;
   margin: 10px;
   letter-spacing: 3px;
+  font-size: 180%;
 }
 .textIntro{
   text-align: center;
@@ -45,7 +46,7 @@ h3 {
 @import "./mediaQueryGames.scss";
 
 .cardGame {
-  perspective: 1000px;
+  perspective: 1000px; // Crée virtuellement une dimension
 }
 
 .contentCardGame {

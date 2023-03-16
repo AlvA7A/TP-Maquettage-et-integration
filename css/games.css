@@ -4219,6 +4219,7 @@ header .icon-menu::before {
   -webkit-text-stroke: 1px #3b5ba7;
   margin: 10px;
   letter-spacing: 3px;
+  font-size: 180%;
 }
 
 .textIntro {
