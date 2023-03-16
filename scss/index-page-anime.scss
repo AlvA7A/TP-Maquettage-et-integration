@@ -1,12 +1,9 @@
-@font-face {
-    font-family: "PokemonSolid";
-    src: local("PokemonSolid") url(../fonts/PokemonSolid.ttf) format("truetype");
-}
+@import "./variables.scss";
 
-  @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-  
-  @import "../node_modules/bootstrap/scss/bootstrap.scss";
-  
-  @import "./mixins.scss";
+@import "./mixins.scss";
 
-  @import "./custom-page-home.scss";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "./custom-page-anime.scss";
+
+@import "./medias-page-anime.scss";
