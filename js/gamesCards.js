@@ -1,8 +1,8 @@
-const cardGame = document.querySelectorAll(".cardGame");
+const cardGame = document.querySelectorAll(".cardGame"); // Seclectionne toute les cartes de Jeu
 
 cardGame.forEach((ev) => {
   ev.addEventListener("mousemove", (e) => {
-    let evRect = ev.getBoundingClientRect();
+    let evRect = ev.getBoundingClientRect(); // Recupération de l'objet DOMRect (Permet de recupérer X et Y et d'accéder à la largeur et la hauteur de l'élement)
 
     let x = e.clientX - evRect.x;
     let y = e.clientY - evRect.y;
