@@ -10,12 +10,14 @@
 
 //Ajout d'un dos de carte devant les noms de set
 .backCard:before {
-  @include icon(30px, "../images/imagesCartes/backCard.png");
+  @include icon(50px, "../images/imagesCartes/backCard.png");
 }
 
 .pokeball {
   //Changement de la police en pokemon
   font-family: "pokemonSolid";
+  color: $jaunepoke;
+  -webkit-text-stroke: 2px $bleunuit;
   //Ajout d'une pokeball devant le titre
   &:before {
     @include icon(30px, "../images/img_game/Pball.png");
@@ -26,48 +28,36 @@
 .imgDisplay {
   width: 100%;
 }
-
+.cardSection {
+  background-color: $bleu;
+}
+.display {
+  background-color: white;
+  border: 3px solid $jaunepoke;
+  margin: 1%;
+  border-radius: 10%;
+  padding: 3%;
+  & > *:nth-child(1) {
+    padding-bottom: 10%;
+  }
+}
 @media screen and (max-width: 576px) {
   .display {
-    background-color: white;
     //Affiche 1 cartes
     width: 80%;
-    border: 3px solid $yellow;
-    margin: 1%;
-    border-radius: 10%;
-    padding: 5%;
-  }
-  main {
-    background-color: $bleu;
   }
 }
 
 @media screen and (min-width: 577px) {
   .display {
-    background-color: white;
     // Affichage de 2 cards
     width: 45%;
-    border: 3px solid $yellow;
-    margin: 1%;
-    border-radius: 10%;
-    padding: 5%;
-  }
-  main {
-    background-color: $bleu;
   }
 }
 
 @media screen and (min-width: 992px) {
   .display {
-    background-color: white;
     // Affiche de 3 cards
     width: 30%;
-    border: 3px solid $yellow;
-    margin: 1%;
-    border-radius: 10%;
-    padding: 5%;
-  }
-  main {
-    background-color: $bleu;
   }
 }

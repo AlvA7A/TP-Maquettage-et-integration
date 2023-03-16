@@ -4,7 +4,6 @@
 
 @mixin icon($size, $url) {
   content: "";
-  display: block;
   background: url($url) no-repeat;
   background-size: $size $size;
   width: $size;
