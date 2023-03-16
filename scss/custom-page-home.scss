@@ -13,12 +13,12 @@
 }
 
 .img_home_head {
-  height: 12em;
-  width: 100%;
+  
+  width: auto;
 }
 
-.presentation,
-.hide {
+
+.presentation {
   padding: 1em 5em;
   text-align: center;
 
@@ -35,15 +35,6 @@
     &:hover {
       color: $bleunuit;
     }
-  }
-  .collapside{
-    outline: none;
-  }
-  .content-collapse {
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-    background-color: #f1f1f1;
   }
 }
 
@@ -66,14 +57,10 @@ h2 {
   -webkit-text-stroke: 2.5px $bleunuit;
   margin: 10px;
   &::before {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
+    @include icon(50px, '../images/images_home/pokeball.png');
     margin-right: 0.5em;
-    width: 50px;
-    height: 59px;
-    background: url(../images/images_home/pokeball.png) no-repeat;
-    background-size: 100%;
+    vertical-align: middle
+ 
   }
 }
 
@@ -81,18 +68,17 @@ h2 {
   @include button();
 }
 
-@media screen and (min-width: 768px) {
-  .img_home_head {
-    height: 25em;
-    width: 80%;
+@include media-breakpoint-up(md){
+  .read-more {
+    @include visually-hidden;
   }
-  // .read-more {
-  //  // @include hideSR;
-  // }
+  #content_collapse {
+    visibility: visible;
+  }
 }
 
-@media screen and (max-width: 768px) {
-  // .hide {
-  //   @include hideSR;
-  // }
+@include media-breakpoint-down(md){
+ 
 }
+
+
