@@ -14914,29 +14914,68 @@ textarea.form-control-lg {
 }
 
 .presentation {
-  padding: 1em 5em;
+  padding: 1em 3em;
   text-align: center;
 }
-.presentation .read-more {
+
+#content_collapse {
+  display: none;
+}
+
+.read-more {
   background-color: white;
   border: 0;
   color: #FFCB05;
   text-align: end;
-  margin-top: 1em;
+  margin: 0 2em 2em 0;
+  position: relative;
+  width: 6em;
+  padding: 0.3em;
+  float: right;
 }
-.presentation .read-more::before {
-  content: "+";
-  margin-right: 0.5em;
+.read-more::before {
+  position: absolute;
+  content: "";
+  border-top: solid 3px #FFCB05;
+  border-left: solid 3px #FFCB05;
+  width: 30%;
+  top: -3px;
+  left: -3px;
+  transition: 0.3s all ease-in-out;
 }
-.presentation .read-more:hover {
+.read-more::after {
+  position: absolute;
+  content: "";
+  border-bottom: solid 3px #FFCB05;
+  border-right: solid 3px #FFCB05;
+  width: 30%;
+  bottom: -3px;
+  right: -3px;
+  transition: 0.3s all ease-in-out;
+}
+.read-more:hover {
   color: #3B5BA7;
+}
+.read-more:hover::after, .read-more:hover::before {
+  width: 40%;
+  border-color: #3B5BA7;
 }
 
 .section-home {
-  margin: 4em 0;
+  margin: 0 0;
+  padding: 3em 0;
+}
+.section-home:nth-child(odd) {
+  width: 100%;
+  background-color: rgba(59, 91, 167, 0.0823529412);
 }
 .section-home .zoom-img {
   overflow: hidden;
+  text-align: center;
+}
+.section-home .zoom-img img {
+  height: 15em;
+  width: 25em;
 }
 .section-home .zoom-img img:hover {
   transform: scale(1.2);
@@ -14948,11 +14987,10 @@ h2, .h2 {
   font-family: "pokemon_solidnormal";
   color: #FFCB05;
   -webkit-text-stroke: 2.5px #3B5BA7;
-  margin: 10px;
+  margin: 0 10px;
 }
 h2::before, .h2::before {
   content: "";
-  display: block;
   background: url("../images/images_home/pokeball.png") no-repeat;
   background-size: 50px 50px;
   width: 50px;
@@ -15014,8 +15052,11 @@ h2::before, .h2::before {
     white-space: nowrap !important;
     border: 0 !important;
   }
+  .img_home_head {
+    max-height: 25em;
+  }
   #content_collapse {
-    visibility: visible;
+    display: inline;
   }
 }
 header {

@@ -13,40 +13,74 @@
 }
 
 .img_home_head {
-  
   width: auto;
 }
 
-
 .presentation {
-  padding: 1em 5em;
+  padding: 1em 3em;
   text-align: center;
+}
 
-  .read-more {
-    background-color: white;
-    border: 0;
-    color: $jaunepoke;
-    text-align: end;
-    margin-top: 1em;
-    &::before {
-      content: "+";
-      margin-right: 0.5em;
-    }
-    &:hover {
-      color: $bleunuit;
-    }
+#content_collapse {
+  display: none;
+}
+.read-more {
+  background-color: white;
+  border: 0;
+  color: $jaunepoke;
+  text-align: end;
+  margin: 0 2em 2em 0;
+  position: relative;
+  width: 6em;
+  padding: 0.3em;
+  float: right;
+  &::before {
+    position: absolute;
+    content: "";
+    border-top: solid 3px $jaunepoke;
+    border-left: solid 3px $jaunepoke;
+    width: 30%;
+    top: -3px;
+    left: -3px;
+    transition: 0.3s all ease-in-out;
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    border-bottom: solid 3px $jaunepoke;
+    border-right: solid 3px $jaunepoke;
+    width: 30%;
+    bottom: -3px;
+    right: -3px;
+    transition: 0.3s all ease-in-out;
+  }
+  &:hover {
+    color: $bleunuit;
+  }
+  &:hover::after, &:hover::before{
+    width: 40%;
+    border-color: $bleunuit;
   }
 }
 
 .section-home {
-  margin: 4em 0;
+  margin: 0 0;
+  padding: 3em 0;
+  &:nth-child(odd){
+    width: 100%;
+    background-color: #3b5ba715;
+  }
   .zoom-img {
     overflow: hidden;
-
-    img:hover {
-      transform: scale(1.2);
-      transition: transform 0.2s ease;
-      padding: 0;
+    text-align: center;
+    img{
+      height: 15em;
+      width: 25em;
+      &:hover {
+        transform: scale(1.2);
+        transition: transform 0.2s ease;
+        padding: 0;
+      }
     }
   }
 }
@@ -55,12 +89,11 @@ h2 {
   font-family: "pokemon_solidnormal";
   color: $jaunepoke;
   -webkit-text-stroke: 2.5px $bleunuit;
-  margin: 10px;
+  margin: 0 10px;
   &::before {
-    @include icon(50px, '../images/images_home/pokeball.png');
+    @include icon(50px, "../images/images_home/pokeball.png");
     margin-right: 0.5em;
-    vertical-align: middle
- 
+    vertical-align: middle;
   }
 }
 
@@ -68,17 +101,18 @@ h2 {
   @include button();
 }
 
-@include media-breakpoint-up(md){
+@include media-breakpoint-up(md) {
   .read-more {
     @include visually-hidden;
   }
+
+  .img_home_head {
+    max-height: 25em;
+  }
   #content_collapse {
-    visibility: visible;
+    display: inline;
   }
 }
 
-@include media-breakpoint-down(md){
- 
+@include media-breakpoint-down(md) {
 }
-
-

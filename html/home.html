@@ -1,170 +1,122 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pokemon - Accueil</title>
-    <link rel="stylesheet" href="../css/index-page-home.css" />
-    <link rel="stylesheet" href="/fontello-f5c70dfd/css/fontello.css">
-    <script defer src="../js/collapse.js"></script>
-  </head>
 
-  <body>
-    <header>
-      <nav class="d-flex justify-content-between align-items-center">
-        <img src="../images/imagesCartes/Logo-Pokemon.png" alt="Logo Pokémon" />
-        <section class="d-flex">
-          <a href="#" class="link-nav">ACCUEIL</a>
-          <a href="#" class="link-nav">ANIME</a>
-          <a href="#" class="link-nav">CARTES</a>
-          <a href="#" class="link-nav">JEUX VIDEOS</a>
-          <a href="#" class="link-nav">POKEDEX</a>
-        </section>
-        <a href="" class="icon-menu"></a>
-      </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon - Accueil</title>
+    <link rel="stylesheet" href="../css/index-page-home.css">
+    <link rel="stylesheet" href="/fontello-f5c70dfd/css/fontello.css" />
+    <script src="../js/collapse.js" defer></script>
+</head>
+
+<body>
+
+    <header class="text-center">
+        <nav class="d-flex justify-content-between align-items-center">
+            <img src="../images/imagesCartes/Logo-Pokemon.png" alt="Logo Pokémon" />
+            <section class="d-flex">
+              <a href="#" class="link-nav">ACCUEIL</a>
+              <a href="./anime.html" class="link-nav">ANIME</a>
+              <a href="./cartes.html" class="link-nav">CARTES</a>
+              <a href="./games.html" class="link-nav">JEUX VIDEOS</a>
+              <a href="./pokedex.html" class="link-nav">POKEDEX</a>
+            </section>
+            <a href="#" class="icon-menu"></a>
+          </nav>
     </header>
 
-    
-
     <main>
-
         <div class="text-center">
-            <img
-                src="../images/images_home/pokemon_gen_1.jpg"
-                alt=""
-                class="img-fluid img_home_head"
-            />
+            <img src="../images/images_home/pokemon_gen_1.jpg" alt="" class="img-fluid img_home_head">
         </div>
-      <div class="container">
-        <div class="presentation d-flex flex-column">
-            Pokémon est une franchise de jeux vidéo créée par Nintendo en 1996. La
-            franchise a connu un immense succès dans le monde entier et est
-            devenue un phénomène culturel avec des films, des émissions de
-            télévision, des jeux de cartes à collectionner et des produits
-            dérivés.
-           
-            <div class="mt-4" id="content_collapse">
-                La première génération de Pokémon, également connue sous le nom de
-                Génération I, est la base de la franchise. Elle a été lancée en 1996
-                et comprend les jeux Pokémon Rouge, Pokémon Bleu et Pokémon Jaune.
-                Dans ces jeux, les joueurs incarnent un dresseur de Pokémon et
-                doivent capturer et entraîner des créatures appelées Pokémon pour
-                combattre d'autres dresseurs de Pokémon et devenir le meilleur
-                dresseur de la région. 
-                </br>
-                </br>
-                La Génération I comprend les 151 Pokémon
-                originaux, chacun ayant ses propres capacités et caractéristiques
-                uniques. Parmi les Pokémon les plus populaires de la Génération I,
-                on trouve Pikachu, Bulbizarre, Carapuce, Salamèche et Mewtwo. Ces
-                personnages sont devenus des icônes de la culture populaire et sont
-                aimés par des millions de fans dans le monde entier.
-            </div>
-            <button class="btn read-more" id="collapsible" type="button">Lire plus</button>
+        <div class="container-fluid">
+            <p class="presentation d-flex flex-column" >
+                Pokémon est une franchise de jeux vidéo créée par Nintendo en 1996. La franchise a connu un immense succès
+                dans le monde entier et est devenue un phénomène culturel avec des films, des émissions de télévision, des
+                jeux de cartes à collectionner et des produits dérivés.
+                
+                <span class="mt-4" id="content_collapse">
+                    La première génération de Pokémon, également connue sous le nom de Génération I, est la base de la
+                    franchise. Elle a été lancée en 1996 et comprend les jeux Pokémon Rouge, Pokémon Bleu et Pokémon Jaune. Dans
+                    ces jeux, les joueurs incarnent un dresseur de Pokémon et doivent capturer et entraîner des créatures
+                    appelées Pokémon pour combattre d'autres dresseurs de Pokémon et devenir le meilleur dresseur de la région.
+                    </br>
+                    </br>
+                    La Génération I comprend les 151 Pokémon originaux, chacun ayant ses propres capacités et caractéristiques
+                    uniques. Parmi les Pokémon les plus populaires de la Génération I, on trouve Pikachu, Bulbizarre, Carapuce,
+                    Salamèche et Mewtwo. Ces personnages sont devenus des icônes de la culture populaire et sont aimés par des
+                    millions de fans dans le monde entier.
+                </span>                
+            </p>
+            <button class="read-more" id="collapsible">Voir plus +</button>
+
+           <div class="">
+             <section class="row align-items-center gap-5 justify-content-center section-home">
+                 <h2>Les animes</h2>
+            
+                 <div class="col-sm-10 col-md-4 zoom-img">
+                     <img src="../images/images_home/anime_1-gen.png" alt="" class="img-fluid">
+                 </div>
+                 <div class="col-sm-10 col-md-4 text-center">
+                     <p>Pokémon est un anime japonais qui suit les aventures de Sacha et Pikachu, alors qu'ils voyagent à travers le monde Pokémon pour attraper de nouveaux Pokémon, affronter des rivaux et participer à des compétitions. Les deux premières saisons sont la Ligue Indigo et l'Île Orange.</p>
+                     
+                     <a href="./anime.html">
+                         <button type="button" class="button">En savoir plus</button>
+                     </a>
+                 </div>
+             </section>
+            
+             <section class="row align-items-center gap-5 justify-content-center section-home">
+                 <h2>Les cartes</h2>
+            
+                 <div class="col-sm-10 col-md-4 text-center">
+                     <p>Les cartes Pokémon sont des cartes à collectionner inspirées de la franchise Pokémon. Chaque carte représente un Pokémon différent avec ses propres statistiques, capacités et attaques. Les cartes Pokémon ont été lancées pour la première fois en 1996 et sont devenues très populaires dans le monde entier depuis lors.</p>
+                     <a href="./cartes.html">
+                         <button type="button" class="button">En savoir plus</button>
+                     </a>
+                 </div>
+            
+                 <div class="col-sm-10 col-md-4 zoom-img">
+                     <img src="../images/images_home/cartes_pokemon.jpg" alt="" class="img-fluid">
+                 </div>
+             </section>
+            
+             <section class="row align-items-center gap-5 justify-content-center section-home">
+                 <h2>Les jeux vidéos</h2>
+            
+                 <div class="col-sm-10 col-md-4 zoom-img">
+                     <img src="../images/images_home/jeux_video.jpeg" alt="" class="img-fluid ">
+                 </div>
+                 <div class="col-sm-10 col-md-4 text-center">
+                     <p>Les jeux vidéo Pokémon sont une série de jeux vidéo développés par Game Freak et édités par Nintendo. Les joueurs incarnent un dresseur Pokémon qui parcourt diverses régions pour attraper, entraîner et échanger des Pokémon, tout en affrontant d'autres dresseurs. </p>
+                     <a href="./games.html">
+                         <button type="button" class="button">En savoir plus</button>
+                     </a>
+                 </div>
+             </section>
+            
+             <section class="row align-items-center gap-5 justify-content-center section-home">
+                 <h2>Pokedex</h2>
+            
+                 <div class="col-sm-10 col-md-4 text-center">
+                     <p>Le Pokédex est une encyclopédie virtuelle qui recense les différentes espèces de Pokémon. Chaque Pokémon a une entrée dans le Pokédex qui contient des informations sur ses caractéristiques, ses capacités, son habitat et ses évolutions possibles.</p>
+                     <a href="./pokedex.html">
+                         <button type="button" class="button">En savoir plus</button>
+                     </a>
+                 </div>
+            
+                 <div class="col-sm-10 col-md-4 zoom-img">
+                     <img src="../images/images_home/pokedex.jpg" alt="" class="img-fluid">
+                 </div>
+             </section>
+           </div>
+
         </div>
-        <section
-          class="row align-items-center gap-1 justify-content-between section-home"
-        >
-          <h2>Les animes</h2>
 
-          <div class="col-sm-10 col-md-6 zoom-img">
-            <img
-              src="../images/images_home/anime_1-gen.png"
-              alt=""
-              class="img-fluid w-100"
-            />
-          </div>
-          <div class="col-sm-10 col-md-5 text-center">
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum
-              consectetur, assumenda itaque at nisi dolore ratione, illum ad
-              neque quasi excepturi eos ut iure incidunt quae dolorem. Odit
-              laboriosam vitae aliquam neque architecto! Debitis dicta delectus
-              perferendis, commodi quasi earum velit eum qui mollitia
-              exercitationem, cum placeat laborum maiores quibusdam!
-            </p>
-            <button type="button" class="button">En savoir plus</button>
-          </div>
-        </section>
-
-        <section
-          class="row align-items-center gap-1 justify-content-around section-home"
-        >
-          <h2>Les cartes</h2>
-
-          <div class="col-sm-10 col-md-5 text-center">
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum
-              consectetur, assumenda itaque at nisi dolore ratione, illum ad
-              neque quasi excepturi eos ut iure incidunt quae dolorem. Odit
-              laboriosam vitae aliquam neque architecto! Debitis dicta delectus
-              perferendis, commodi quasi earum velit eum qui mollitia
-              exercitationem, cum placeat laborum maiores quibusdam!
-            </p>
-            <button type="button" class="button">En savoir plus</button>
-          </div>
-
-          <div class="col-sm-10 col-md-6 zoom-img">
-            <img
-              src="../images/images_home/cartes_pokemon.jpg"
-              alt=""
-              class="img-fluid w-100"
-            />
-          </div>
-        </section>
-
-        <section
-          class="row align-items-center gap-1 justify-content-around section-home"
-        >
-          <h2>Les jeux vidéos</h2>
-
-          <div class="col-sm-10 col-md-6 zoom-img">
-            <img
-              src="../images/images_home/jeux_video.jpeg"
-              alt=""
-              class="img-fluid w-100"
-            />
-          </div>
-          <div class="col-sm-10 col-md-5 text-center">
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum
-              consectetur, assumenda itaque at nisi dolore ratione, illum ad
-              neque quasi excepturi eos ut iure incidunt quae dolorem. Odit
-              laboriosam vitae aliquam neque architecto! Debitis dicta delectus
-              perferendis, commodi quasi earum velit eum qui mollitia
-              exercitationem, cum placeat laborum maiores quibusdam!
-            </p>
-            <button type="button" class="button">En savoir plus</button>
-          </div>
-        </section>
-
-        <section
-          class="row align-items-center gap-1 justify-content-around section-home"
-        >
-          <h2>Pokedex</h2>
-
-          <div class="col-sm-10 col-md-5 text-center">
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum
-              consectetur, assumenda itaque at nisi dolore ratione, illum ad
-              neque quasi excepturi eos ut iure incidunt quae dolorem. Odit
-              laboriosam vitae aliquam neque architecto! Debitis dicta delectus
-              perferendis, commodi quasi earum velit eum qui mollitia
-              exercitationem, cum placeat laborum maiores quibusdam!
-            </p>
-            <button type="button" class="button">En savoir plus</button>
-          </div>
-
-          <div class="col-sm-10 col-md-6 zoom-img">
-            <img
-              src="../images/images_home/pokedex.jpg"
-              alt=""
-              class="img-fluid w-100"
-            />
-          </div>
-        </section>
-      </div>
     </main>
-  </body>
+
+</body>
+
 </html>
