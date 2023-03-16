@@ -41,11 +41,8 @@ h3 {
   text-align: center;
 }
 
-.cardGames {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
+@import "./mediaQueryGames.scss";
 
 .cardGame {
   perspective: 1000px;
@@ -57,7 +54,7 @@ h3 {
   align-items: center;
   justify-content: center;
   height: 400px;
-  background-color: #3b5ba7;
+  background: #3b5ba7;
   padding: 5ch;
   border-radius: 15px;
   transition: all 0.15s ease-out;
