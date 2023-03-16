@@ -2,6 +2,9 @@
   font-family: "pokemonSolid";
   src: URL("../font/Pokemon\ Solid.ttf") format("truetype");
 }
+@import "./variables.scss";
+@import "./mixins.scss";
+@import "./navbar-burger-menu.scss";
 
 .pokeball:before {
   @include icon(30px, "../images/img_game/Pball.png");
@@ -13,6 +16,34 @@
   font-family: "pokemonSolid";
 }
 
-.display {
-  width: 25%;
+.imgDisplay {
+  width: 100%;
+}
+
+// taille pc
+@media screen and (min-width: 700px) {
+  .display {
+    background-color: white;
+    width: 30%;
+    border: 3px solid $yellow;
+    margin: 1%;
+    border-radius: 10%;
+    padding: 5%;
+  }
+  main {
+    background-color: $bleu;
+  }
+}
+@media screen and (max-width: 699px) {
+  .display {
+    background-color: white;
+    width: 80%;
+    border: 3px solid $yellow;
+    margin: 1%;
+    border-radius: 10%;
+    padding: 5%;
+  }
+  main {
+    background-color: $bleu;
+  }
 }
