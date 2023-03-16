@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "pokemon_solidnormal";
+  src: url("../font/pokemon_solid-webfont.woff2") format("woff2"), url("../font/pokemon_solid-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.poketitle {
+  font-family: "pokemon_solidnormal";
+  color: #ffcb05;
+  -webkit-text-stroke: 1px #3b5ba7;
+  margin: 10px;
+}
+
+#firstPokeBall {
+  max-width: 30px;
+  max-height: 30px;
+  margin-right: 10px;
+}
+
+.masterBall {
+  max-width: 25px;
+  max-height: 25px;
+  margin-right: 10px;
+}
+
+.jacketGames {
+  max-width: 140px;
+  max-height: 140px;
+}
+
+h3 {
+  text-align: center;
+}
+
+.cardGames {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardGame {
+  background-color: #3b5ba7;
+  width: 70%;
+  text-align: center;
+  padding: 50px;
+}
+
+/*# sourceMappingURL=games.css.map */
