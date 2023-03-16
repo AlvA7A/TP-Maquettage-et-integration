@@ -3,6 +3,13 @@
     src: URL("../font/Pokemon\ Solid.ttf") format("truetype");
   }
 
+.cont-1 {
+    width: 90%;
+}
+.cont-2 {
+    padding: 0 !important;
+}
+
 main {
     margin: 20px 30px;
 
@@ -16,6 +23,7 @@ main {
             @include icon(40px, "../images/img_game/Pball.png");
             margin-right: 15px;
             margin-top: 10px;
+            @include visually-hidden();
         }
     }
 
@@ -29,34 +37,44 @@ main {
         -webkit-text-stroke: 1.5px $bleu;
         letter-spacing: 2px;
         font-size: 26px;
-        margin-top: 40px;
+        margin-top: 10px;
+        text-align: center;
         &::before {
             @include icon(34px, "../images/imagesCartes/superBall.png");
-            margin-right: 15px;
+            margin-right: 0px;
             margin-top: 6px;
+            @include visually-hidden();
+            
         }
     }
 }
 
+.img-super {
+    width: 40px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
 .img-indigo {
-    height: 500px;
+    width: 70%;
+    max-width: 360px;
     margin: 40px auto;
 }
 
 main {
     p {
         margin-top: 10px;
-        text-align:justify;
+        text-align: center;
     }
     h3 {
         font-size: 20px;
         color: $bleu;
-        width: 201px;
+        width: 206px;
         border-bottom: 2px solid $jaunepoke;
         border-right: 2px solid $jaunepoke;
         border-left: 2px solid $jaunepoke;
-        padding: 0px 4px 5px 10px;
-        margin: 0 auto;
+        padding: 0px 8px 5px 10px;
+        margin: 20px auto;
     }
 
 }
@@ -67,9 +85,11 @@ main {
 
 .cont-saison2 {
     flex-direction: column;
+    width: 90%;
 
     img {
-        height: 500px;
+        width: 70%;
+        max-width: 360px;
         margin: 40px auto;
     }
     a {
@@ -91,6 +111,7 @@ main {
 
 .cont-saison1 {
     flex-direction: column;
+    width: 90%;
 
     a {
         text-decoration: none;
@@ -107,8 +128,4 @@ main {
             background-color: $bleu;
         }
     }
-}
-
-.img-s2-big {
-    @include visually-hidden();
 }
