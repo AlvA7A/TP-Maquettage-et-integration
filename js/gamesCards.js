@@ -15,4 +15,7 @@ cardGame.forEach((ev) => {
 
     ev.children[0].style.transform = `rotateX(${angleX}deg) rotateY(${angleY}deg) scale(1.1)`;
   });
+  ev.addEventListener("mouseleave", () => {
+    ev.children[0].style.transform = "rotateX(0) rotateY(0)";
+  });
 });
