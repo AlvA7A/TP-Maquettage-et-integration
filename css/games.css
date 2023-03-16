@@ -55,5 +55,9 @@ h3 {
   width: 315px;
   height: 400px;
 }
+.contentCardGame h4 {
+  text-align: center;
+  padding: 10px;
+}
 
 /*# sourceMappingURL=games.css.map */
