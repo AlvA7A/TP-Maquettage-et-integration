@@ -1,0 +1,22 @@
+header {
+    border-bottom: 2px solid black;
+    height: 70px;
+
+    img {
+        height: 90px;
+        margin-top: -10px;
+        margin-left: 10px;
+    }
+
+    section {
+        margin-left: 40px;
+        background-color: aqua;
+        height: 70px;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            margin-left: 60px;
+        }
+    }
+}
