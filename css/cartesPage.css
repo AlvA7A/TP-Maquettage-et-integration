@@ -4235,8 +4235,35 @@ header .icon-menu::before {
   font-family: "pokemonSolid";
 }
 
-.display {
-  width: 25%;
+.imgDisplay {
+  width: 100%;
+}
+
+@media screen and (min-width: 700px) {
+  .display {
+    background-color: white;
+    width: 30%;
+    border: 3px solid #ffc107;
+    margin: 1%;
+    border-radius: 10%;
+    padding: 5%;
+  }
+  main {
+    background-color: #357ACC;
+  }
+}
+@media screen and (max-width: 699px) {
+  .display {
+    background-color: white;
+    width: 80%;
+    border: 3px solid #ffc107;
+    margin: 1%;
+    border-radius: 10%;
+    padding: 5%;
+  }
+  main {
+    background-color: #357ACC;
+  }
 }
 
 /*# sourceMappingURL=cartesPage.css.map */
