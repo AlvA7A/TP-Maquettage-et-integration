@@ -4213,20 +4213,20 @@ header .icon-menu::before {
 }
 .backCard:before {
   content: "";
-  display: block;
   background: url("../images/imagesCartes/backCard.png") no-repeat;
-  background-size: 30px 30px;
-  width: 30px;
-  height: 30px;
+  background-size: 50px 50px;
+  width: 50px;
+  height: 50px;
   float: left;
 }
 
 .pokeball {
   font-family: "pokemonSolid";
+  color: #FFCB05;
+  -webkit-text-stroke: 2px #3B5BA7;
 }
 .pokeball:before {
   content: "";
-  display: block;
   background: url("../images/img_game/Pball.png") no-repeat;
   background-size: 30px 30px;
   width: 30px;
@@ -4238,43 +4238,34 @@ header .icon-menu::before {
   width: 100%;
 }
 
+.cardSection {
+  background-color: #357ACC;
+}
+
+.display {
+  background-color: white;
+  border: 3px solid #FFCB05;
+  margin: 1%;
+  border-radius: 10%;
+  padding: 3%;
+}
+.display > *:nth-child(1) {
+  padding-bottom: 10%;
+}
+
 @media screen and (max-width: 576px) {
   .display {
-    background-color: white;
     width: 80%;
-    border: 3px solid #ffc107;
-    margin: 1%;
-    border-radius: 10%;
-    padding: 5%;
-  }
-  main {
-    background-color: #357ACC;
   }
 }
 @media screen and (min-width: 577px) {
   .display {
-    background-color: white;
     width: 45%;
-    border: 3px solid #ffc107;
-    margin: 1%;
-    border-radius: 10%;
-    padding: 5%;
-  }
-  main {
-    background-color: #357ACC;
   }
 }
 @media screen and (min-width: 992px) {
   .display {
-    background-color: white;
     width: 30%;
-    border: 3px solid #ffc107;
-    margin: 1%;
-    border-radius: 10%;
-    padding: 5%;
-  }
-  main {
-    background-color: #357ACC;
   }
 }
 
