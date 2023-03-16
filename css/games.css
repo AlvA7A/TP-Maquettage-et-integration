@@ -39,10 +39,19 @@ h3 {
 }
 
 .cardGame {
+  perspective: 1000px;
+}
+
+.contentCardGame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
   background-color: #3b5ba7;
-  width: 70%;
-  text-align: center;
-  padding: 50px;
+  padding: 5ch;
+  border-radius: 10px;
+  transition: all 0.15s ease-out;
 }
 
 /*# sourceMappingURL=games.css.map */
