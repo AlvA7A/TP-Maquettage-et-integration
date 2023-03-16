@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "pokemonSolid";
+  src: URL("../font/Pokemon\ Solid.ttf") format("truetype");
+}
+@import "./variables.scss";
+@import "./mixins.scss";
+@import "./navbar-burger-menu.scss";
+
+.pokeball:before {
+  @include icon(30px, "../images/img_game/Pball.png");
+}
+.backCard:before {
+  @include icon(30px, "../images/imagesCartes/backCard.png");
+}
+.pokeball {
+  font-family: "pokemonSolid";
+}
+
+.display {
+  width: 25%;
+}
