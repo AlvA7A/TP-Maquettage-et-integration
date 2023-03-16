@@ -6,12 +6,12 @@ header {
 
     img {
         height: 90px;
-        margin-top: -10px;
         margin-left: 10px;
     }
 
     nav {
         width: 100%;
+        height: 100%;
     }
 
     section {
@@ -19,8 +19,9 @@ header {
         justify-content: center;
         align-items: center;
         flex-wrap: nowrap;
+        margin-right: 80px;
 
-        a {
+        .link-nav {
             margin-left: 60px;
             text-decoration: none;
             color: $bleunuit;
@@ -35,7 +36,7 @@ header {
             }
         }
     }
-    a {
+    .icon-menu {
         text-decoration: none;
         color: $bleunuit;
         margin-right: 40px;
@@ -43,9 +44,53 @@ header {
 
         &::before {
             font-size: 24px;
-            @include visually-hidden();
+            
         }
     }
 }
+
+@include media-breakpoint-up(md) {
+    header {
+        .icon-menu {
+            &::before {
+                @include visually-hidden();
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+header {
+    height: 60px;
+
+    img {
+        height: 70px;
+    }
+
+    nav {
+        height: 100%;
+    }
+
+    section {
+        height: 100%px;
+        .link-nav {
+            margin-left: 20px;
+            font-size: 20px;
+            padding: 10px 10px;
+        }
+    }
+}
+}
+
+@include media-breakpoint-down(md) {
+    header {
+        section {
+            .link-nav {
+                @include visually-hidden();
+                
+            }
+        }
+    }
+    }
 
 
