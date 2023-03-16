@@ -1,3 +1,6 @@
+
+
+@import "../node_modules/bootstrap/scss/mixins/visually-hidden";
 @mixin button {
     padding: 0.5em 1em;
     margin: 2em 0;
@@ -37,6 +40,8 @@
     }
 }
 
+
+@import "../node_modules/bootstrap/scss/mixins/breakpoints";
 @mixin hideSR {
     clip: rect (1px, 1px, 1px, 1px);
     height: 1px;
