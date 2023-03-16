@@ -1,0 +1,79 @@
+* {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.img_home_head {
+  height: 12em;
+  width: 100%;
+}
+
+.presentation,
+.hide {
+  padding: 1em 5em;
+  text-align: center;
+
+  .read-more {
+    background-color: white;
+    border: 0;
+    color: #ffcb05;
+    text-align: end;
+    margin-top: 1em;
+    &::before {
+      content: "+";
+      margin-right: 0.5em;
+    }
+    &:hover {
+      color: #3b5ba7;
+    }
+  }
+}
+
+.section-home {
+  margin: 4em 0;
+  .zoom-img {
+    overflow: hidden;
+
+    img:hover {
+      transform: scale(1.2);
+      transition: transform 0.2s ease;
+      padding: 0;
+    }
+  }
+}
+
+h2 {
+  font-family: "PokemonSolid";
+  color: #ffcb05;
+  &::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.5em;
+    width: 50px;
+    height: 59px;
+    background: url(../images_home/pokeball.png) no-repeat;
+    background-size: 100%;
+  }
+}
+
+.button {
+  @include button();
+}
+
+@media screen and (min-width: 768px) {
+  .img_home_head {
+    height: 25em;
+    width: 80%;
+  }
+  .read-more {
+    @include hideSR;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hide {
+    @include hideSR;
+  }
+}

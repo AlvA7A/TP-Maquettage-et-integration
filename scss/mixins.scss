@@ -1,0 +1,48 @@
+@mixin button {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    text-transform: uppercase;
+    border: none;
+    position: relative;
+    color: #3B5BA7;
+    background-color: transparent;
+    &::before {
+        position: absolute;
+        content: "";
+        border-top: solid 3px #3B5BA7 ;
+        border-left: solid 3px #3B5BA7 ;
+        width: 10%;
+        height: 30%;
+        top: -3px;
+        left: -3px;
+        transition: 0.3s all ease-in-out;
+    }
+    &::after {
+        position: absolute;
+        content: "";
+        border-bottom: solid 3px #3B5BA7 ;
+        border-right: solid 3px #3B5BA7 ;
+        width: 10%;
+        height: 30%;
+        bottom: -3px;
+        right: -3px;
+        transition: 0.3s all ease-in-out;
+    }&:hover{
+        color: #FFCB05;
+    }
+    &:hover::after, &:hover::before{
+        width: 104%;
+        height: 109%;
+        border-color: #FFCB05;
+    }
+}
+
+@mixin hideSR {
+    clip: rect (1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    z-index: -1000;
+  }
