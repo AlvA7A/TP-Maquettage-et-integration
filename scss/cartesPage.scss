@@ -1,3 +1,5 @@
+// sass --watch .\scss\cartesPage.scss .\css\cartesPage.css
+
 @font-face {
   font-family: "pokemonSolid";
   src: URL("../font/Pokemon\ Solid.ttf") format("truetype");
@@ -6,25 +8,30 @@
 @import "./mixins.scss";
 @import "./navbar-burger-menu.scss";
 
-.pokeball:before {
-  @include icon(30px, "../images/img_game/Pball.png");
-}
+//Ajout d'un dos de carte devant les noms de set
 .backCard:before {
   @include icon(30px, "../images/imagesCartes/backCard.png");
 }
+
 .pokeball {
+  //Changement de la police en pokemon
   font-family: "pokemonSolid";
+  //Ajout d'une pokeball devant le titre
+  &:before {
+    @include icon(30px, "../images/img_game/Pball.png");
+  }
 }
 
+// L'image prends toute la largeur de son contenant
 .imgDisplay {
   width: 100%;
 }
 
-// taille pc
-@media screen and (min-width: 700px) {
+@media screen and (max-width: 576px) {
   .display {
     background-color: white;
-    width: 30%;
+    //Affiche 1 cartes
+    width: 80%;
     border: 3px solid $yellow;
     margin: 1%;
     border-radius: 10%;
@@ -34,10 +41,27 @@
     background-color: $bleu;
   }
 }
-@media screen and (max-width: 699px) {
+
+@media screen and (min-width: 577px) {
   .display {
     background-color: white;
-    width: 80%;
+    // Affichage de 2 cards
+    width: 45%;
+    border: 3px solid $yellow;
+    margin: 1%;
+    border-radius: 10%;
+    padding: 5%;
+  }
+  main {
+    background-color: $bleu;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .display {
+    background-color: white;
+    // Affiche de 3 cards
+    width: 30%;
     border: 3px solid $yellow;
     margin: 1%;
     border-radius: 10%;
