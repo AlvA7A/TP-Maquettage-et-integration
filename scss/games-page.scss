@@ -5,14 +5,22 @@
   font-weight: normal;
   font-style: normal;
 }
+@import "./variables.scss";
+
+@import "./mixins.scss";
+
+@import "./navbar-burger-menu.scss";
 
 .poketitle {
   font-family: "pokemon_solidnormal";
   color: #ffcb05;
   -webkit-text-stroke: 1px #3b5ba7;
   margin: 10px;
+  letter-spacing: 3px;
 }
-
+.textIntro{
+  text-align: center;
+}
 #firstPokeBall {
   max-width: 30px;
   max-height: 30px;
@@ -51,6 +59,15 @@ h3 {
   height: 400px;
   background-color: #3b5ba7;
   padding: 5ch;
-  border-radius: 10px;
+  border-radius: 15px;
   transition: all 0.15s ease-out;
+  width: 315px;
+  height: 400px;
+  border: 5px solid #ffcb05;
+  box-shadow: 0 0 1em rgb(12, 12, 12);
+  h4{
+    text-align: center;
+    padding: 10px;
+    color: #ffcb05;
+  }
 }
