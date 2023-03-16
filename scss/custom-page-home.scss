@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "pokemon_solidnormal";
+  src: url("../font/pokemon_solid-webfont.woff2") format("woff2"),
+    url("../font/pokemon_solid-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   font-family: "Roboto", sans-serif;
   padding: 0;
@@ -17,7 +25,7 @@
   .read-more {
     background-color: white;
     border: 0;
-    color: #ffcb05;
+    color: $jaunepoke;
     text-align: end;
     margin-top: 1em;
     &::before {
@@ -25,8 +33,17 @@
       margin-right: 0.5em;
     }
     &:hover {
-      color: #3b5ba7;
+      color: $bleunuit;
     }
+  }
+  .collapside{
+    outline: none;
+  }
+  .content-collapse {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
   }
 }
 
@@ -44,8 +61,10 @@
 }
 
 h2 {
-  font-family: "PokemonSolid";
-  color: #ffcb05;
+  font-family: "pokemon_solidnormal";
+  color: $jaunepoke;
+  -webkit-text-stroke: 2.5px $bleunuit;
+  margin: 10px;
   &::before {
     content: "";
     display: inline-block;
@@ -53,7 +72,7 @@ h2 {
     margin-right: 0.5em;
     width: 50px;
     height: 59px;
-    background: url(../images_home/pokeball.png) no-repeat;
+    background: url(../images/images_home/pokeball.png) no-repeat;
     background-size: 100%;
   }
 }
@@ -67,13 +86,13 @@ h2 {
     height: 25em;
     width: 80%;
   }
-  .read-more {
-    @include hideSR;
-  }
+  // .read-more {
+  //  // @include hideSR;
+  // }
 }
 
 @media screen and (max-width: 768px) {
-  .hide {
-    @include hideSR;
-  }
+  // .hide {
+  //   @include hideSR;
+  // }
 }

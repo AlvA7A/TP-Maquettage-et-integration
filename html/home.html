@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -7,11 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokemon - Accueil</title>
     <link rel="stylesheet" href="../css/index-page-home.css">
-
+   
 </head>
 
 <body>
-
     <header class="text-center">
         <img src="../images/images_home/pokemon_gen_1.jpg" alt="" class="img-fluid img_home_head">
     </header>
@@ -23,8 +22,8 @@
                 dans le monde entier et est devenue un phénomène culturel avec des films, des émissions de télévision, des
                 jeux de cartes à collectionner et des produits dérivés.
                 
-                <button class="read-more">Lire plus</button>
-                <div class="hide">
+                <button class="btn read-more" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Lire plus</button>
+                <div class="hide collapse" id="collapseExample">
                     La première génération de Pokémon, également connue sous le nom de Génération I, est la base de la
                     franchise. Elle a été lancée en 1996 et comprend les jeux Pokémon Rouge, Pokémon Bleu et Pokémon Jaune. Dans
                     ces jeux, les joueurs incarnent un dresseur de Pokémon et doivent capturer et entraîner des créatures
@@ -40,7 +39,7 @@
 
             <section class="row align-items-center gap-2 justify-content-around section-home">
                 <h2>Les animes</h2>
-
+            
                 <div class="col-sm-10 col-md-5 zoom-img">
                     <img src="../images/images_home/anime_1-gen.png" alt="" class="img-fluid w-100">
                 </div>
@@ -49,6 +48,7 @@
                     <button type="button" class="button">En savoir plus</button>
                 </div>
             </section>
+        </div>
 
             <section class="row align-items-center gap-2 justify-content-around section-home">
                 <h2>Les cartes</h2>
@@ -91,6 +91,8 @@
         </div>
 
     </main>
+
+
 
 </body>
 

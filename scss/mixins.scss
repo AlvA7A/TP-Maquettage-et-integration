@@ -4,13 +4,13 @@
     text-transform: uppercase;
     border: none;
     position: relative;
-    color: #3B5BA7;
+    color: $bleunuit;
     background-color: transparent;
     &::before {
         position: absolute;
         content: "";
-        border-top: solid 3px #3B5BA7 ;
-        border-left: solid 3px #3B5BA7 ;
+        border-top: solid 3px $bleunuit ;
+        border-left: solid 3px $bleunuit ;
         width: 10%;
         height: 30%;
         top: -3px;
@@ -20,20 +20,20 @@
     &::after {
         position: absolute;
         content: "";
-        border-bottom: solid 3px #3B5BA7 ;
-        border-right: solid 3px #3B5BA7 ;
+        border-bottom: solid 3px $bleunuit ;
+        border-right: solid 3px $bleunuit ;
         width: 10%;
         height: 30%;
         bottom: -3px;
         right: -3px;
         transition: 0.3s all ease-in-out;
     }&:hover{
-        color: #FFCB05;
+        color: $jaunepoke;
     }
     &:hover::after, &:hover::before{
         width: 104%;
         height: 109%;
-        border-color: #FFCB05;
+        border-color: $jaunepoke;
     }
 }
 
