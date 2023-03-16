@@ -1,5 +1,13 @@
-
-
 @import "../node_modules/bootstrap/scss/mixins/visually-hidden";
 
 @import "../node_modules/bootstrap/scss/mixins/breakpoints";
+
+@mixin icon($size, $url) {
+  content: "";
+  display: block;
+  background: url($url) no-repeat;
+  background-size: $size $size;
+  width: $size;
+  height: $size;
+  float: left;
+}
