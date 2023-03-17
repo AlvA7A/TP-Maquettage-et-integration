@@ -13,9 +13,15 @@ cardGame.forEach((ev) => {
     let angleY = -(x - midcardWidth) / 8; // Position en x de la souris qui va modifier la rotation de l'axe Y
     let angleX = (y - midcardWidth) / 8; // Position en y de la souris qui va modifier la rotation de l'axe X
 
+    let glowX = x / evRect.width * 100
+    let glowY = y / evRect.height * 100
+
     ev.children[0].style.transform = `rotateX(${angleX}deg) rotateY(${angleY}deg) scale(1.1)`;
+    ev.children[1].style.transform = `rotateX(${angleX}deg) rotateY(${angleY}deg) scale(1.1)`;
+    ev.children[1].style.background = `radial-gradient(circle at ${glowX}% ${glowY}%, rgb(255, 255, 255), transparent)`
   });
   ev.addEventListener("mouseleave", () => {
     ev.children[0].style.transform = "rotateX(0) rotateY(0)";
+    ev.children[1].style.transform = "rotateX(0) rotateY(0)";
   });
 });
