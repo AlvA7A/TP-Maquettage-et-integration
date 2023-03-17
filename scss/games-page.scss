@@ -1,9 +1,6 @@
 @font-face {
-  font-family: "pokemon_solidnormal";
-  src: url("../font/pokemon_solid-webfont.woff2") format("woff2"),
-    url("../font/pokemon_solid-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+  font-family: "pokemonSolid";
+  src: URL("../font/PocketMonk.ttf") format("truetype");
 }
 @import "./variables.scss";
 
@@ -12,11 +9,10 @@
 @import "./navbar-burger-menu.scss";
 
 .poketitle {
-  font-family: "pokemon_solidnormal";
+  font-family: "pokemonSolid";
   color: #ffcb05;
   -webkit-text-stroke: 1px #3b5ba7;
   margin: 10px;
-  letter-spacing: 3px;
   font-size: 180%;
 }
 .textIntro{
