@@ -1,5 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import "./variables.scss";
+@import "./mixins.scss";
 
 header {
     height: 70px;
@@ -144,8 +146,6 @@ ul li {
     }
     
 
-
-
 @include media-breakpoint-up(md) {
     header {
         overflow: hidden;
@@ -176,7 +176,7 @@ header {
         .link-nav {
             margin-left: 20px;
             font-size: 20px;
-            padding: 10px 10px;
+            padding: 14px 10px;
         }
     }
 }
