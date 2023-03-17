@@ -4130,7 +4130,7 @@ header {
 }
 header img {
   height: 90px;
-  margin-left: 10px;
+  margin-left: 30px;
 }
 header nav {
   width: 100%;
@@ -4160,7 +4160,7 @@ header section .link-nav:hover {
 header .icon-menu {
   text-decoration: none;
   color: #3B5BA7;
-  margin-right: 40px;
+  margin-right: 20px;
 }
 header .icon-menu::before {
   font-size: 24px;
@@ -4211,6 +4211,10 @@ header .icon-menu::before {
     border: 0 !important;
   }
 }
+main {
+  background-color: rgba(59, 91, 167, 0.0823529412);
+}
+
 .poketitle {
   font-family: "pokemonSolid";
   color: #ffcb05;
@@ -4227,6 +4231,12 @@ header .icon-menu::before {
   max-width: 30px;
   max-height: 30px;
   margin-right: 10px;
+}
+
+#rondou {
+  max-width: 30px;
+  max-height: 30px;
+  cursor: pointer;
 }
 
 .masterBall {

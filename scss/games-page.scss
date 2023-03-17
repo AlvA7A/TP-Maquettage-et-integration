@@ -8,6 +8,9 @@
 
 @import "./navbar-burger-menu.scss";
 
+main{
+  background-color: #3b5ba715;
+}
 .poketitle {
   font-family: "pokemonSolid";
   color: #ffcb05;
@@ -23,7 +26,11 @@
   max-height: 30px;
   margin-right: 10px;
 }
-
+#rondou{
+  max-width: 30px;
+  max-height: 30px;
+  cursor: pointer;
+}
 .masterBall {
   max-width: 25px;
   max-height: 25px;
