@@ -157,6 +157,7 @@ h2 {
   @include button();
 }
 
+//changement pour la version non mobile
 @include media-breakpoint-up(md) {
   .read-more {
     @include visually-hidden;
