@@ -128,3 +128,221 @@ main {
         }
     }
 }
+
+
+
+
+
+
+
+
+.card-pokedex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 900px;
+    border: 2px solid $bleunuit;
+    border-radius: 30px;
+}
+
+.h3-pokedex {
+    font-size: 18px;
+    border: none;
+    margin: 0;
+    padding: 2px 0 0 0;
+    width: 100%;
+    text-align: center;
+}
+.h3-pokedexT  {
+    font-size: 18px;
+    border: none;
+    margin: 0 0 8px 0;
+    padding: 2px 0 0 0;
+    width: 100%;
+    text-align: center;
+}
+
+.h4-pokedex {
+    font-size: 16px;
+    color: $jaunepoke;
+}
+
+.type-pokedex {
+    font-size: 14px;
+    margin: 0;
+    color: white;
+}
+
+.text-pokedex-01 {
+    font-weight: 500;
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+.cont-pokedex-01 {
+    border: 2px solid $bleunuit;
+    width: 50px;
+    height: 50px;
+    background-color: $jaunepoke;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+.cont-pokedex-02 {
+    border: 2px solid $bleunuit;
+    width: 80px;
+    height: 90%;
+    border-radius: 20px;
+    background-color: #e9e9e9;
+}
+.cont-pokedex-03 {
+    height: 90%;
+}
+.nom-poke {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.para-pokedex {
+    margin: 0;
+    text-align: center;
+}
+
+.cont-type-pokedex {
+    display: flex;
+    margin-top: 8px;
+}
+.cont-type-pokedex2 {
+    display: flex;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.cont-stats-pokedex {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.cont-last-pokedex {
+    margin-right: 30px;
+    width: 250px;
+}
+.img-type {
+    height: 23px;
+    border-radius: 6px;
+    margin-right: -10px;
+    z-index: 2;
+}
+.img-pokemon {
+    height: 80px;
+    padding-bottom: 10px;
+    padding-left: 2px;
+}
+.span-pokedex {
+    background-color: $jaunepoke;
+    border-radius: 12px;
+    padding: 1px 3px;
+    margin-left: 4px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.bg-plante {
+    background-color: #36a849;
+    padding: 4px 6px 2px 10px;
+    border-radius: 4px;
+}
+.bg-poison {
+    background-color: #924c96;
+    padding: 4px 6px 2px 10px;
+    border-radius: 4px;
+}
+.bg-electrik {
+    background-color: #924c96;
+    padding: 4px 6px 2px 10px;
+    border-radius: 4px;
+}
+.bg-feu {
+    background-color: #924c96;
+    padding: 4px 6px 2px 10px;
+    border-radius: 4px;
+}
+.bg-eau {
+    background-color: #924c96;
+    padding: 4px 6px 2px 10px;
+    border-radius: 4px;
+}
+.bg-fee {
+    background-color: #924c96;
+    padding: 4px 6px 2px 10px;
+    border-radius: 4px;
+}
+.bg-glace {
+    background-color: #924c96;
+    padding: 4px 6px 2px 10px;
+    border-radius: 4px;
+}
+.bg-normal {
+    background-color: #924c96;
+    padding: 4px 6px 2px 10px;
+    border-radius: 4px;
+}
+.bg-roche {
+    background-color: #924c96;
+    padding: 4px 6px 2px 10px;
+    border-radius: 4px;
+}
+.bg-spectre {
+    background-color: #924c96;
+    padding: 4px 6px 2px 10px;
+    border-radius: 4px;
+}
+.bg-vol {
+    background-color: #924c96;
+    padding: 4px 6px 2px 10px;
+    border-radius: 4px;
+}
+.bg-combat {
+    background-color: #924c96;
+    padding: 4px 6px 2px 10px;
+    border-radius: 4px;
+}
+.bg-acier {
+    background-color: #924c96;
+    padding: 4px 6px 2px 10px;
+    border-radius: 4px;
+}
+.bg-dragon {
+    background-color: #924c96;
+    padding: 4px 6px 2px 10px;
+    border-radius: 4px;
+}
+.bg-insecte {
+    background-color: #924c96;
+    padding: 4px 6px 2px 10px;
+    border-radius: 4px;
+}
+.bg-psy {
+    background-color: #924c96;
+    padding: 4px 6px 2px 10px;
+    border-radius: 4px;
+}
+.bg-sol {
+    background-color: #924c96;
+    padding: 4px 6px 2px 10px;
+    border-radius: 4px;
+}
+.bg-tenebre {
+    background-color: #924c96;
+    padding: 4px 6px 2px 10px;
+    border-radius: 4px;
+}
+.stat-pokedex {
+    text-align: center;
+    border: 1px solid $bleunuit;
+    border-radius: 8px;
+    padding: 4px 4px;
+}
