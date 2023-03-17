@@ -4236,8 +4236,8 @@ header .icon-menu::before {
 }
 
 .jacketGames {
-  max-width: 140px;
-  max-height: 140px;
+  width: 60%;
+  height: auto;
 }
 
 h3 {
@@ -4269,7 +4269,6 @@ h3 {
   justify-content: center;
   height: 400px;
   background: #3b5ba7;
-  padding: 5ch;
   border-radius: 15px;
   transition: all 0.15s ease-out;
   width: 315px;
