@@ -24,6 +24,7 @@
 #content_collapse {
   display: none;
 }
+
 .read-more {
   background-color: white;
   border: 0;
@@ -57,7 +58,8 @@
   &:hover {
     color: $bleunuit;
   }
-  &:hover::after, &:hover::before{
+  &:hover::after,
+  &:hover::before {
     width: 40%;
     border-color: $bleunuit;
   }
@@ -66,14 +68,14 @@
 .section-home {
   margin: 0 0;
   padding: 3em 0;
-  &:nth-child(odd){
+  &:nth-child(even) {
     width: 100%;
     background-color: #3b5ba715;
   }
   .zoom-img {
     overflow: hidden;
     text-align: center;
-    img{
+    img {
       height: 15em;
       width: 25em;
       &:hover {
@@ -88,12 +90,66 @@
 h2 {
   font-family: "pokemon_solidnormal";
   color: $jaunepoke;
+  letter-spacing: 2px;
   -webkit-text-stroke: 2.5px $bleunuit;
   margin: 0 10px;
   &::before {
     @include icon(50px, "../images/images_home/pokeball.png");
     margin-right: 0.5em;
     vertical-align: middle;
+  }
+}
+
+.card-container {
+  clear: both;
+  padding: 0 3.5em;
+  margin: 2em;
+  h2 {
+    text-align: center;
+    &::before {
+      background: url("");
+
+    }
+  }
+  //permet de retrecir les cartes qui ne sont pas survolés
+  &:hover .card:not(:hover) {
+    transform: scale(0.8);
+  }
+  //permet de mettre un filtre sur les cartes non survolés
+  &:hover > .card:not(:hover) {
+    filter: brightness(0.5) blur(3px);
+    transform: scale(0.8);
+  }
+  .card {
+    background-position: center center;
+    background-size: cover;
+    height: 12em;
+    border-radius: 10px;
+    justify-content: end;
+    align-items: flex-start;
+    color: white;
+
+    .card-name {
+      font-size: 22px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .card-description {
+      font-size: 15px;
+    }
+    
+  }
+  .card-alvin {
+    background-image: url(https://i0.wp.com/cours-de-japonais.com/wp-content/uploads/2019/03/pkmn_gdtac_054____001_bulbizarre___bulbasaur_by_camaetprune_d97gykp.png?fit=800%2C600&ssl=1);
+  }
+  .card-loic {
+    background-image: url(https://www.eclypsia.com/wp-content/uploads/eclypsia/2022/12/Salameche_LetsGo.jpg);
+  }
+  .card-jordan {
+    background-image: url(../images/images_home/lucario.webp);
+  }
+  .card-loevane {
+    background-image: url(http://sm.ign.com/ign_fr/screenshot/default/blob_n19y.jpg);
   }
 }
 
@@ -105,6 +161,9 @@ h2 {
   .read-more {
     @include visually-hidden;
   }
+  .card-container {
+    padding: 0;
+  }
 
   .img_home_head {
     max-height: 25em;
@@ -112,7 +171,4 @@ h2 {
   #content_collapse {
     display: inline;
   }
-}
-
-@include media-breakpoint-down(md) {
 }

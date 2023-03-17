@@ -1,0 +1,39 @@
+footer{
+    padding: 3em;
+    text-align: center;
+    color: $bleunuit;
+    background-color: #3b5ba715;
+    nav{
+       
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        a{
+            text-decoration: none;
+            color: $bleunuit;
+            font-family: abel, sans-serif;
+            font-size: 22px;
+            padding: 0.2em 1em;
+            &:hover{
+            color: $jaunepoke;
+            }
+         }
+    }
+    
+    p{
+        margin-bottom: 0;
+    }
+    img {
+        width: 8em;
+        margin: 1em;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    footer {
+        nav {
+            flex-direction: row;
+        }
+    }
+}
