@@ -1,44 +1,121 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pokedex</title>
-    <link rel="stylesheet" href="../css/reset.css" />
-    <link rel="stylesheet" href="../css/bootstrap.css" />
-    <link rel="stylesheet" href="../css/pokedexPage.css" />
-    <link rel="stylesheet" href="/fontello-f5c70dfd/css/fontello.css" />
-  </head>
-  <body>
-    <header>
-      <nav class="d-flex justify-content-between align-items-center">
-        <img src="../images/imagesCartes/Logo-Pokemon.png" alt="Logo Pokémon" />
-        <section class="d-flex">
-          <a href="./home.html" class="link-nav">ACCUEIL</a>
-          <a href="./anime.html" class="link-nav">ANIME</a>
-          <a href="./cartes.html" class="link-nav">CARTES</a>
-          <a href="./games.html" class="link-nav">JEUX VIDEOS</a>
-          <a href="./pokedex.html" class="link-nav">POKEDEX</a>
-        </section>
-        <a href="#" class="icon-menu"></a>
-      </nav>
-    </header>
-    <footer>
-      <nav class="">
-        <a href="#" class="">ACCUEIL</a>
-        <a href="./anime.html" class="">ANIME</a>
-        <a href="./cartes.html" class="">CARTES</a>
-        <a href="./games.html" class="">JEUX VIDEOS</a>
-        <a href="./pokedex.html" class="">POKEDEX</a>
-      </nav>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pokedex</title>
+        <link rel="stylesheet" href="../css/bootstrap.css" />
+        <link rel="stylesheet" href="../css/navbar-burger-menu.css" />
+        <link rel="stylesheet" href="../css/pokedexPage.css" />
+        <script src="../js/anime.js" defer></script>
+        <script src="../js/pokedex.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="d-flex justify-content-between align-items-center">
+                    <img src="../images/imagesCartes/Logo-Pokemon.png" alt="Logo Pokémon" />
+                    <section class="d-flex">
+                        <a href="./home.html" class="link-nav">ACCUEIL</a>
+                        <a href="./anime.html" class="link-nav">ANIME</a>
+                        <a href="./cartes.html" class="link-nav">CARTES</a>
+                        <a href="./games.html" class="link-nav">JEUX VIDEOS</a>
+                        <a href="./pokedex.html" class="link-nav">POKEDEX</a>
+                    </section>
+                    <a id="link" href="#"><span id="burger"></span></a>
+                </div>
 
-      <a href="#">
-        <img src="../images/imagesCartes/Logo-Pokemon.png" alt="Logo Pokémon" />
-      </a>
+                <ul>
+                    <li><a href="./home.html" class="link-menu">ACCUEIL</a></li>
+                    <li><a href="./anime.html" class="link-menu">ANIME</a></li>
+                    <li><a href="./cartes.html" class="link-menu">CARTES</a></li>
+                    <li><a href="./games.html" class="link-menu">JEUX VIDEOS</a></li>
+                    <li><a href="./pokedex.html" class="link-menu">POKEDEX</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article class="card-pokedex">
+                <div>
+                    <h4 class="h4-pokedex">No.</h4>
+                    <span>001</span>
+                </div>
+                <div><img src="" alt="" /></div>
+                <div>
+                    <h3 class="h3-pokedex">Pokémon</h3>
+                    <div>
+                        <p>Bulbasaur</p>
+                        <span>US</span>
+                    </div>
+                    <div>
+                        <p>Bulbizarre</p>
+                        <span>FR</span>
+                    </div>
+                </div>
+                <section>
+                    <h3 class="h3-pokedex">Type</h3>
+                    <div>
+                        <img src="" alt="" />
+                        <h4 class="type-pokedex">PLANTE</h4>
+                    </div>
+                    <div>
+                        <img src="" alt="" />
+                        <h4>POISON</h4>
+                    </div>
+                </section>
+                <div>
+                    <h3 class="h3-pokedex">Talent</h3>
+                    <p>Engrais</p>
+                    <p>Chlorophylle</p>
+                </div>
+                <section>
+                    <h3 class="h3-pokedex">Statistiques de base</h3>
+                    <div>
+                        <div>
+                            <h4 class="h4-pokedex">PV</h4>
+                            <span>45</span>
+                        </div>
+                        <div>
+                            <h4 class="h4-pokedex">Atq</h4>
+                            <span>49</span>
+                        </div>
+                        <div>
+                            <h4 class="h4-pokedex">Def</h4>
+                            <span>49</span>
+                        </div>
+                        <div>
+                            <h4 class="h4-pokedex">ASpé</h4>
+                            <span>65</span>
+                        </div>
+                        <div>
+                            <h4 class="h4-pokedex">DSpé</h4>
+                            <span>65</span>
+                        </div>
+                        <div>
+                            <h4 class="h4-pokedex">Vit</h4>
+                            <span>45</span>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </main>
 
-      <p>Par Alvin, Loïc, Jordan et Loëvane.</p>
-      <p>Diginamic 2023</p>
-    </footer>
-  </body>
+        <footer>
+            <nav class="">
+                <a href="#" class="">ACCUEIL</a>
+                <a href="./anime.html" class="">ANIME</a>
+                <a href="./cartes.html" class="">CARTES</a>
+                <a href="./games.html" class="">JEUX VIDEOS</a>
+                <a href="./pokedex.html" class="">POKEDEX</a>
+            </nav>
+
+            <a href="#">
+                <img src="../images/imagesCartes/Logo-Pokemon.png" alt="Logo Pokémon" />
+            </a>
+
+            <p>Par Alvin, Loïc, Jordan et Loëvane.</p>
+            <p>Diginamic 2023</p>
+        </footer>
+    </body>
 </html>
