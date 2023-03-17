@@ -2,6 +2,9 @@
     font-family: "pokemonSolid";
     src: URL("../font/Pokemon\ Solid.ttf") format("truetype");
   }
+body {
+    background-color: $verylightgray !important;
+}
 
 .cont-1 {
     width: 90%;

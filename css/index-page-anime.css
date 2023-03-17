@@ -4123,6 +4123,7 @@
 }
 header {
   height: 70px;
+  background-color: white;
 }
 header img {
   height: 90px;
@@ -4211,6 +4212,10 @@ header .icon-menu::before {
   font-family: "pokemonSolid";
   src: URL("../font/Pokemon Solid.ttf") format("truetype");
 }
+body {
+  background-color: #fafafa !important;
+}
+
 .cont-1 {
   width: 90%;
 }
