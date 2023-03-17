@@ -10,11 +10,9 @@
 }
 @import "./variables.scss";
 @import "./mixins.scss";
-@import "./navbar-burger-menu.scss";
 @import "./footer.scss";
 
-main > header {
-  height: 15%;
+.cartesHead {
   padding: 2%;
   & > p {
     padding-top: 40px;
