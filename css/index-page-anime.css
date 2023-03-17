@@ -4126,7 +4126,7 @@ header {
 }
 header img {
   height: 90px;
-  margin-left: 10px;
+  margin-left: 30px;
 }
 header nav {
   width: 100%;
@@ -4156,7 +4156,7 @@ header section .link-nav:hover {
 header .icon-menu {
   text-decoration: none;
   color: #3B5BA7;
-  margin-right: 40px;
+  margin-right: 20px;
 }
 header .icon-menu::before {
   font-size: 24px;
@@ -4211,6 +4211,14 @@ header .icon-menu::before {
   font-family: "pokemonSolid";
   src: URL("../font/Pokemon Solid.ttf") format("truetype");
 }
+.cont-1 {
+  width: 90%;
+}
+
+.cont-2 {
+  padding: 0 !important;
+}
+
 main {
   margin: 20px 30px;
 }
@@ -4223,7 +4231,6 @@ main h1 {
 }
 main h1::before {
   content: "";
-  display: block;
   background: url("../images/img_game/Pball.png") no-repeat;
   background-size: 40px 40px;
   width: 40px;
@@ -4231,6 +4238,15 @@ main h1::before {
   float: left;
   margin-right: 15px;
   margin-top: 10px;
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
 }
 main p {
   margin-top: 40px;
@@ -4241,38 +4257,54 @@ main h2 {
   -webkit-text-stroke: 1.5px #357ACC;
   letter-spacing: 2px;
   font-size: 26px;
-  margin-top: 40px;
+  margin-top: 10px;
+  text-align: center;
 }
 main h2::before {
   content: "";
-  display: block;
   background: url("../images/imagesCartes/superBall.png") no-repeat;
   background-size: 34px 34px;
   width: 34px;
   height: 34px;
   float: left;
-  margin-right: 15px;
+  margin-right: 0px;
   margin-top: 6px;
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.img-super {
+  width: 40px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .img-indigo {
-  height: 500px;
+  width: 70%;
+  max-width: 360px;
   margin: 40px auto;
 }
 
 main p {
   margin-top: 10px;
-  text-align: justify;
+  text-align: center;
 }
 main h3 {
   font-size: 20px;
   color: #357ACC;
-  width: 201px;
+  width: 206px;
   border-bottom: 2px solid #FFCB05;
   border-right: 2px solid #FFCB05;
   border-left: 2px solid #FFCB05;
-  padding: 0px 4px 5px 10px;
-  margin: 0 auto;
+  padding: 0px 8px 5px 10px;
+  margin: 20px auto;
 }
 
 .text-s1 {
@@ -4281,9 +4313,11 @@ main h3 {
 
 .cont-saison2 {
   flex-direction: column;
+  width: 90%;
 }
 .cont-saison2 img {
-  height: 500px;
+  width: 70%;
+  max-width: 360px;
   margin: 40px auto;
 }
 .cont-saison2 a {
@@ -4303,6 +4337,7 @@ main h3 {
 
 .cont-saison1 {
   flex-direction: column;
+  width: 90%;
 }
 .cont-saison1 a {
   text-decoration: none;
@@ -4318,16 +4353,70 @@ main h3 {
   background-color: #357ACC;
 }
 
-.img-s2-big {
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  padding: 0 !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  clip: rect(0, 0, 0, 0) !important;
-  white-space: nowrap !important;
-  border: 0 !important;
+@media (max-width: 991.98px) {
+  main p {
+    text-align: center;
+  }
+  .cont-2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cont-3 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cont-4 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .img-s2-big {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+  }
+}
+@media (min-width: 992px) {
+  main h1 {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  main h2 {
+    margin-top: 26px;
+    margin-left: 20px;
+  }
+  main p {
+    text-align: left;
+  }
+  .cont-saison1 {
+    flex-direction: row;
+  }
+  .cont-saison1 section {
+    margin-left: 100px;
+  }
+  .img-s2-lit {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+  }
+  .cont-saison2 {
+    flex-direction: row;
+    align-items: center;
+  }
+  .cont-saison2 section {
+    margin-right: 100px;
+  }
 }
 
 /*# sourceMappingURL=index-page-anime.css.map */
