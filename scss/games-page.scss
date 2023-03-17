@@ -15,6 +15,7 @@
   margin: 10px;
   font-size: 180%;
 }
+
 .textIntro{
   text-align: center;
 }
@@ -63,5 +64,13 @@ h3 {
     text-align: center;
     padding: 10px;
     color: #ffcb05;
+  }
+  p{
+    text-align: center;
+    padding: 10px;
+    color: transparent;
+    &:hover{
+      color: black;
+    }
   }
 }

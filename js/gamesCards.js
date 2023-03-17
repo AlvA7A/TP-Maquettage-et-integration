@@ -7,11 +7,11 @@ cardGame.forEach((ev) => {
     let x = e.clientX - evRect.x;
     let y = e.clientY - evRect.y;
 
-    let midcardWidth = evRect.width / 2;
-    let midcardHeight = evRect.height / 2;
+    let midcardWidth = evRect.width / 2; // Largeur divisé par 2
+    let midcardHeight = evRect.height / 2; // Hauteur divisé par 2
 
-    let angleY = (x - midcardWidth) / 8;
-    let angleX = (y - midcardWidth) / 8;
+    let angleY = -(x - midcardWidth) / 8; // Position en x de la souris qui va modifier la rotation de l'axe Y
+    let angleX = (y - midcardWidth) / 8; // Position en y de la souris qui va modifier la rotation de l'axe X
 
     ev.children[0].style.transform = `rotateX(${angleX}deg) rotateY(${angleY}deg) scale(1.1)`;
   });
