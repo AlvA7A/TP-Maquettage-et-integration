@@ -4,6 +4,7 @@
 header {
     height: 70px;
     background-color: white;
+    position: relative;
 
     img {
         height: 90px;
@@ -12,6 +13,10 @@ header {
 
     nav {
         width: 100%;
+        height: 100%;
+    }
+
+    div {
         height: 100%;
     }
 
@@ -50,12 +55,103 @@ header {
     }
 }
 
+#burger {
+    width:30px;
+    height:2px;
+    background:$bleunuit;
+    display:inline-block;
+    position:relative;
+
+    &::before, &::after {
+        content:'';
+        width:30px;
+        height:2px;
+        background:$bleunuit;
+        display:inline-block;
+        position:absolute;
+        transform-origin: center;
+        transition: all 0.3s ease;
+    }
+    &::before {
+        top: -7px;
+    }
+    &::after {
+        top: 7px;
+    }
+}
+
+#link {
+    margin-top: 0px;
+    margin-right: 24px;
+    background-color: white;
+    padding: 4px 10px 14px 10px;
+    border-radius: 8px;
+}
+
+#burger.open {
+    background: transparent;
+}
+#burger.open::before {
+    transform: rotate(45deg);
+    top:0;
+}
+#burger.open::after {
+    transform: rotate(-45deg);
+    top:0;
+}
+
+ul {
+    position:absolute;
+    list-style-type: none;
+    width:100%;
+    padding: 0 !important;
+    left:0;
+    top:100%;
+    padding:10px 0;
+    transform:scaleY(0);
+    transform-origin:center top;
+    transition:all 0.3s ease;
+  }
+ul.open {
+    transform:scaleY(1);
+  }
+ul li {
+    font-family: abel, sans-serif;
+    background-color: $bleu;
+    font-size: 20px;
+    width: 100%;
+    padding:10px 0;
+    text-align:center;
+    text-decoration: none;
+    transition:all 0.1s ease;
+
+    &:nth-child(-n+4) {
+        border-bottom: 1px solid $jaunepoke;
+    }
+
+    &:hover {
+        background-color: $jaunepoke;
+        a {
+            color: $bleu;
+        }
+    }
+
+    a {
+        color: $jaunepoke;
+        text-decoration: none;
+
+        }
+    }
+    
+
+
+
 @include media-breakpoint-up(md) {
     header {
-        .icon-menu {
-            &::before {
+        overflow: hidden;
+        #burger {
                 @include visually-hidden();
-            }
+            
         }
     }
 }
@@ -69,6 +165,9 @@ header {
     }
 
     nav {
+        height: 100%;
+    }
+    div {
         height: 100%;
     }
 
@@ -85,6 +184,14 @@ header {
 
 @include media-breakpoint-down(md) {
     header {
+        background-image: url(../images/imagesAnime/ban-pokemon.png);
+        background-size: cover;
+        height: 80px;
+        border-bottom: 1px solid #cecece;
+
+        img {
+            @include visually-hidden();
+        }
         section {
             .link-nav {
                 @include visually-hidden();
