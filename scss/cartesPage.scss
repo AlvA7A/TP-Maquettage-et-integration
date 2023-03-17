@@ -4,9 +4,35 @@
   font-family: "pokemonSolid";
   src: URL("../font/Pokemon\ Solid.ttf") format("truetype");
 }
+@font-face {
+  font-family: "pocketMonk";
+  src: URL("../font/PocketMonk.ttf") format("truetype");
+}
 @import "./variables.scss";
 @import "./mixins.scss";
 @import "./navbar-burger-menu.scss";
+main > header {
+  height: 15%;
+  padding: 2%;
+  & > p {
+    padding-top: 40px;
+  }
+}
+.cardBanner {
+  background-image: url("../images/imagesCartes/backCard.png");
+  background-size: contain;
+  background-repeat: repeat;
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+  & > * {
+    background-color: white;
+    display: inline;
+    padding: 1%;
+    margin: 0%;
+    border: 2px solid lightgrey;
+  }
+}
 
 //Ajout d'un dos de carte devant les noms de set
 .backCard:before {
@@ -18,9 +44,13 @@
   font-family: "pokemonSolid";
   color: $jaunepoke;
   -webkit-text-stroke: 2px $bleunuit;
+  letter-spacing: 2px;
+  font-size: 34px;
   //Ajout d'une pokeball devant le titre
   &:before {
     @include icon(30px, "../images/img_game/Pball.png");
+    margin-right: 15px;
+    margin-top: 10px;
   }
 }
 
@@ -30,6 +60,7 @@
 }
 .cardSection {
   background-color: $bleu;
+  padding: 2%;
 }
 .display {
   background-color: white;
