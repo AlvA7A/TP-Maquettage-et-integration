@@ -121,7 +121,7 @@ h2 {
     transform: scale(0.8);
   }
   .card {
-    background-position: center center;
+    
     background-size: cover;
     height: 12em;
     border-radius: 10px;
@@ -147,6 +147,7 @@ h2 {
   }
   .card-jordan {
     background-image: url(../images/images_home/lucario.webp);
+    background-position: top;
   }
   .card-loevane {
     background-image: url(http://sm.ign.com/ign_fr/screenshot/default/blob_n19y.jpg);
