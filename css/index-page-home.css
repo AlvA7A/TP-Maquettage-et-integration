@@ -14993,10 +14993,10 @@ h2, .h2 {
 h2::before, .h2::before {
   content: "";
   background: url("../images/images_home/pokeball.png") no-repeat;
-  background-size: 50px 50px;
+  background-size: 100%;
   width: 50px;
   height: 50px;
-  float: left;
+  display: inline-block;
   margin-right: 0.5em;
   vertical-align: middle;
 }
