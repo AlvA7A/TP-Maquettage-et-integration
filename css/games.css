@@ -4282,5 +4282,13 @@ h3 {
   padding: 10px;
   color: #ffcb05;
 }
+.contentCardGame p {
+  text-align: center;
+  padding: 10px;
+  color: transparent;
+}
+.contentCardGame p:hover {
+  color: black;
+}
 
 /*# sourceMappingURL=games.css.map */
