@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
 @font-face {
   font-family: "pokemonSolid";
   src: URL("../font/Pokemon Solid.ttf") format("truetype");
@@ -4129,92 +4128,6 @@
     display: none !important;
   }
 }
-header {
-  height: 70px;
-}
-header img {
-  height: 90px;
-  margin-left: 30px;
-}
-header nav {
-  width: 100%;
-  height: 100%;
-}
-header section {
-  height: 70px;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  margin-right: 80px;
-}
-header section .link-nav {
-  margin-left: 60px;
-  text-decoration: none;
-  color: #3B5BA7;
-  font-family: abel, sans-serif;
-  font-size: 24px;
-  border-bottom: 2px solid rgba(255, 5, 5, 0);
-  padding: 15px 15px;
-  white-space: nowrap;
-}
-header section .link-nav:hover {
-  border-bottom: 2px solid #3B5BA7;
-  color: #3B5BA7;
-}
-header .icon-menu {
-  text-decoration: none;
-  color: #3B5BA7;
-  margin-right: 20px;
-}
-header .icon-menu::before {
-  font-size: 24px;
-}
-
-@media (min-width: 768px) {
-  header .icon-menu::before {
-    position: absolute !important;
-    width: 1px !important;
-    height: 1px !important;
-    padding: 0 !important;
-    margin: -1px !important;
-    overflow: hidden !important;
-    clip: rect(0, 0, 0, 0) !important;
-    white-space: nowrap !important;
-    border: 0 !important;
-  }
-}
-@media (max-width: 991.98px) {
-  header {
-    height: 60px;
-  }
-  header img {
-    height: 70px;
-  }
-  header nav {
-    height: 100%;
-  }
-  header section {
-    height: 100% px;
-  }
-  header section .link-nav {
-    margin-left: 20px;
-    font-size: 20px;
-    padding: 10px 10px;
-  }
-}
-@media (max-width: 767.98px) {
-  header section .link-nav {
-    position: absolute !important;
-    width: 1px !important;
-    height: 1px !important;
-    padding: 0 !important;
-    margin: -1px !important;
-    overflow: hidden !important;
-    clip: rect(0, 0, 0, 0) !important;
-    white-space: nowrap !important;
-    border: 0 !important;
-  }
-}
 footer {
   padding: 3em;
   text-align: center;
@@ -4250,11 +4163,10 @@ footer img {
     flex-direction: row;
   }
 }
-main > header {
-  height: 15%;
+.cartesHead {
   padding: 2%;
 }
-main > header > p {
+.cartesHead > p {
   padding-top: 40px;
 }
 
