@@ -44,62 +44,61 @@ function pad(num, size) {
 //     this.stats = stats;
 //   }
 // }
-function creaPokeHtml(pokemon) {
+function creaPokeHtml(pokemon, id) {
     const article = createMarkup("article", "", sectionPoke, [
-        { name: "class", value: "border w-75" },
+        { name: "class", value: "card-pokedex" },
     ]);
-
-    for (const type of pokemon.types) {
-        const talent = createMarkup("div", "", sectionType, []);
-        createMarkup("img", "", divType, [{ name: "src", value: type.image }]);
-        createMarkup("h4", type.name, divType, []);
-    }
-    const sectionTalent = createMarkup("section", "", article, []);
-    if (pokemon.talents.length === 1) {
-        createMarkup("h3", "Talent", sectionTalent, []);
-        createMarkup("p", pokemon.talents[0].name, sectionTalent, []);
+    let types = ``;
+    // Voir operateur ternaire
+    if (pokemon.pokedexId === 125) {
+        types += `<div>
+            <img src="https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/types/electrik.png">
+            <h4>Electrique</h4>
+        </div>`;
     } else {
-        createMarkup("h3", "Talents", sectionTalent, []);
-        for (const talent of pokemon.talents) {
-            createMarkup("p", talent.name, sectionTalent, []);
+        for (const type of pokemon.types) {
+            types += `<div>
+            <img src=${type.image}>
+            <h4>${type.name}</h4>
+        </div>`;
         }
     }
-    const sectionStats = createMarkup("section", "", article, []);
-    createMarkup("h3", "Statistiques", sectionStats, []);
+    let talents = ``;
+    if (pokemon.talents.length === 1) {
+        talents = `<h3>Talent</h3>
+        <p>${pokemon.talents[0].name}</p>`;
+    } else {
+        talents = `<h3>Talents</h3>`;
+        for (const talent of pokemon.talents) {
+            talents += `
+            <p>${talent.name}</p>`;
+        }
+    }
     article.innerHTML = `
-    <div>
-        <h4>No.</h4>
-        <span>${pad(pokemon.pokedexId, 3)}</span>
+    <div class="cont-pokedex-01">
+        <h3 class="h3-pokedex">No.</h3>
+        <p class="text-pokedex-01">${pad(pokemon.pokedexId, 3)}</p>
     </div>
-    <div>
-        <img src=${pokemon.sprites.regular}>
+    <div class="cont-pokedex-02">
+        <img src=${pokemon.sprites.regular} class="img-pokemon">
     </div>
-    <section>
-        <h3>Pokémon</h3>
-        <div>
-            <p>${pokemon.name.fr}</p>
-            <span>FR</span>
+    <section class="cont-pokedex-03">
+        <h3 class="h3-pokedex">Pokémon</h3>
+        <div class="nom-poke">
+            <p class="para-pokedex">${pokemon.name.fr}</p>
+            <span class="span-pokedex">FR</span>
         </div>
-        <div>
-            <p>${pokemon.name.en}</p>
-            <span>EN</span>
+        <div class="nom-poke">
+            <p class="para-pokedex">${pokemon.name.en}</p>
+            <span class="span-pokedex">EN</span>
         </div>
     </section>
     <section>
         <h3>Type</h3>
-        <div>
-            <img src="https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/types/plante.png">
-            <h4>Plante</h4>
-        </div>
-        <div>
-            <img src="https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/types/poison.png">
-            <h4>Poison</h4>
-        </div>
+        ${types}
     </section>
     <section>
-        <h3>Talents</h3>
-        <p>Engrais</p>
-        <p>Chlorophylle</p>
+        ${talents}
     </section>
     <section>
         <h3>Statistiques</h3>
