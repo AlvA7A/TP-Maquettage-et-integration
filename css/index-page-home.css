@@ -14965,7 +14965,7 @@ textarea.form-control-lg {
   margin: 0 0;
   padding: 3em 0;
 }
-.section-home:nth-child(odd) {
+.section-home:nth-child(even) {
   width: 100%;
   background-color: rgba(59, 91, 167, 0.0823529412);
 }
@@ -15011,7 +15011,6 @@ h2::before, .h2::before {
 }
 .card-container h2::before, .card-container .h2::before {
   background: url("");
-  margin-right: 0;
 }
 .card-container:hover .card:not(:hover) {
   transform: scale(0.8);
@@ -15044,7 +15043,7 @@ h2::before, .h2::before {
   background-image: url(https://www.eclypsia.com/wp-content/uploads/eclypsia/2022/12/Salameche_LetsGo.jpg);
 }
 .card-container .card-jordan {
-  background-image: url(https://i0.wp.com/cours-de-japonais.com/wp-content/uploads/2019/03/pkmn_gdtac_054____001_bulbizarre___bulbasaur_by_camaetprune_d97gykp.png?fit=800%2C600&ssl=1);
+  background-image: url(../images/images_home/lucario.webp);
 }
 .card-container .card-loevane {
   background-image: url(http://sm.ign.com/ign_fr/screenshot/default/blob_n19y.jpg);
@@ -15117,7 +15116,7 @@ header {
 }
 header img {
   height: 90px;
-  margin-left: 10px;
+  margin-left: 30px;
 }
 header nav {
   width: 100%;
@@ -15147,7 +15146,7 @@ header section .link-nav:hover {
 header .icon-menu {
   text-decoration: none;
   color: #3B5BA7;
-  margin-right: 40px;
+  margin-right: 20px;
 }
 header .icon-menu::before {
   font-size: 24px;
@@ -15196,6 +15195,41 @@ header .icon-menu::before {
     clip: rect(0, 0, 0, 0) !important;
     white-space: nowrap !important;
     border: 0 !important;
+  }
+}
+footer {
+  padding: 3em;
+  text-align: center;
+  color: #3B5BA7;
+  background-color: rgba(59, 91, 167, 0.0823529412);
+}
+footer nav {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer nav a {
+  text-decoration: none;
+  color: #3B5BA7;
+  font-family: abel, sans-serif;
+  font-size: 22px;
+  padding: 0.2em 1em;
+}
+footer nav a:hover {
+  color: #FFCB05;
+}
+footer p {
+  margin-bottom: 0;
+}
+footer img {
+  width: 8em;
+  margin: 1em;
+}
+
+@media (min-width: 768px) {
+  footer nav {
+    flex-direction: row;
   }
 }
 

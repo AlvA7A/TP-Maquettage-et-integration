@@ -68,7 +68,7 @@
 .section-home {
   margin: 0 0;
   padding: 3em 0;
-  &:nth-child(odd) {
+  &:nth-child(even) {
     width: 100%;
     background-color: #3b5ba715;
   }
@@ -108,7 +108,7 @@ h2 {
     text-align: center;
     &::before {
       background: url("");
-      margin-right: 0;
+
     }
   }
   //permet de retrecir les cartes qui ne sont pas survolés
@@ -146,7 +146,7 @@ h2 {
     background-image: url(https://www.eclypsia.com/wp-content/uploads/eclypsia/2022/12/Salameche_LetsGo.jpg);
   }
   .card-jordan {
-    background-image: url(https://i0.wp.com/cours-de-japonais.com/wp-content/uploads/2019/03/pkmn_gdtac_054____001_bulbizarre___bulbasaur_by_camaetprune_d97gykp.png?fit=800%2C600&ssl=1);
+    background-image: url(../images/images_home/lucario.webp);
   }
   .card-loevane {
     background-image: url(http://sm.ign.com/ign_fr/screenshot/default/blob_n19y.jpg);
