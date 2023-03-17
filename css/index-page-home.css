@@ -4254,6 +4254,7 @@ h2::before {
   justify-content: end;
   align-items: flex-start;
   color: white;
+  text-shadow: black 0.1em 0.1em 0.2em;
 }
 .card-container .card .card-name {
   font-size: 22px;
@@ -4264,14 +4265,14 @@ h2::before {
   font-size: 15px;
 }
 .card-container .card-alvin {
-  background-image: url(https://i0.wp.com/cours-de-japonais.com/wp-content/uploads/2019/03/pkmn_gdtac_054____001_bulbizarre___bulbasaur_by_camaetprune_d97gykp.png?fit=800%2C600&ssl=1);
+  background-image: url(../images/imagesAnime/Deoxys.png);
 }
 .card-container .card-loic {
   background-image: url(https://www.eclypsia.com/wp-content/uploads/eclypsia/2022/12/Salameche_LetsGo.jpg);
 }
 .card-container .card-jordan {
   background-image: url(../images/images_home/lucario.webp);
-  background-position: top;
+  background-position: top center;
 }
 .card-container .card-loevane {
   background-image: url(http://sm.ign.com/ign_fr/screenshot/default/blob_n19y.jpg);

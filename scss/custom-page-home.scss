@@ -108,7 +108,6 @@ h2 {
     text-align: center;
     &::before {
       background: url("");
-
     }
   }
   //permet de retrecir les cartes qui ne sont pas survolés
@@ -121,13 +120,13 @@ h2 {
     transform: scale(0.8);
   }
   .card {
-    
     background-size: cover;
     height: 12em;
     border-radius: 10px;
     justify-content: end;
     align-items: flex-start;
     color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
 
     .card-name {
       font-size: 22px;
@@ -137,17 +136,16 @@ h2 {
     .card-description {
       font-size: 15px;
     }
-    
   }
   .card-alvin {
-    background-image: url(https://i0.wp.com/cours-de-japonais.com/wp-content/uploads/2019/03/pkmn_gdtac_054____001_bulbizarre___bulbasaur_by_camaetprune_d97gykp.png?fit=800%2C600&ssl=1);
+    background-image: url(../images/imagesAnime/Deoxys.png);
   }
   .card-loic {
     background-image: url(https://www.eclypsia.com/wp-content/uploads/eclypsia/2022/12/Salameche_LetsGo.jpg);
   }
   .card-jordan {
     background-image: url(../images/images_home/lucario.webp);
-    background-position: top;
+    background-position: top center;
   }
   .card-loevane {
     background-image: url(http://sm.ign.com/ign_fr/screenshot/default/blob_n19y.jpg);
