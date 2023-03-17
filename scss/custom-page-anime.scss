@@ -1,7 +1,10 @@
 @font-face {
-    font-family: "pokemonSolid";
-    src: URL("../font/Pokemon\ Solid.ttf") format("truetype");
+    font-family: "pokemonMonk";
+    src: URL("../font/PocketMonk.ttf") format("truetype");
   }
+body {
+    background-color: $verylightgray !important;
+}
 
 .cont-1 {
     width: 90%;
@@ -14,15 +17,14 @@ main {
     margin: 20px 30px;
 
     h1 {
-        font-family: pokemonSolid;
+        font-family: pokemonMonk;
         color: $jaunepoke;
-        -webkit-text-stroke: 2px $bleu;
-        letter-spacing: 2px;
-        font-size: 34px;
+        -webkit-text-stroke: 1.5px $bleu;
+        letter-spacing: 0px;
+        font-size: 38px;
+        margin-top: 14px;
         &::before {
             @include icon(40px, "../images/img_game/Pball.png");
-            margin-right: 15px;
-            margin-top: 10px;
             @include visually-hidden();
         }
     }
@@ -32,17 +34,15 @@ main {
     }
 
     h2 {
-        font-family: pokemonSolid;
+        font-family: pokemonMonk;
         color: $jaunepoke;
         -webkit-text-stroke: 1.5px $bleu;
-        letter-spacing: 2px;
-        font-size: 26px;
+        letter-spacing: 0px;
+        font-size: 32px;
         margin-top: 10px;
         text-align: center;
         &::before {
             @include icon(34px, "../images/imagesCartes/superBall.png");
-            margin-right: 0px;
-            margin-top: 6px;
             @include visually-hidden();
             
         }
@@ -50,9 +50,8 @@ main {
 }
 
 .img-super {
-    width: 40px;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    height: 40px;
+    margin-top: 20px;
 }
 
 .img-indigo {
