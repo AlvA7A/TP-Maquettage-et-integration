@@ -1,20 +1,26 @@
 /**
- * Au click :
- * Permet de voir la partie cacher du texte
- * et changer le texte du bouton en fonction de ce qui est affiché ou non
- * @returns un style display et un textContent
-**/
+ * Associe l'affichage/masquage d'un contenu au click sur un bouton.
+ * @param {string} buttonClass - La classe CSS des boutons à associer à l'affichage/masquage du contenu.
+ * @param {string} contentClass - La classe CSS des contenus à afficher/masquer.
+ * modifie la valeur "display" de l'élément "content_collapse"
+ * modifie le texte de l'élément "collapsible"
+ */
 
-const collapsible = document.getElementById("collapsible");
-const content_collapse = document.getElementById("content_collapse");
+function toggleCollapse(buttonClass, contentClass) {
+  let buttons = document.querySelectorAll(`.${buttonClass}`);
+  buttons.forEach((button, i) => {
+    let content = document.querySelectorAll(`.${contentClass}`)[i];
+    button.addEventListener("click", () => {
+      console.log(`DISPLAY`, content.style.display);
+      if (content.style.display === "none" || content.style.display === "") {
+        content.style.display = "block";
+        buttons.textContent = "Voir moins -";
+      } else {
+        content.style.display = "none";
+        buttons.textContent = "Voir plus +";
+      }
+    });
+  });
+}
 
-
-collapsible.onclick = (e) => {
-  if (collapsible.textContent == "Voir plus +") {
-    content_collapse.style = "display : inline";
-    collapsible.textContent = "Voir moins -";
-  } else {
-    content_collapse.style = "display : none";
-    collapsible.textContent = "Voir plus +";
-  }
-};
+toggleCollapse("collapsible", "content_collapse");

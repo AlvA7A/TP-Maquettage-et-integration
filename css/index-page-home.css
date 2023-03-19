@@ -4126,97 +4126,23 @@
   }
 }
 @font-face {
-  font-family: "pokemon_solidnormal";
-  src: url("../font/pokemon_solid-webfont.woff2") format("woff2"), url("../font/pokemon_solid-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+  font-family: "pokemonMonk";
+  src: URL("../font/PocketMonk.ttf") format("truetype");
 }
 * {
   font-family: "Roboto", sans-serif;
   padding: 0;
   margin: 0;
-}
-
-.img_home_head {
-  width: auto;
-}
-
-.presentation {
-  padding: 1em 3em;
-  text-align: center;
-}
-
-#content_collapse {
-  display: none;
-}
-
-.read-more {
-  background-color: white;
-  border: 0;
-  color: #FFCB05;
-  text-align: end;
-  margin: 0 2em 2em 0;
-  position: relative;
-  width: 6em;
-  padding: 0.3em;
-  float: right;
-}
-.read-more::before {
-  position: absolute;
-  content: "";
-  border-top: solid 3px #FFCB05;
-  border-left: solid 3px #FFCB05;
-  width: 30%;
-  top: -3px;
-  left: -3px;
-  transition: 0.3s all ease-in-out;
-}
-.read-more::after {
-  position: absolute;
-  content: "";
-  border-bottom: solid 3px #FFCB05;
-  border-right: solid 3px #FFCB05;
-  width: 30%;
-  bottom: -3px;
-  right: -3px;
-  transition: 0.3s all ease-in-out;
-}
-.read-more:hover {
-  color: #3B5BA7;
-}
-.read-more:hover::after, .read-more:hover::before {
-  width: 40%;
-  border-color: #3B5BA7;
-}
-
-.section-home {
-  margin: 0 0;
-  padding: 3em 0;
-}
-.section-home:nth-child(even) {
-  width: 100%;
-  background-color: rgba(59, 91, 167, 0.0823529412);
-}
-.section-home .zoom-img {
-  overflow: hidden;
-  text-align: center;
-}
-.section-home .zoom-img img {
-  height: 15em;
-  width: 25em;
-}
-.section-home .zoom-img img:hover {
-  transform: scale(1.2);
-  transition: transform 0.2s ease;
-  padding: 0;
+  max-width: 100%;
 }
 
 h2 {
-  font-family: "pokemon_solidnormal";
+  font-family: "pokemonMonk";
   color: #FFCB05;
-  letter-spacing: 2px;
-  -webkit-text-stroke: 2.5px #3B5BA7;
-  margin: 0 10px;
+  -webkit-text-stroke: 1.5px #357ACC;
+  letter-spacing: 0px;
+  font-size: 38px;
+  text-align: center;
 }
 h2::before {
   content: "";
@@ -4227,55 +4153,6 @@ h2::before {
   display: inline-block;
   margin-right: 0.5em;
   vertical-align: middle;
-}
-
-.card-container {
-  clear: both;
-  padding: 0 3.5em;
-  margin: 2em;
-}
-.card-container h2 {
-  text-align: center;
-}
-.card-container h2::before {
-  background: url("");
-}
-.card-container:hover .card:not(:hover) {
-  transform: scale(0.8);
-}
-.card-container:hover > .card:not(:hover) {
-  filter: brightness(0.5) blur(3px);
-  transform: scale(0.8);
-}
-.card-container .card {
-  background-size: cover;
-  height: 12em;
-  border-radius: 10px;
-  justify-content: end;
-  align-items: flex-start;
-  color: white;
-  text-shadow: black 0.1em 0.1em 0.2em;
-}
-.card-container .card .card-name {
-  font-size: 22px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-.card-container .card .card-description {
-  font-size: 15px;
-}
-.card-container .card-alvin {
-  background-image: url(../images/imagesAnime/Deoxys.png);
-}
-.card-container .card-loic {
-  background-image: url(https://www.eclypsia.com/wp-content/uploads/eclypsia/2022/12/Salameche_LetsGo.jpg);
-}
-.card-container .card-jordan {
-  background-image: url(../images/images_home/lucario.webp);
-  background-position: top center;
-}
-.card-container .card-loevane {
-  background-image: url(http://sm.ign.com/ign_fr/screenshot/default/blob_n19y.jpg);
 }
 
 .button {
@@ -4318,7 +4195,150 @@ h2::before {
   border-color: #FFCB05;
 }
 
+.presentation {
+  padding: 1em 15%;
+  text-align: center;
+  margin-top: 3em;
+}
+.presentation .content_collapse {
+  display: none;
+}
+
+.read-more {
+  background-color: white;
+  border: 0;
+  color: #FFCB05;
+  text-align: end;
+  margin: 0 2em 2em 0;
+  position: relative;
+  width: 6em;
+  padding: 0.3em;
+  float: right;
+}
+.read-more::before {
+  position: absolute;
+  content: "";
+  border-top: solid 3px #FFCB05;
+  border-left: solid 3px #FFCB05;
+  width: 30%;
+  top: -3px;
+  left: -3px;
+  transition: 0.3s all ease-in-out;
+}
+.read-more::after {
+  position: absolute;
+  content: "";
+  border-bottom: solid 3px #FFCB05;
+  border-right: solid 3px #FFCB05;
+  width: 30%;
+  bottom: -3px;
+  right: -3px;
+  transition: 0.3s all ease-in-out;
+}
+.read-more:hover {
+  color: #3B5BA7;
+}
+.read-more:hover::after, .read-more:hover::before {
+  width: 40%;
+  border-color: #3B5BA7;
+}
+
+.title_favorite {
+  clear: both;
+  text-align: center;
+  margin: 1em;
+}
+.title_favorite::before {
+  background: url("");
+  width: 0;
+  margin: 0;
+}
+
+.card-container {
+  padding: 0 3.5em;
+  margin: 2em 0;
+  transition: all 0.3s ease;
+}
+.card-container:hover .card:not(:hover) {
+  filter: brightness(0.5) blur(3px);
+  transform: scale(0.8);
+}
+.card-container .card {
+  background-size: cover;
+  height: 14em;
+  border-radius: 10px;
+  justify-content: end;
+  align-items: flex-start;
+  color: white;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+.card-container .card .card-name {
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.card-container .card .card-description {
+  font-size: 15px;
+}
+.card-container .card-alvin {
+  background-image: url(../images/imagesAnime/Deoxys.png);
+  background-position: top center;
+}
+.card-container .card-loic {
+  background-image: url(https://www.eclypsia.com/wp-content/uploads/eclypsia/2022/12/Salameche_LetsGo.jpg);
+  background-position: top center;
+}
+.card-container .card-jordan {
+  background-image: url(../images/images_home/lucario.webp);
+  background-position: top center;
+}
+.card-container .card-loevane {
+  background-image: url(../images/images_home/pikachu.jpg);
+  background-position: bottom right;
+}
+
+.section-home {
+  padding: 3em 0;
+}
+.section-home:nth-child(even) {
+  width: 100%;
+  background-color: rgba(59, 91, 167, 0.0823529412);
+}
+.section-home .zoom-img {
+  overflow: hidden;
+  text-align: center;
+  width: 30em;
+  height: 20em;
+}
+.section-home .zoom-img img {
+  width: 100%;
+  height: 100%;
+}
+.section-home .zoom-img img:hover {
+  width: 100%;
+  -webkit-transform: scale(1.3);
+  transform: scale(1.1);
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
 @media (min-width: 768px) {
+  h2 {
+    text-align: start;
+  }
+  h2::before {
+    margin-left: 4em;
+  }
+  .img_home_head {
+    max-width: 65%;
+    height: auto;
+  }
+  .presentation {
+    margin: 2em;
+  }
+  .presentation .content_collapse {
+    display: inline;
+  }
   .read-more {
     position: absolute !important;
     width: 1px !important;
@@ -4333,11 +4353,18 @@ h2::before {
   .card-container {
     padding: 0;
   }
+}
+@media (max-width: 767.98px) {
   .img_home_head {
-    max-height: 25em;
-  }
-  #content_collapse {
-    display: inline;
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
   }
 }
 footer {
