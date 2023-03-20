@@ -4124,14 +4124,49 @@
     display: none !important;
   }
 }
-main {
+footer {
+  padding: 3em;
+  text-align: center;
+  color: #3B5BA7;
   background-color: rgba(59, 91, 167, 0.0823529412);
+}
+footer nav {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer nav a {
+  text-decoration: none;
+  color: #3B5BA7;
+  font-family: abel, sans-serif;
+  font-size: 22px;
+  padding: 0.2em 1em;
+}
+footer nav a:hover {
+  color: #FFCB05;
+}
+footer p {
+  margin-bottom: 0;
+}
+footer img {
+  width: 8em;
+  margin: 1em;
+}
+
+@media (min-width: 768px) {
+  footer nav {
+    flex-direction: row;
+  }
+}
+body {
+  background: #fafafa;
 }
 
 .poketitle {
   font-family: "pokemonSolid";
-  color: #ffcb05;
-  -webkit-text-stroke: 1px #3b5ba7;
+  color: #FFCB05;
+  -webkit-text-stroke: 1px #3B5BA7;
   margin: 30px;
   font-size: 180%;
 }
@@ -4192,7 +4227,7 @@ h3 {
 }
 .cardGame:hover p {
   color: black;
-  background: #ffcb05;
+  background: #FFCB05;
 }
 
 .jacketResize {
@@ -4209,13 +4244,13 @@ h3 {
   transition: all 0.15s ease-out;
   width: 315px;
   height: 400px;
-  border: 5px solid #ffcb05;
+  border: 5px solid #FFCB05;
   box-shadow: 0 0 1em rgb(12, 12, 12);
 }
 .contentCardGame h4 {
   text-align: center;
   padding: 10px;
-  color: #ffcb05;
+  color: #FFCB05;
 }
 
 .glow {

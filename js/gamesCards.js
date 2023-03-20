@@ -4,25 +4,25 @@ cardGame.forEach((ev) => {
   ev.addEventListener("mousemove", (e) => {
     let evRect = ev.getBoundingClientRect(); // Recupération de l'objet DOMRect (Permet de recupérer X et Y et d'accéder à la largeur et la hauteur de l'élement)
 
-    let x = e.clientX - evRect.x;
-    let y = e.clientY - evRect.y;
+    let x = e.clientX - evRect.x; // Connaitre la distance x de mon cursor par rapport à mon élément
+    let y = e.clientY - evRect.y; // Connaitre la distance y de mon cursor par rapport à mon élément
 
     let midcardWidth = evRect.width / 2; // Largeur divisé par 2
     let midcardHeight = evRect.height / 2; // Hauteur divisé par 2
 
     let angleY = -(x - midcardWidth) / 8; // Position en x de la souris qui va modifier la rotation de l'axe Y
-    let angleX = (y - midcardWidth) / 8; // Position en y de la souris qui va modifier la rotation de l'axe X
+    let angleX = (y - midcardHeight) / 8; // Position en y de la souris qui va modifier la rotation de l'axe X
 
-    let glowX = x / evRect.width * 100
-    let glowY = y / evRect.height * 100
+    let glowX = x / evRect.width * 100 // Position en x de la souris qui va modifier la position de mon effet glow
+    let glowY = y / evRect.height * 100// Position en y de la souris qui va modifier la position de mon effet glow
 
     ev.children[0].style.transform = `rotateX(${angleX}deg) rotateY(${angleY}deg) scale(1.1)`;
     ev.children[1].style.transform = `rotateX(${angleX}deg) rotateY(${angleY}deg) scale(1.1)`;
     ev.children[1].style.background = `radial-gradient(circle at ${glowX}% ${glowY}%, rgb(255, 255, 255,0.8), transparent)`
   });
   ev.addEventListener("mouseleave", () => {
-    ev.children[0].style.transform = "rotateX(0) rotateY(0)";
-    ev.children[1].style.transform = "rotateX(0) rotateY(0)";
+    ev.children[0].style.transform = "rotateX(0) rotateY(0)"; // Quand la souris quitte l'élément remise à 0 
+    ev.children[1].style.transform = "rotateX(0) rotateY(0)"; // Quand la souris quitte l'élément remise à 0 
   });
 });
 
