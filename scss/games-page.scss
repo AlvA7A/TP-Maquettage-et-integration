@@ -14,7 +14,7 @@ body{
   margin: 30px;
   font-size: 180%;
 }
-.mainBall{
+.mainBall{ // Ajout de l'image pokeball devant le titre principal
   @include icon (50px,"../images/images_home/pokeball.png");
 }
 .secondBall{
