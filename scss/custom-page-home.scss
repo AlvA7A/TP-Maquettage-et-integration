@@ -17,11 +17,10 @@ h2 {
   letter-spacing: 0px;
   font-size: 38px;
   text-align: center;
-  &::before {
-    @include icon(50px, "../images/images_home/pokeball.png");
-    margin-right: 0.5em;
-    vertical-align: middle;
-  }
+  margin-right: 0.5em;
+  vertical-align: middle;
+  @include icon(50px, "../images/images_home/pokeball.png");
+  
 }
 
 .button {

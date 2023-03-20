@@ -53,10 +53,17 @@
 }
 
 @mixin icon($size, $url) {
-  content: "";
-  background: url($url) no-repeat;
-  background-size: 100%;
-  width: $size;
-  height: $size;
-  display: inline-block;
+  &::before{
+    content: "";
+    background: url($url) no-repeat;
+    background-size: 100%;
+    width: $size;
+    height: $size;
+    display: inline-block;
+    transition: transform 1s;
+  }
+  &:hover::before{
+    transform: rotate(360deg) translateZ(0);
+  }
 }
+
