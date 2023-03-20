@@ -4,8 +4,6 @@
 // l'image est à droite du texte donc en dessous en html
 @include media-breakpoint-down(lg) {
 main {
-    h1 {
-    }
     p {
         text-align: center;
     }
