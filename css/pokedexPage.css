@@ -8487,10 +8487,12 @@ footer img {
   width: 900px;
   border: 2px solid #3B5BA7;
   border-radius: 30px;
+  margin: 20px auto;
 }
 
 .h3-pokedex {
   font-size: 18px;
+  color: #357ACC;
   border: none;
   margin: 0;
   padding: 2px 0 0 0;
@@ -8500,6 +8502,7 @@ footer img {
 
 .h3-pokedexT {
   font-size: 18px;
+  color: #357ACC;
   border: none;
   margin: 0 0 8px 0;
   padding: 2px 0 0 0;
@@ -8509,6 +8512,7 @@ footer img {
 
 .h4-pokedex {
   font-size: 16px;
+  margin: 0;
   color: #FFCB05;
 }
 
@@ -8554,7 +8558,14 @@ footer img {
 }
 
 .para-pokedex {
-  margin: 0;
+  font-size: 16px;
+  margin: 2px 0 0 0;
+  text-align: center;
+}
+
+.para-pokedex-2 {
+  font-size: 16px;
+  margin: 2px 0 0 0;
   text-align: center;
 }
 
@@ -8572,6 +8583,7 @@ footer img {
 .cont-stats-pokedex {
   display: flex;
   width: 100%;
+  margin-top: 6px;
   justify-content: space-between;
 }
 
@@ -8598,8 +8610,13 @@ footer img {
   border-radius: 12px;
   padding: 1px 3px;
   margin-left: 4px;
+  margin-top: 2px;
   font-size: 12px;
   font-weight: 500;
+}
+
+.span-stat {
+  font-size: 16px;
 }
 
 .bg-plante {
@@ -8715,6 +8732,40 @@ footer img {
   border: 1px solid #3B5BA7;
   border-radius: 8px;
   padding: 4px 4px;
+}
+
+@media (max-width: 991.98px) {
+  .card-pokedex {
+    width: 750px;
+  }
+  .h3-pokedex {
+    font-size: 16px;
+  }
+  .h3-pokedexT {
+    font-size: 16px;
+  }
+  .h4-pokedex {
+    font-size: 14px;
+  }
+  .type-pokedex {
+    font-size: 12px;
+  }
+  .para-pokedex-2 {
+    font-size: 14px;
+    margin: 2px 0 6px 0;
+  }
+  .para-pokedex {
+    font-size: 14px;
+  }
+  .span-pokedex {
+    font-size: 10px;
+  }
+  .span-stat {
+    font-size: 14px;
+  }
+  .cont-stats-pokedex {
+    margin-top: 10px;
+  }
 }
 
 /*# sourceMappingURL=pokedexPage.css.map */
