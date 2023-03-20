@@ -1,22 +1,29 @@
 /**
- * Permet d'optimiser les images
- * 
- * @returns l'image entre 50% et 60% de sa taille original
-**/
+ * Comprime toutes les images JPG et PNG dans un dossier spécifié en utilisant imagemin et des plugins spécifiques pour chaque type d'image.
+ * @function compressImages
+ * @async
+ * @param {Object} - src, dest
+ * @param {string} src - chemin vers le dossier contenant les images à compresser.
+ * @param {string} dest - chemin vers le dossier de destination pour les images compressées.
+ * @param {number} [options.mozjpeg] qualité de l'image compressée
+ * @returns les images compressés vers la destination.
+ **/
 
-import imagemin from 'imagemin';
-import imageminPngquant from 'imagemin-pngquant';
-import imageminMozjpeg from 'imagemin-mozjpeg';
+import imagemin from "imagemin";
+import imageminPngquant from "imagemin-pngquant";
+import imageminMozjpeg from "imagemin-mozjpeg";
 
-const files = await imagemin(['../images/**/*.(jpg|png)'], { //récupère toutes les images des sous-dossiers "images"
-	destination: '../assets/images',
-	plugins: [
-		imageminMozjpeg(),
-		imageminPngquant({
-			quality: [0.5, 0.6]
-		})
-	]
-});
+const compressImages = async () => {
+  	//récupère toutes les images des sous-dossiers "images"
+  	const files = await imagemin(["../images/**/*.(jpg|png)"], {
+		destination: "../assets/images",
+		plugins: [
+			imageminMozjpeg(),
+			imageminPngquant({
+				quality: [0.5, 0.6],
+			}),
+		],
+  });
+};
 
-console.log(files);
-//=> [{data: <Buffer 89 50 4e …>, destinationPath: 'build/images/foo.jpg'}, …]
+compressImages();
