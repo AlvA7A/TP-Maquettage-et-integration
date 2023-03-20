@@ -16,6 +16,7 @@ body {
 main {
     margin: 20px 30px;
 
+    // Titre h1 avec la pokeball devant, la pokeball est cachée dans la version  mobile, une autre pokeball apparait au dessus
     h1 {
         font-family: pokemonMonk;
         color: $jaunepoke;
@@ -33,6 +34,7 @@ main {
         margin-top: 40px;
     }
 
+    // pareil que pour le h1
     h2 {
         font-family: pokemonMonk;
         color: $jaunepoke;
@@ -44,7 +46,6 @@ main {
         &::before {
             @include icon(34px, "../images/imagesCartes/superBall.png");
             @include visually-hidden();
-            
         }
     }
 }
@@ -81,6 +82,7 @@ main {
     margin-top: 40px;
 }
 
+// les conteneurs des saisons sont en colonne en version mobile et passent en row dans les versions supérieures
 .cont-saison2 {
     flex-direction: column;
     width: 90%;
@@ -98,9 +100,9 @@ main {
         color: $bleu;
         transition: all 0.3s ease;
         width: 170px;
-
     }
 }
+
 
 .cont-saison1 {
     flex-direction: column;
@@ -113,9 +115,6 @@ main {
         border-radius: 5px;
         color: $bleu;
         transition: all 0.3s ease;
-
-
-       
     }
 }
 

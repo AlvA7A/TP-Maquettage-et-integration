@@ -4128,7 +4128,7 @@ footer {
   padding: 3em;
   text-align: center;
   color: #3B5BA7;
-  background-color: rgba(59, 91, 167, 0.0823529412);
+  background-color: #EFF1F8;
 }
 footer nav {
   max-width: 100%;
@@ -4187,6 +4187,12 @@ body {
   cursor: pointer;
 }
 
+#tryme {
+  font-family: "pokemonSolid";
+  color: #FFCB05;
+  -webkit-text-stroke: 1px #3B5BA7;
+}
+
 .masterBall {
   max-width: 25px;
   max-height: 25px;
@@ -4196,6 +4202,7 @@ body {
 .jacketGames {
   width: 60%;
   height: auto;
+  border: 2px solid black;
 }
 
 h3 {

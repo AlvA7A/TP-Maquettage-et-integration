@@ -17,7 +17,6 @@ body{
   -webkit-text-stroke: 1px $bleunuit;
   margin: 30px;
   font-size: 180%;
-
 }
 .textIntro{
   text-align: center;
@@ -32,6 +31,11 @@ body{
   max-height: 30px;
   cursor: pointer;
 }
+#tryme{
+  font-family: "pokemonSolid";
+  color:$jaunepoke;
+  -webkit-text-stroke: 1px $bleunuit;
+}
 .masterBall {
   max-width: 25px;
   max-height: 25px;
@@ -41,6 +45,7 @@ body{
 .jacketGames {
   width: 60%;
   height: auto;
+  border: 2px solid black;
 }
 h3 {
   text-align: center;
