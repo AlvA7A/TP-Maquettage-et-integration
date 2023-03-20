@@ -4167,7 +4167,7 @@ footer img {
   padding: 2%;
 }
 .cartesHead > p {
-  padding-top: 40px;
+  padding-top: 1%;
 }
 
 .cardBanner {
@@ -4191,6 +4191,7 @@ footer img {
   color: #FFCB05;
   -webkit-text-stroke: 2px #3B5BA7;
   font-size: 34px;
+  margin-top: 1%;
 }
 .pokeBall:before {
   content: "";
@@ -4239,8 +4240,8 @@ footer img {
 }
 
 .cardSection {
-  background-color: #357ACC;
-  padding: 2%;
+  background-color: #e9edfa;
+  padding: 3%;
 }
 
 .display {

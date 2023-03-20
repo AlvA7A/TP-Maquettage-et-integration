@@ -1,132 +1,123 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Les cartes à jouer</title>
-    <link rel="stylesheet" href="../css/bootstrap.css" />
-    <link rel="stylesheet" href="../css/navbar-burger-menu.css" />
-    <link rel="stylesheet" href="../css/cartesPage.css" />
-    <script src="../js/anime.js" defer></script>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div class="d-flex justify-content-between align-items-center">
-          <img
-            src="../images/imagesCartes/Logo-Pokemon.png"
-            alt="Logo Pokémon"
-          />
-          <section class="d-flex">
-            <a href="./home.html" class="link-nav">ACCUEIL</a>
-            <a href="./anime.html" class="link-nav">ANIME</a>
-            <a href="./cartes.html" class="link-nav">CARTES</a>
-            <a href="./games.html" class="link-nav">JEUX VIDEOS</a>
-            <a href="./pokedex.html" class="link-nav">POKEDEX</a>
-          </section>
-          <a id="link" href="#"><span id="burger"></span></a>
-        </div>
-        <ul>
-          <li><a href="./home.html" class="link-menu">ACCUEIL</a></li>
-          <li><a href="./anime.html" class="link-menu">ANIME</a></li>
-          <li><a href="./cartes.html" class="link-menu">CARTES</a></li>
-          <li><a href="./games.html" class="link-menu">JEUX VIDEOS</a></li>
-          <li><a href="./pokedex.html" class="link-menu">POKEDEX</a></li>
-        </ul>
-      </nav>
-    </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pokemon - Les cartes à jouer</title>
+        <link rel="stylesheet" href="../css/bootstrap.css" />
+        <link rel="stylesheet" href="../css/navbar-burger-menu.css" />
+        <link rel="stylesheet" href="../css/cartesPage.css" />
+        <link rel="shortcut icon" href="../images/images_home/pokeball.png" type="image/x-icon" />
+        <script src="../js/anime.js" defer></script>
+        <script src="../js/gamesCards.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="d-flex justify-content-between align-items-center">
+                    <img src="../images/imagesCartes/Logo-Pokemon.png" alt="Logo Pokémon" />
+                    <section class="d-flex">
+                        <a href="./home.html" class="link-nav">ACCUEIL</a>
+                        <a href="./anime.html" class="link-nav">ANIME</a>
+                        <a href="./cartes.html" class="link-nav">CARTES</a>
+                        <a href="./games.html" class="link-nav">JEUX VIDEOS</a>
+                        <a href="./pokedex.html" class="link-nav">POKEDEX</a>
+                    </section>
+                    <a id="link" href="#"><span id="burger"></span></a>
+                </div>
+                <ul>
+                    <li><a href="./home.html" class="link-menu">ACCUEIL</a></li>
+                    <li><a href="./anime.html" class="link-menu">ANIME</a></li>
+                    <li><a href="./cartes.html" class="link-menu">CARTES</a></li>
+                    <li><a href="./games.html" class="link-menu">JEUX VIDEOS</a></li>
+                    <li><a href="./pokedex.html" class="link-menu">POKEDEX</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <main class="">
-      <section class="cartesHead">
-        <h2 class="pokeBall titre">Les cartes</h2>
-        <p>
-          Le jeu de cartes à collectionner Pokémon (JCC), souvent désigné sous
-          son nom anglais Pokémon Trading card game (TCG) est un jeu de cartes à
-          collectionner de la franchise Pokémon.
-        </p>
-      </section>
-      <div class="cardBanner">
-        <h2 class="text-center superBall">
-          Liste des sets concernants la première génération :
-        </h2>
-      </div>
-      <section
-        class="cardSection d-flex flex-wrap text-center justify-content-center"
-      >
-        <section class="display">
-          <h3 class="backCard">Set de base</h3>
-          <img
-            src="../images/imagesCartes/setBase.png"
-            alt="Un display set de base"
-            class="imgDisplay"
-          />
-        </section>
-        <section class="display">
-          <h3 class="backCard">Set Jungle</h3>
-          <img
-            src="../images/imagesCartes/setJungle.png"
-            alt="Un display jungle"
-            class="imgDisplay"
-          />
-        </section>
-        <section class="display">
-          <h3 class="backCard">Set Fossile</h3>
-          <img
-            src="../images/imagesCartes/setFossile.png"
-            alt="Un display fossile"
-            class="imgDisplay"
-          />
-        </section>
-        <section class="display">
-          <h3 class="backCard">Set de base 2</h3>
-          <img
-            src="../images/imagesCartes/setBase2.png"
-            alt="Un display set de base 2"
-            class="imgDisplay"
-          />
-        </section>
-        <section class="display">
-          <h3 class="backCard">Set Team Rocket</h3>
-          <img
-            src="../images/imagesCartes/teamRocket.png"
-            alt="Un display team rocket"
-            class="imgDisplay"
-          />
-        </section>
-        <section class="display">
-          <h3 class="backCard">Set Gym Heroes</h3>
-          <img
-            src="../images/imagesCartes/gymHeroes.png"
-            alt="Un display gym Heroes"
-            class="imgDisplay"
-          />
-        </section>
-        <section class="display">
-          <h3 class="backCard">Set Gym Challenge</h3>
-          <img
-            src="../images/imagesCartes/gymChallenge.png"
-            alt="Un display gym challenge"
-            class="imgDisplay"
-          />
-        </section>
-      </section>
-    </main>
-    <footer>
-      <nav class="">
-        <a href="#" class="">ACCUEIL</a>
-        <a href="./anime.html" class="">ANIME</a>
-        <a href="./cartes.html" class="">CARTES</a>
-        <a href="./games.html" class="">JEUX VIDEOS</a>
-        <a href="./pokedex.html" class="">POKEDEX</a>
-      </nav>
+        <main class="">
+            <section class="cartesHead">
+                <h2 class="pokeBall">Les cartes</h2>
+                <p>
+                    Le jeu de cartes à collectionner Pokémon (JCC), souvent désigné sous son nom
+                    anglais Pokémon Trading card game (TCG) est un jeu de cartes à collectionner de
+                    la franchise Pokémon. Il contient de nombreuses extensions dont la collection
+                    fait, encore aujoud'hui, vibrer les fans.
+                </p>
+            </section>
+            <div class="cardBanner">
+                <h2 class="text-center superBall">
+                    Liste des sets concernants la première génération :
+                </h2>
+            </div>
+            <section class="cardSection d-flex flex-wrap text-center justify-content-center">
+                <section class="display">
+                    <h3 class="backCard">Set de base</h3>
+                    <img
+                        src="../images/imagesCartes/setBase.png"
+                        alt="Un display set de base"
+                        class="imgDisplay" />
+                </section>
+                <section class="display">
+                    <h3 class="backCard">Set Jungle</h3>
+                    <img
+                        src="../images/imagesCartes/setJungle.png"
+                        alt="Un display jungle"
+                        class="imgDisplay" />
+                </section>
+                <section class="display">
+                    <h3 class="backCard">Set Fossile</h3>
+                    <img
+                        src="../images/imagesCartes/setFossile.png"
+                        alt="Un display fossile"
+                        class="imgDisplay" />
+                </section>
+                <section class="display">
+                    <h3 class="backCard">Set de base 2</h3>
+                    <img
+                        src="../images/imagesCartes/setBase2.png"
+                        alt="Un display set de base 2"
+                        class="imgDisplay" />
+                </section>
+                <section class="display">
+                    <h3 class="backCard">Set Team Rocket</h3>
+                    <img
+                        src="../images/imagesCartes/teamRocket.png"
+                        alt="Un display team rocket"
+                        class="imgDisplay" />
+                </section>
+                <section class="display">
+                    <h3 class="backCard">Set Gym Heroes</h3>
+                    <img
+                        src="../images/imagesCartes/gymHeroes.png"
+                        alt="Un display gym Heroes"
+                        class="imgDisplay" />
+                </section>
+                <section class="display">
+                    <h3 class="backCard">Set Gym Challenge</h3>
+                    <img
+                        src="../images/imagesCartes/gymChallenge.png"
+                        alt="Un display gym challenge"
+                        class="imgDisplay" />
+                </section>
+            </section>
+        </main>
+        <footer>
+            <nav class="">
+                <a href="./home.html" class="">ACCUEIL</a>
+                <a href="./anime.html" class="">ANIME</a>
+                <a href="./cartes.html" class="">CARTES</a>
+                <a href="./games.html" class="">JEUX VIDEOS</a>
+                <a href="./pokedex.html" class="">POKEDEX</a>
+            </nav>
 
-      <a href="#">
-        <img src="../images/imagesCartes/Logo-Pokemon.png" alt="Logo Pokémon" />
-      </a>
+            <a href="./home.html">
+                <img src="../images/imagesCartes/Logo-Pokemon.png" alt="Logo Pokémon" />
+            </a>
 
-      <p>Par Alvin, Loïc, Jordan et Loëvane.</p>
-      <p>Diginamic 2023</p>
-    </footer>
-  </body>
+            <p>Par Alvin, Loïc, Jordan et Loëvane.</p>
+            <p>Diginamic 2023</p>
+        </footer>
+    </body>
 </html>

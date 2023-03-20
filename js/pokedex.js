@@ -56,11 +56,13 @@ function creaPokeHtml(pokemon, id) {
             <h4 class="type-pokedex bg-Électrik">Électrik</h4>
         </div>`;
     } else {
+        let i = 1;
         for (const type of pokemon.types) {
-            types += `<div class="cont-type-pokedex">
+            types += `<div class="cont-type-pokedex${i}">
             <img src=${type.image} class="img-type">
             <h4 class="type-pokedex bg-${type.name}">${type.name}</h4>
         </div>`;
+            i++;
         }
     }
     let talents = ``;
@@ -71,7 +73,7 @@ function creaPokeHtml(pokemon, id) {
         talents = `<h3 class="h3-pokedexT">Talents</h3>`;
         for (const talent of pokemon.talents) {
             talents += `
-            <p class="para-pokedex">${talent.name}</p>`;
+            <p class="para-pokedex-2">${talent.name}</p>`;
         }
     }
     article.innerHTML = `
@@ -79,53 +81,57 @@ function creaPokeHtml(pokemon, id) {
         <h3 class="h3-pokedex">No.</h3>
         <p class="text-pokedex-01">${pad(pokemon.pokedexId, 3)}</p>
     </div>
-    <div class="cont-pokedex-02">
-        <img src=${pokemon.sprites.regular} class="img-pokemon">
-    </div>
-    <section class="cont-pokedex-03">
-        <h3 class="h3-pokedex">Pokémon</h3>
-        <div class="nom-poke">
-            <p class="para-pokedex">${pokemon.name.fr}</p>
-            <span class="span-pokedex">FR</span>
+    <section class="cont-02et03">
+        <div class="cont-pokedex-02">
+            <img src=${pokemon.sprites.regular} class="img-pokemon">
         </div>
-        <div class="nom-poke">
-            <p class="para-pokedex">${pokemon.name.en}</p>
-            <span class="span-pokedex">EN</span>
-        </div>
+        <section class="cont-pokedex-03">
+            <h3 class="h3-pokedex">Pokémon</h3>
+            <div class="nom-poke">
+                <p class="para-pokedex">${pokemon.name.fr}</p>
+                <span class="span-pokedex">FR</span>
+            </div>
+            <div class="nom-poke">
+                <p class="para-pokedex">${pokemon.name.en}</p>
+                <span class="span-pokedex">EN</span>
+            </div>
+        </section>
     </section>
-    <section>
-        <h3 class="h3-pokedex">Type</h3>
-        ${types}
-    </section>
-    <section>
-        ${talents}
+    <section class="cont-04et05">
+        <section>
+            <h3 class="h3-pokedex">Type</h3>
+            ${types}
+        </section>
+        <section class="cont-pokedex-05">
+            ${talents}
+        </section>
     </section>
     <section class="cont-last-pokedex">
         <h3 class="h3-pokedex">Statistiques de base</h3>
         <div class="cont-stats-pokedex">
             <div class="stat-pokedex">
                 <h4 class="h4-pokedex">PV</h4>
-                <span>${pokemon.stats.hp}</span>
+                <span class="span-stat">${pokemon.stats.hp}</span>
             </div>
             <div class="stat-pokedex">
                 <h4 class="h4-pokedex">Atq</h4>
-                <span>${pokemon.stats.atk}</span>
+                <span class="span-stat">${pokemon.stats.atk}</span>
             </div>
             <div class="stat-pokedex">
                 <h4 class="h4-pokedex">Def</h4>
-                <span>${pokemon.stats.def}</span>
+                <span class="span-stat">${pokemon.stats.def}</span>
             </div>
             <div class="stat-pokedex">
                 <h4 class="h4-pokedex">ASpé</h4>
-                <span>${pokemon.stats.spe_atk}</span>
+                <span class="span-stat">${pokemon.stats.spe_atk}</span>
             </div>
             <div class="stat-pokedex">
                 <h4 class="h4-pokedex">DSpé</h4>
-                <span>${pokemon.stats.spe_def}</span>
+                <span class="span-stat">${pokemon.stats.spe_def}</span>
             </div>
             <div class="stat-pokedex">
                 <h4 class="h4-pokedex">Vit</h4>
-                <span>${pokemon.stats.vit}</span>
+                <span class="span-stat">${pokemon.stats.vit}</span>
             </div>
         </div>
     </section>`;
