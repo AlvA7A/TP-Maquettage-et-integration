@@ -26,9 +26,9 @@ function pad(num, size) {
     return s.slice(s.length - size);
 }
 
-// Fonction pour creer l'article d'un pokemon
+// Fonction pour creer la section d'un pokemon
 function creaPokeHtml(pokemon) {
-    const article = createMarkup("article", "", sectionPoke, [
+    const section = createMarkup("section", "", sectionPoke, [
         { name: "class", value: "card-pokedex" },
     ]);
 
@@ -65,7 +65,7 @@ function creaPokeHtml(pokemon) {
         }
     }
     // Création de l'html pour chaque rang pokedex
-    article.innerHTML = `
+    section.innerHTML = `
     <div class="cont-pokedex-01">
         <h3 class="h3-pokedex">No.</h3>
         <p class="text-pokedex-01">${pad(pokemon.pokedexId, 3)}</p>

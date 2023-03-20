@@ -1,8 +1,13 @@
 @import "../node_modules/bootstrap/scss/bootstrap-grid.scss";
 
-$bleunuit: #3B5BA7;
-$bleu: #357ACC;
-$jaunepoke: #FFCB05;
+$bleunuit: #3b5ba7;
+$bleu: #357acc;
+$jaunepoke: #ffcb05;
 $vide: #ff050500;
 $verylightgray: #fafafa;
-$lightgray: #EFF1F8;
+$lightgray: #eff1f8;
+
+@font-face {
+    font-family: "pocketMonk";
+    src: URL("../font/PocketMonk.ttf") format("truetype");
+}
