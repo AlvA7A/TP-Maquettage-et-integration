@@ -4154,6 +4154,8 @@ h2::before {
   height: 50px;
   display: inline-block;
   transition: transform 1s;
+  vertical-align: middle;
+  margin-right: 0.5em;
 }
 h2:hover::before {
   transform: rotate(360deg) translateZ(0);
