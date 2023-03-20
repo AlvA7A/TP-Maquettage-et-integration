@@ -8485,7 +8485,7 @@ footer img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
+  height: 110px;
   width: 900px;
   border: 2px solid #3B5BA7;
   border-radius: 30px;
@@ -8576,7 +8576,7 @@ footer img {
   text-align: center;
 }
 
-.cont-type-pokedex {
+.cont-type-pokedex1 {
   display: flex;
   margin-top: 8px;
 }

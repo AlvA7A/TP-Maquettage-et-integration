@@ -1,161 +1,162 @@
 // sass --watch .\scss\cartesPage.scss .\css\cartesPage.css
 
 @font-face {
-  font-family: "pokemonSolid";
-  src: URL("../font/Pokemon\ Solid.ttf") format("truetype");
+    font-family: "pokemonSolid";
+    src: URL("../font/Pokemon\ Solid.ttf") format("truetype");
 }
 @font-face {
-  font-family: "pocketMonk";
-  src: URL("../font/PocketMonk.ttf") format("truetype");
+    font-family: "pocketMonk";
+    src: URL("../font/PocketMonk.ttf") format("truetype");
 }
 @import "./variables.scss";
 @import "./mixins.scss";
 @import "./footer.scss";
 
 .cartesHead {
-  padding: 2%;
-  & > p {
-    padding-top: 40px;
-  }
+    padding: 2%;
+    & > p {
+        padding-top: 1%;
+    }
 }
 .cardBanner {
-  background-image: url("../images/imagesCartes/backCard.png");
-  background-size: contain;
-  background-repeat: repeat;
-  display: flex;
-  justify-content: center;
-  padding: 1%;
-  & > * {
-    background-color: white;
-    display: inline;
+    background-image: url("../images/imagesCartes/backCard.png");
+    background-size: contain;
+    background-repeat: repeat;
+    display: flex;
+    justify-content: center;
     padding: 1%;
-    margin: 0%;
-    border: 2px solid lightgrey;
-  }
+    & > * {
+        background-color: white;
+        display: inline;
+        padding: 1%;
+        margin: 0%;
+        border: 2px solid lightgrey;
+    }
 }
 
 .pokeBall {
-  //Changement de la police en pokemon
-  font-family: "pocketMonk";
-  color: $jaunepoke;
-  -webkit-text-stroke: 2px $bleunuit;
-  font-size: 34px;
-  //Ajout d'une pokeball devant le titre
-  &:before {
-    @include icon(35px, "../images/images_home/pokeball.png");
-    margin-right: 1%;
-  }
+    //Changement de la police en pokemon
+    font-family: "pocketMonk";
+    color: $jaunepoke;
+    -webkit-text-stroke: 2px $bleunuit;
+    font-size: 34px;
+    //Ajout d'une pokeball devant le titre
+    &:before {
+        @include icon(35px, "../images/images_home/pokeball.png");
+        margin-right: 1%;
+    }
+    margin-top: 1%;
 }
 .superBall {
-  //Changement de la police en pokemon
-  font-family: "pocketMonk";
-  color: $jaunepoke;
-  -webkit-text-stroke: 2px $bleunuit;
-  //Ajout d'une pokeball devant le titre
-  &:before {
-    @include icon(50px, "../images/imagesCartes/superBall.png");
-    padding-right: 3%;
-  }
+    //Changement de la police en pokemon
+    font-family: "pocketMonk";
+    color: $jaunepoke;
+    -webkit-text-stroke: 2px $bleunuit;
+    //Ajout d'une pokeball devant le titre
+    &:before {
+        @include icon(50px, "../images/imagesCartes/superBall.png");
+        padding-right: 3%;
+    }
 }
 //Ajout d'un dos de carte devant les noms de set
 .backCard {
-  display: flex;
-  justify-content: center;
-  &:before {
-    @include icon(50px, "../images/imagesCartes/boosterSetDeBase.webp");
-    background-size: 45px 70px;
-    height: 70px;
-    margin-top: -5%;
-    margin-right: 2%;
-  }
+    display: flex;
+    justify-content: center;
+    &:before {
+        @include icon(50px, "../images/imagesCartes/boosterSetDeBase.webp");
+        background-size: 45px 70px;
+        height: 70px;
+        margin-top: -5%;
+        margin-right: 2%;
+    }
 }
 
 // L'image prends toute la largeur de son contenant
 .imgDisplay {
-  width: 100%;
+    width: 100%;
 }
 .cardSection {
-  background-color: $bleu;
-  padding: 2%;
+    background-color: #e9edfa;
+    padding: 3%;
 }
 .display {
-  background-color: white;
-  border: 3px solid $jaunepoke;
-  margin: 1%;
-  border-radius: 10%;
-  padding: 3%;
-  & > *:nth-child(1) {
-    padding-bottom: 10%;
-  }
+    background-color: white;
+    border: 3px solid $jaunepoke;
+    margin: 1%;
+    border-radius: 10%;
+    padding: 3%;
+    & > *:nth-child(1) {
+        padding-bottom: 10%;
+    }
 }
 
 //Taille petit écran
 @media screen and (max-width: 576px) {
-  .display {
-    //Affiche 1 carte
-    width: 80%;
-  }
-  .pokeBall {
-    font-size: 30px;
-    &:before {
-      margin-bottom: -1%;
-      width: 35px;
-      height: 35px;
+    .display {
+        //Affiche 1 carte
+        width: 80%;
     }
-  }
-  .superBall {
-    font-size: 20px;
-    -webkit-text-stroke: 1px $bleunuit;
-    &:before {
-      width: 30px;
-      height: 30px;
+    .pokeBall {
+        font-size: 30px;
+        &:before {
+            margin-bottom: -1%;
+            width: 35px;
+            height: 35px;
+        }
     }
-  }
+    .superBall {
+        font-size: 20px;
+        -webkit-text-stroke: 1px $bleunuit;
+        &:before {
+            width: 30px;
+            height: 30px;
+        }
+    }
 }
 
 //Taille moyen écran
 @media screen and (min-width: 577px) {
-  .display {
-    // Affichage de 2 cards
-    width: 45%;
-  }
-  .pokeBall {
-    font-size: 28px;
-    &:before {
-      margin-bottom: -5px;
-      width: 40px;
-      height: 40px;
+    .display {
+        // Affichage de 2 cards
+        width: 45%;
     }
-  }
-  .superBall {
-    font-size: 25px;
-    -webkit-text-stroke: 2px $bleunuit;
-    &:before {
-      margin-bottom: -1%;
-      width: 40px;
-      height: 40px;
+    .pokeBall {
+        font-size: 28px;
+        &:before {
+            margin-bottom: -5px;
+            width: 40px;
+            height: 40px;
+        }
     }
-  }
+    .superBall {
+        font-size: 25px;
+        -webkit-text-stroke: 2px $bleunuit;
+        &:before {
+            margin-bottom: -1%;
+            width: 40px;
+            height: 40px;
+        }
+    }
 }
 //Taille grand écran
 @media screen and (min-width: 992px) {
-  .display {
-    // Affiche de 3 cards
-    width: 30%;
-  }
-  .pokeBall {
-    font-size: 35px;
-    &:before {
-      margin-bottom: -10px;
-      width: 50px;
-      height: 50px;
+    .display {
+        // Affiche de 3 cards
+        width: 30%;
     }
-  }
-  .superBall {
-    font-size: 30px;
-    &:before {
-      width: 50px;
-      height: 50px;
+    .pokeBall {
+        font-size: 35px;
+        &:before {
+            margin-bottom: -10px;
+            width: 50px;
+            height: 50px;
+        }
     }
-  }
+    .superBall {
+        font-size: 30px;
+        &:before {
+            width: 50px;
+            height: 50px;
+        }
+    }
 }
