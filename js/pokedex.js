@@ -20,44 +20,30 @@ function createMarkup(markup_name, text, parent, attributes) {
     }
     return markup;
 }
+// Fonction pour formater les id à 3 characteres
 function pad(num, size) {
     let s = "00" + num;
     return s.slice(s.length - size);
 }
 
-// INUTILE IDIOT MOI mais c bo
-/**
- * @param {int} pokedexId
- * @param {JS Object} name {fr,en,jg}
- * @param {JS Object} sprites => {regular,shiny}
- * @param {Array of JS Object} types => [{name, image}]
- * @param {Array of JS Object} talents => [{name, tc}]
- * @param {JS Object} stats => {hp,atk,def,spe_atk,spe_def,vit}
- */
-// class Pokemon {
-//   constructor(pokedexId, name, sprites, types, talents, stats) {
-//     this.pokedexId = pokedexId;
-//     this.name = name;
-//     this.sprites = sprites;
-//     this.types = types;
-//     this.talents = talents;
-//     this.stats = stats;
-//   }
-// }
-function creaPokeHtml(pokemon, id) {
+// Fonction pour creer l'article d'un pokemon
+function creaPokeHtml(pokemon) {
     const article = createMarkup("article", "", sectionPoke, [
         { name: "class", value: "card-pokedex" },
     ]);
+
     let types = ``;
     // Voir operateur ternaire
     if (pokemon.pokedexId === 125) {
+        //car erreur dans l'api
         types += `<div class="cont-type-pokedex">
             <img src="https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/types/electrik.png" class="img-type">
             <h4 class="type-pokedex bg-Électrik">Électrik</h4>
         </div>`;
     } else {
-        let i = 1;
+        let i = 1; //pour classe css
         for (const type of pokemon.types) {
+            //enumeration de chaque type du poke pour creation de l'html
             types += `<div class="cont-type-pokedex${i}">
             <img src=${type.image} class="img-type">
             <h4 class="type-pokedex bg-${type.name}">${type.name}</h4>
@@ -65,6 +51,8 @@ function creaPokeHtml(pokemon, id) {
             i++;
         }
     }
+
+    // Creation de l'html de talents
     let talents = ``;
     if (pokemon.talents.length === 1) {
         talents = `<h3 class="h3-pokedexT">Talent</h3>
@@ -76,6 +64,7 @@ function creaPokeHtml(pokemon, id) {
             <p class="para-pokedex-2">${talent.name}</p>`;
         }
     }
+    // Création de l'html pour chaque rang pokedex
     article.innerHTML = `
     <div class="cont-pokedex-01">
         <h3 class="h3-pokedex">No.</h3>
@@ -136,8 +125,10 @@ function creaPokeHtml(pokemon, id) {
         </div>
     </section>`;
 }
+
+// Création de la section hote
 const sectionPoke = createMarkup("section", "", document.querySelector("main"), []);
-// Api n°3
+// Fetech de toutes les données sur api-pokemon-fr
 const pokedex = fetch("https://api-pokemon-fr.vercel.app/api/v1/gen/1")
     .then(function (response) {
         if (response.status !== 200) {
@@ -145,9 +136,8 @@ const pokedex = fetch("https://api-pokemon-fr.vercel.app/api/v1/gen/1")
         } else return response.json();
     })
     .then(function (pokedex) {
-        console.log("Pokedex : ", pokedex);
+        // console.log("Pokedex : ", pokedex);
         for (let pokemon of pokedex) {
-            //   console.log(pokemon.name.fr);
             creaPokeHtml(pokemon);
         }
         return pokedex;

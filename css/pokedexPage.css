@@ -8273,13 +8273,25 @@ header section .link-nav {
   color: #3B5BA7;
   font-family: abel, sans-serif;
   font-size: 24px;
-  border-bottom: 2px solid rgba(255, 5, 5, 0);
   padding: 15px 15px;
   white-space: nowrap;
+  position: relative;
 }
-header section .link-nav:hover {
-  border-bottom: 2px solid #3B5BA7;
-  color: #3B5BA7;
+header section .link-nav::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: -3px;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 0;
+  background: transparent;
+  transition: all 0.8s ease;
+}
+header section .link-nav:hover:after {
+  width: 100%;
+  background: #3B5BA7;
 }
 header .icon-menu {
   text-decoration: none;
@@ -8450,7 +8462,7 @@ footer {
   padding: 3em;
   text-align: center;
   color: #3B5BA7;
-  background-color: rgba(59, 91, 167, 0.0823529412);
+  background-color: #EFF1F8;
 }
 footer nav {
   max-width: 100%;
@@ -8481,6 +8493,34 @@ footer img {
     flex-direction: row;
   }
 }
+@font-face {
+  font-family: "pocketMonk";
+  src: URL("../font/PocketMonk.ttf") format("truetype");
+}
+.pokedexHead {
+  padding: 2%;
+}
+.pokedexHead > p {
+  padding-top: 1%;
+}
+
+.pokeBall {
+  font-family: "pocketMonk";
+  color: #FFCB05;
+  -webkit-text-stroke: 2px #3B5BA7;
+  font-size: 35px;
+}
+.pokeBall:before {
+  content: "";
+  background: url("../images/images_home/pokeball.png") no-repeat;
+  background-size: 100%;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  margin-right: 1%;
+  margin-bottom: -5px;
+}
+
 .card-pokedex {
   display: flex;
   justify-content: space-between;
@@ -8781,6 +8821,14 @@ footer img {
   .cont-pokedex-05 {
     margin-left: 16px;
   }
+  .pokeBall {
+    font-size: 35px;
+  }
+  .pokeBall:before {
+    margin-bottom: -5px;
+    width: 40px;
+    height: 40px;
+  }
 }
 @media (max-width: 767.98px) {
   .card-pokedex {
@@ -8840,6 +8888,14 @@ footer img {
   .cont-pokedex-02 {
     width: 100px;
     height: 100px;
+  }
+  .pokeBall {
+    font-size: 30px;
+  }
+  .pokeBall:before {
+    margin-bottom: -5px;
+    width: 35px;
+    height: 35px;
   }
 }
 
