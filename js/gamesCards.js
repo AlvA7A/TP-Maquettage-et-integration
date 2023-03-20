@@ -26,12 +26,18 @@ cardGame.forEach((ev) => {
   });
 });
 
-const img = document.getElementById("rondou")
 const myaudio = document.querySelector("audio")
+let isPlaying = false;
 
-myaudio.volume=0.1;
-img.addEventListener("click", startmusic)
+function tooglePlay() {
+  isPlaying ? myaudio.pause() : myaudio.play()
+}
 
-function startmusic() {
-    myaudio.play();
+myaudio.onplaying = function () {
+  myaudio.volume=0.1;
+  isPlaying = true;
+}
+
+myaudio.onpause = function () {
+  isPlaying = false;
 }
