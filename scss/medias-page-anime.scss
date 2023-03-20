@@ -1,3 +1,7 @@
+
+// en dessous de "lg"= 992px toutes les flex box passent en colonne
+// il y a 2 fois l'image des iles orange dans le html, en mobile l'image est au dessus du texte et en version supérieure
+// l'image est à droite du texte donc en dessous en html
 @include media-breakpoint-down(lg) {
 main {
     h1 {
@@ -24,6 +28,7 @@ main {
 
 }
 
+// au dessus de "lg" = 992px les flex box passent en "row"
 @include media-breakpoint-up(lg) {
     main {
         h1 {
