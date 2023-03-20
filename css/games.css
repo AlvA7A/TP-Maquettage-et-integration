@@ -4171,14 +4171,42 @@ body {
   font-size: 180%;
 }
 
-.textIntro {
-  text-align: center;
+.mainBall::before {
+  content: "";
+  background: url("../images/images_home/pokeball.png") no-repeat;
+  background-size: 100%;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  transition: transform 1s;
+}
+.mainBall:hover::before {
+  transform: rotate(360deg) translateZ(0);
+}
+.mainBall::before {
+  margin-right: 10px;
+  vertical-align: middle;
 }
 
-#firstPokeBall {
-  max-width: 30px;
-  max-height: 30px;
+.secondBall::before {
+  content: "";
+  background: url("../images/img_game/Mball.png") no-repeat;
+  background-size: 100%;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  transition: transform 1s;
+}
+.secondBall:hover::before {
+  transform: rotate(360deg) translateZ(0);
+}
+.secondBall::before {
   margin-right: 10px;
+  vertical-align: middle;
+}
+
+.textIntro {
+  text-align: center;
 }
 
 #rondou {
@@ -4191,12 +4219,6 @@ body {
   font-family: "pokemonSolid";
   color: #FFCB05;
   -webkit-text-stroke: 1px #3B5BA7;
-}
-
-.masterBall {
-  max-width: 25px;
-  max-height: 25px;
-  margin-right: 10px;
 }
 
 .jacketGames {
