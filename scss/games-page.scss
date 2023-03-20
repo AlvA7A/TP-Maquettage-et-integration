@@ -8,11 +8,11 @@ body{
   background: $verylightgray;
 }
 .poketitle {
-  font-family: "pocketMonk";
-  color:$jaunepoke;
-  -webkit-text-stroke: 1px $bleunuit;
-  margin: 30px;
-  font-size: 180%;
+  font-family: "pocketMonk"; // Change la police
+  color:$jaunepoke; // Change la couleur du texte
+  -webkit-text-stroke: 1px $bleunuit; // Ajoute des bordures au texte 
+  margin: 30px; // Définit la taille des marges sur les quatre côtés 
+  font-size: 180%; // Définit la taille de font utilisée pour le texte 
 }
 .mainBall{ // Ajout de l'image pokeball devant le titre principal
   @include icon (50px,"../images/images_home/pokeball.png");
@@ -39,7 +39,7 @@ body{
   border: 2px solid black; // Ajout de bordure pour la classe indiqué 
 }
 h3 {
-  text-align: center;
+  text-align: center; // Définit l'alignement des h3 au centre
 }
 
 
