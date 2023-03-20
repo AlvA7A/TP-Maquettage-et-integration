@@ -34,7 +34,6 @@ header {
       color: $bleunuit;
       font-family: abel, sans-serif;
       font-size: 24px;
-      //border-bottom: 2px solid $vide;
       padding: 15px 15px;
       white-space: nowrap;
       position: relative;
@@ -48,11 +47,9 @@ header {
         height: 4px;
         width: 0;
         background: transparent;
-        transition: all 0.8s ease;
+        transition: all 0.5s ease;
       }
       &:hover:after {
-        //border-bottom: 2px solid $bleunuit;
-        //color: $bleunuit;
         width: 100%;
         background: $bleunuit;
       }
