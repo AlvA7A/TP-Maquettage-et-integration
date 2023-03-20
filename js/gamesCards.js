@@ -18,7 +18,7 @@ cardGame.forEach((ev) => {
 
     ev.children[0].style.transform = `rotateX(${angleX}deg) rotateY(${angleY}deg) scale(1.1)`;
     ev.children[1].style.transform = `rotateX(${angleX}deg) rotateY(${angleY}deg) scale(1.1)`;
-    ev.children[1].style.background = `radial-gradient(circle at ${glowX}% ${glowY}%, rgb(255, 255, 255), transparent)`
+    ev.children[1].style.background = `radial-gradient(circle at ${glowX}% ${glowY}%, rgb(255, 255, 255,0.8), transparent)`
   });
   ev.addEventListener("mouseleave", () => {
     ev.children[0].style.transform = "rotateX(0) rotateY(0)";

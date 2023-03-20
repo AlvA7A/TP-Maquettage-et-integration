@@ -4132,7 +4132,7 @@ main {
   font-family: "pokemonSolid";
   color: #ffcb05;
   -webkit-text-stroke: 1px #3b5ba7;
-  margin: 10px;
+  margin: 30px;
   font-size: 180%;
 }
 
@@ -4186,11 +4186,17 @@ h3 {
 }
 .cardGame p {
   text-align: center;
-  padding: 10px;
   color: transparent;
+  padding: 15px;
+  margin-top: 10px;
 }
 .cardGame:hover p {
   color: black;
+  background: #ffcb05;
+}
+
+.jacketResize {
+  max-height: 200px;
 }
 
 .contentCardGame {
@@ -4223,7 +4229,11 @@ h3 {
   transition: all 0.15s ease-out;
   border-radius: 25px;
   mix-blend-mode: hard-light;
-  background: radial-gradient(circle at 50% 0%, rgb(255, 255, 255), transparent);
+  background: radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.5), transparent);
+  opacity: 0;
+}
+.glow:hover {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=games.css.map */
