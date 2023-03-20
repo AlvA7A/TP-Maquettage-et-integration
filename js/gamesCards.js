@@ -25,3 +25,13 @@ cardGame.forEach((ev) => {
     ev.children[1].style.transform = "rotateX(0) rotateY(0)";
   });
 });
+
+const img = document.getElementById("rondou")
+const myaudio = document.querySelector("audio")
+
+myaudio.volume=0.1;
+img.addEventListener("click", startmusic)
+
+function startmusic() {
+    myaudio.play();
+}
