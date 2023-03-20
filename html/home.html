@@ -7,33 +7,38 @@
     <title>Pokemon - Accueil</title>
     <link rel="stylesheet" href="../css/index-page-home.css" />
     <link rel="stylesheet" href="/fontello-f5c70dfd/css/fontello.css" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/navbar-burger-menu.css" />
+    <link rel="shortcut icon" href="../images/images_home/pokeball.png" type="image/x-icon">
     <script src="../js/collapse.js" defer></script>
     <script src="../js/anime.js" defer></script>
-    <link rel="stylesheet" href="../css/navbar-burger-menu.css">
-</head>
+  </head>
 
   <body>
     <header>
-        <nav>
-            <div class="d-flex justify-content-between align-items-center">
-                <img src="../images/imagesCartes/Logo-Pokemon.png" alt="Logo Pokémon">
-                <section class="d-flex">
-                    <a href="./home.html" class="link-nav">ACCUEIL</a>
-                    <a href="./anime.html" class="link-nav">ANIME</a>
-                    <a href="./cartes.html" class="link-nav">CARTES</a>
-                    <a href="./games.html" class="link-nav">JEUX VIDEOS</a>
-                    <a href="./pokedex.html" class="link-nav">POKEDEX</a>
-                </section>
-                <a id="link" href="#"><span id="burger"></span></a>
-            </div>
-            <ul>
-                <li><a href="./home.html" class="link-menu">ACCUEIL</a></li>
-                <li><a href="./anime.html" class="link-menu">ANIME</a></li>
-                <li><a href="./cartes.html" class="link-menu">CARTES</a></li>
-                <li><a href="./games.html" class="link-menu">JEUX VIDEOS</a></li>
-                <li><a href="./pokedex.html" class="link-menu">POKEDEX</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <div class="d-flex justify-content-between align-items-center">
+          <img
+            src="../images/imagesCartes/Logo-Pokemon.png"
+            alt="Logo Pokémon"
+          />
+          <section class="d-flex">
+            <a href="./home.html" class="link-nav">ACCUEIL</a>
+            <a href="./anime.html" class="link-nav">ANIME</a>
+            <a href="./cartes.html" class="link-nav">CARTES</a>
+            <a href="./games.html" class="link-nav">JEUX VIDEOS</a>
+            <a href="./pokedex.html" class="link-nav">POKEDEX</a>
+          </section>
+          <a id="link" href="#"><span id="burger"></span></a>
+        </div>
+        <ul>
+          <li><a href="./home.html" class="link-menu">ACCUEIL</a></li>
+          <li><a href="./anime.html" class="link-menu">ANIME</a></li>
+          <li><a href="./cartes.html" class="link-menu">CARTES</a></li>
+          <li><a href="./games.html" class="link-menu">JEUX VIDEOS</a></li>
+          <li><a href="./pokedex.html" class="link-menu">POKEDEX</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
@@ -41,18 +46,18 @@
         <img
           src="../images/images_home/pokemon_gen_1.jpg"
           alt=""
-          class="img-fluid img_home_head"
+          class="img_home_head"
         />
       </div>
       <div class="container-fluid p-0">
         <p class="presentation d-flex flex-column">
-          Pokémon est une franchise de jeux vidéo créée par Nintendo en 1996. La
+          POKÉMON est une franchise de jeux vidéo créée par Nintendo en 1996. La
           franchise a connu un immense succès dans le monde entier et est
           devenue un phénomène culturel avec des films, des émissions de
           télévision, des jeux de cartes à collectionner et des produits
           dérivés.
 
-          <span class="mt-4" id="content_collapse">
+          <span class="mt-4 content_collapse">
             La première génération de Pokémon, également connue sous le nom de
             Génération I, est la base de la franchise. Elle a été lancée en 1996
             et comprend les jeux Pokémon Rouge, Pokémon Bleu et Pokémon Jaune.
@@ -70,30 +75,31 @@
             fans dans le monde entier.
           </span>
         </p>
-        <button class="read-more" id="collapsible">Voir plus +</button>
+        <button class="read-more collapsible">Voir plus +</button>
 
-        <div class="card-container row justify-content-center gap-3">
-          <h2>Nos favoris</h2>
-          <div class="card card-alvin col-sm-10 col-md-2">
-            <div class="card-name">Bulbizzarre</div>
+        <h2 class="title_favorite">Nos favoris</h2>
+
+        <section class="card-container row justify-content-center gap-3">
+          <div class="card card-alvin col-sm-8 col-md-2">
+            <div class="card-name">Deoxys</div>
             <h3 class="card-description">Favoris de Alvin</h3>
           </div>
-          <div class="card card-loic col-sm-10 col-md-2">
+          <div class="card card-loic col-sm-8 col-md-2">
             <div class="card-name">Salamesh</div>
             <h3 class="card-description">Favoris de Loïc</h3>
           </div>
-          <div class="card card-jordan col-sm-10 col-md-2">
+          <div class="card card-jordan col-sm-8 col-md-2">
             <div class="card-name">Lucario</div>
             <h3 class="card-description">Favoris de Jordan</h3>
           </div>
-          <div class="card card-loevane col-sm-10 col-md-2">
+          <div class="card card-loevane col-sm-8 col-md-2">
             <div class="card-name">Pikachu</div>
             <h3 class="card-description">Favoris de Loëvane</h3>
           </div>
-        </div>
+        </section>
 
         <section
-          class="row align-items-center gap-5 justify-content-center section-home"
+          class="row align-items-center gap-5 justify-content-center section-home m-0"
         >
           <h2>Les animes</h2>
 
@@ -104,27 +110,27 @@
               class="img-fluid"
             />
           </div>
-          <div class="col-sm-10 col-md-4 text-center">
+          <section class="col-sm-10 col-md-4 text-center">
             <p>
               Pokémon est un anime japonais qui suit les aventures de Sacha et
               Pikachu, alors qu'ils voyagent à travers le monde Pokémon pour
               attraper de nouveaux Pokémon, affronter des rivaux et participer à
               des compétitions. Les deux premières saisons sont la Ligue Indigo
-              et l'Île Orange.
+              et l'Île Orange.
             </p>
 
             <a href="./anime.html">
               <button type="button" class="button">En savoir plus</button>
             </a>
-          </div>
+          </section>
         </section>
 
         <section
-          class="row align-items-center gap-5 justify-content-center section-home"
+          class="row align-items-center gap-5 justify-content-center section-home m-0"
         >
           <h2>Les cartes</h2>
 
-          <div class="col-sm-10 col-md-4 text-center">
+          <section class="col-sm-10 col-md-4 text-center">
             <p>
               Les cartes Pokémon sont des cartes à collectionner inspirées de la
               franchise Pokémon. Chaque carte représente un Pokémon différent
@@ -135,7 +141,7 @@
             <a href="./cartes.html">
               <button type="button" class="button">En savoir plus</button>
             </a>
-          </div>
+          </section>
 
           <div class="col-sm-10 col-md-4 zoom-img">
             <img
@@ -147,17 +153,17 @@
         </section>
 
         <section
-          class="row align-items-center gap-5 justify-content-center section-home"
+          class="row align-items-center gap-5 justify-content-center section-home m-0"
         >
           <h2>Les jeux vidéos</h2>
 
-          <div class="col-sm-10 col-md-4 zoom-img">
+          <section class="col-sm-10 col-md-4 zoom-img">
             <img
               src="../images/images_home/jeux_video.jpeg"
               alt=""
               class="img-fluid"
             />
-          </div>
+          </section>
           <div class="col-sm-10 col-md-4 text-center">
             <p>
               Les jeux vidéo Pokémon sont une série de jeux vidéo développés par
@@ -173,11 +179,11 @@
         </section>
 
         <section
-          class="row align-items-center gap-5 justify-content-center section-home"
+          class="row align-items-center gap-5 justify-content-center section-home m-0"
         >
           <h2>Pokedex</h2>
 
-          <div class="col-sm-10 col-md-4 text-center">
+          <section class="col-sm-10 col-md-4 text-center">
             <p>
               Le Pokédex est une encyclopédie virtuelle qui recense les
               différentes espèces de Pokémon. Chaque Pokémon a une entrée dans
@@ -187,7 +193,7 @@
             <a href="./pokedex.html">
               <button type="button" class="button">En savoir plus</button>
             </a>
-          </div>
+          </section>
 
           <div class="col-sm-10 col-md-4 zoom-img">
             <img
@@ -201,22 +207,20 @@
     </main>
 
     <footer>
-        <nav class="">
-            <a href="#">ACCUEIL</a>
-            <a href="./anime.html">ANIME</a>
-            <a href="./cartes.html">CARTES</a>
-            <a href="./games.html">JEUX VIDEOS</a>
-            <a href="./pokedex.html">POKEDEX</a>
-        </nav>
+      <nav class="">
+        <a href="#">ACCUEIL</a>
+        <a href="./anime.html">ANIME</a>
+        <a href="./cartes.html">CARTES</a>
+        <a href="./games.html">JEUX VIDEOS</a>
+        <a href="./pokedex.html">POKEDEX</a>
+      </nav>
 
-        <a href="#">
-            <img src="../images/imagesCartes/Logo-Pokemon.png" alt="Logo Pokémon" />
-        </a>
+      <a href="#">
+        <img src="../images/imagesCartes/Logo-Pokemon.png" alt="Logo Pokémon" />
+      </a>
 
-        <p>Par Alvin, Loïc, Jordan et Loëvane.</p>
-        <p>Diginamic 2023</p>
-
+      <p>Par Alvin, Loïc, Jordan et Loëvane.</p>
+      <p>Diginamic 2023</p>
     </footer>
-
   </body>
 </html>

@@ -44,65 +44,96 @@ function pad(num, size) {
 //     this.stats = stats;
 //   }
 // }
-function creaPokeHtml(pokemon) {
+function creaPokeHtml(pokemon, id) {
     const article = createMarkup("article", "", sectionPoke, [
-        { name: "class", value: "border w-75" },
+        { name: "class", value: "card-pokedex" },
     ]);
-
-    for (const type of pokemon.types) {
-        const talent = createMarkup("div", "", sectionType, []);
-        createMarkup("img", "", divType, [{ name: "src", value: type.image }]);
-        createMarkup("h4", type.name, divType, []);
-    }
-    const sectionTalent = createMarkup("section", "", article, []);
-    if (pokemon.talents.length === 1) {
-        createMarkup("h3", "Talent", sectionTalent, []);
-        createMarkup("p", pokemon.talents[0].name, sectionTalent, []);
+    let types = ``;
+    // Voir operateur ternaire
+    if (pokemon.pokedexId === 125) {
+        types += `<div class="cont-type-pokedex">
+            <img src="https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/types/electrik.png" class="img-type">
+            <h4 class="type-pokedex bg-Électrik">Électrik</h4>
+        </div>`;
     } else {
-        createMarkup("h3", "Talents", sectionTalent, []);
-        for (const talent of pokemon.talents) {
-            createMarkup("p", talent.name, sectionTalent, []);
+        let i = 1;
+        for (const type of pokemon.types) {
+            types += `<div class="cont-type-pokedex${i}">
+            <img src=${type.image} class="img-type">
+            <h4 class="type-pokedex bg-${type.name}">${type.name}</h4>
+        </div>`;
+            i++;
         }
     }
-    const sectionStats = createMarkup("section", "", article, []);
-    createMarkup("h3", "Statistiques", sectionStats, []);
+    let talents = ``;
+    if (pokemon.talents.length === 1) {
+        talents = `<h3 class="h3-pokedexT">Talent</h3>
+        <p class="para-pokedex">${pokemon.talents[0].name}</p>`;
+    } else {
+        talents = `<h3 class="h3-pokedexT">Talents</h3>`;
+        for (const talent of pokemon.talents) {
+            talents += `
+            <p class="para-pokedex-2">${talent.name}</p>`;
+        }
+    }
     article.innerHTML = `
-    <div>
-        <h4>No.</h4>
-        <span>${pad(pokemon.pokedexId, 3)}</span>
+    <div class="cont-pokedex-01">
+        <h3 class="h3-pokedex">No.</h3>
+        <p class="text-pokedex-01">${pad(pokemon.pokedexId, 3)}</p>
     </div>
-    <div>
-        <img src=${pokemon.sprites.regular}>
-    </div>
-    <section>
-        <h3>Pokémon</h3>
-        <div>
-            <p>${pokemon.name.fr}</p>
-            <span>FR</span>
+    <section class="cont-02et03">
+        <div class="cont-pokedex-02">
+            <img src=${pokemon.sprites.regular} class="img-pokemon">
         </div>
-        <div>
-            <p>${pokemon.name.en}</p>
-            <span>EN</span>
-        </div>
+        <section class="cont-pokedex-03">
+            <h3 class="h3-pokedex">Pokémon</h3>
+            <div class="nom-poke">
+                <p class="para-pokedex">${pokemon.name.fr}</p>
+                <span class="span-pokedex">FR</span>
+            </div>
+            <div class="nom-poke">
+                <p class="para-pokedex">${pokemon.name.en}</p>
+                <span class="span-pokedex">EN</span>
+            </div>
+        </section>
     </section>
-    <section>
-        <h3>Type</h3>
-        <div>
-            <img src="https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/types/plante.png">
-            <h4>Plante</h4>
-        </div>
-        <div>
-            <img src="https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/types/poison.png">
-            <h4>Poison</h4>
-        </div>
+    <section class="cont-04et05">
+        <section>
+            <h3 class="h3-pokedex">Type</h3>
+            ${types}
+        </section>
+        <section class="cont-pokedex-05">
+            ${talents}
+        </section>
     </section>
-    <section>
-        <h3>Talents</h3>
-        <p>Engrais</p>
-        <p>Chlorophylle</p>
-    </section>
-    <section>
-        <h3>Statistiques</h3>
+    <section class="cont-last-pokedex">
+        <h3 class="h3-pokedex">Statistiques de base</h3>
+        <div class="cont-stats-pokedex">
+            <div class="stat-pokedex">
+                <h4 class="h4-pokedex">PV</h4>
+                <span class="span-stat">${pokemon.stats.hp}</span>
+            </div>
+            <div class="stat-pokedex">
+                <h4 class="h4-pokedex">Atq</h4>
+                <span class="span-stat">${pokemon.stats.atk}</span>
+            </div>
+            <div class="stat-pokedex">
+                <h4 class="h4-pokedex">Def</h4>
+                <span class="span-stat">${pokemon.stats.def}</span>
+            </div>
+            <div class="stat-pokedex">
+                <h4 class="h4-pokedex">ASpé</h4>
+                <span class="span-stat">${pokemon.stats.spe_atk}</span>
+            </div>
+            <div class="stat-pokedex">
+                <h4 class="h4-pokedex">DSpé</h4>
+                <span class="span-stat">${pokemon.stats.spe_def}</span>
+            </div>
+            <div class="stat-pokedex">
+                <h4 class="h4-pokedex">Vit</h4>
+                <span class="span-stat">${pokemon.stats.vit}</span>
+            </div>
+        </div>
     </section>`;
 }
 const sectionPoke = createMarkup("section", "", document.querySelector("main"), []);
