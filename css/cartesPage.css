@@ -1,8 +1,4 @@
 @font-face {
-  font-family: "pokemonSolid";
-  src: URL("../font/Pokemon Solid.ttf") format("truetype");
-}
-@font-face {
   font-family: "pocketMonk";
   src: URL("../font/PocketMonk.ttf") format("truetype");
 }
@@ -4132,7 +4128,7 @@ footer {
   padding: 3em;
   text-align: center;
   color: #3B5BA7;
-  background-color: rgba(59, 91, 167, 0.0823529412);
+  background-color: #EFF1F8;
 }
 footer nav {
   max-width: 100%;
@@ -4165,6 +4161,7 @@ footer img {
 }
 .cartesHead {
   padding: 2%;
+  background-color: #fafafa;
 }
 .cartesHead > p {
   padding-top: 1%;
@@ -4237,6 +4234,15 @@ footer img {
 
 .imgDisplay {
   width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+.imgDisplay:hover {
+  width: 100%;
+  -webkit-transform: scale(1.3);
+  transform: scale(1.1);
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 .cardSection {
@@ -4281,7 +4287,7 @@ footer img {
     width: 45%;
   }
   .pokeBall {
-    font-size: 28px;
+    font-size: 35px;
   }
   .pokeBall:before {
     margin-bottom: -5px;
