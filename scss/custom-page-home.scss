@@ -1,19 +1,11 @@
+@import "./indexCommon.scss";
+
 * {
   font-family: "Roboto", sans-serif;
   padding: 0;
   margin: 0;
   max-width: 100%;
-}
-
-h2 {
-  font-family: "pocketMonk";
-  color: $jaunepoke;
-  -webkit-text-stroke: 1.5px $bleu;
-  letter-spacing: 0px;
-  font-size: 38px;
-  //text-align: center;
-  margin-right: 0.5em;
-  @include icon(50px, "../images/images_home/pokeball.png");
+  //ddjdk
 }
 
 .button {
@@ -73,11 +65,6 @@ h2 {
   clear: both;
   text-align: center;
   margin: 1em;
-  &::before {
-    background: url("");
-    width: 0;
-    margin: 0;
-  }
 }
 
 .card-container {
