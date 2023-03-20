@@ -53,13 +53,13 @@ function creaPokeHtml(pokemon, id) {
     if (pokemon.pokedexId === 125) {
         types += `<div class="cont-type-pokedex">
             <img src="https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/types/electrik.png" class="img-type">
-            <h4 class="type-pokedex bg-electrique">Electrique</h4>
+            <h4 class="type-pokedex bg-Électrik">Électrik</h4>
         </div>`;
     } else {
         for (const type of pokemon.types) {
             types += `<div class="cont-type-pokedex">
             <img src=${type.image} class="img-type">
-            <h4 class="type-pokedex">${type.name}</h4>
+            <h4 class="type-pokedex bg-${type.name}">${type.name}</h4>
         </div>`;
         }
     }

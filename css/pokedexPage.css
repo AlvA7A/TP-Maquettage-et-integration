@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap Grid v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -8633,110 +8634,104 @@ footer img {
   font-size: 16px;
 }
 
-.bg-plante {
-  background-color: #36a849;
+.bg-Plante {
+  background-color: #3fa129;
   padding: 4px 6px 2px 10px;
   border-radius: 4px;
 }
 
-.bg-poison {
-  background-color: #924c96;
+.bg-Poison {
+  background-color: #9141cb;
   padding: 4px 6px 2px 10px;
   border-radius: 4px;
 }
 
-.bg-electrik {
-  background-color: #924c96;
+.bg-Électrik {
+  background-color: #fac000;
   padding: 4px 6px 2px 10px;
   border-radius: 4px;
 }
 
-.bg-feu {
-  background-color: #924c96;
+.bg-Feu {
+  background-color: #e62829;
   padding: 4px 6px 2px 10px;
   border-radius: 4px;
 }
 
-.bg-eau {
-  background-color: #924c96;
+.bg-Eau {
+  background-color: #2980ef;
   padding: 4px 6px 2px 10px;
   border-radius: 4px;
 }
 
-.bg-fee {
-  background-color: #924c96;
+.bg-Fée {
+  background-color: #ef71ef;
   padding: 4px 6px 2px 10px;
   border-radius: 4px;
 }
 
-.bg-glace {
-  background-color: #924c96;
+.bg-Glace {
+  background-color: #3fd8ff;
   padding: 4px 6px 2px 10px;
   border-radius: 4px;
 }
 
-.bg-normal {
-  background-color: #924c96;
+.bg-Normal {
+  background-color: #9fa19f;
   padding: 4px 6px 2px 10px;
   border-radius: 4px;
 }
 
-.bg-roche {
-  background-color: #924c96;
+.bg-Roche {
+  background-color: #afa981;
   padding: 4px 6px 2px 10px;
   border-radius: 4px;
 }
 
-.bg-spectre {
-  background-color: #924c96;
+.bg-Spectre {
+  background-color: #704170;
   padding: 4px 6px 2px 10px;
   border-radius: 4px;
 }
 
-.bg-vol {
-  background-color: #924c96;
+.bg-Vol {
+  background-color: #81b9ef;
   padding: 4px 6px 2px 10px;
   border-radius: 4px;
 }
 
-.bg-combat {
-  background-color: #924c96;
+.bg-Combat {
+  background-color: #ff8000;
   padding: 4px 6px 2px 10px;
   border-radius: 4px;
 }
 
-.bg-acier {
-  background-color: #924c96;
+.bg-Acier {
+  background-color: #60a1b8;
   padding: 4px 6px 2px 10px;
   border-radius: 4px;
 }
 
-.bg-dragon {
-  background-color: #924c96;
+.bg-Dragon {
+  background-color: #5061e1;
   padding: 4px 6px 2px 10px;
   border-radius: 4px;
 }
 
-.bg-insecte {
-  background-color: #924c96;
+.bg-Insecte {
+  background-color: #91a119;
   padding: 4px 6px 2px 10px;
   border-radius: 4px;
 }
 
-.bg-psy {
-  background-color: #924c96;
+.bg-Psy {
+  background-color: #ef4179;
   padding: 4px 6px 2px 10px;
   border-radius: 4px;
 }
 
-.bg-sol {
-  background-color: #924c96;
-  padding: 4px 6px 2px 10px;
-  border-radius: 4px;
-}
-
-.bg-tenebre {
-  background-color: #924c96;
+.bg-Sol {
+  background-color: #915121;
   padding: 4px 6px 2px 10px;
   border-radius: 4px;
 }
