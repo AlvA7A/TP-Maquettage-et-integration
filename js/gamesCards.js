@@ -11,7 +11,7 @@ cardGame.forEach((ev) => {
     let midcardHeight = evRect.height / 2; // Hauteur divisé par 2
 
     let angleY = -(x - midcardWidth) / 8; // Position en x de la souris qui va modifier la rotation de l'axe Y
-    let angleX = (y - midcardWidth) / 8; // Position en y de la souris qui va modifier la rotation de l'axe X
+    let angleX = (y - midcardHeight) / 8; // Position en y de la souris qui va modifier la rotation de l'axe X
 
     let glowX = x / evRect.width * 100
     let glowY = y / evRect.height * 100
