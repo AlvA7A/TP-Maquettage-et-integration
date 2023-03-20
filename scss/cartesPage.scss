@@ -1,12 +1,6 @@
 // sass --watch .\scss\cartesPage.scss .\css\cartesPage.css
 
-@font-face {
-    font-family: "pocketMonk";
-    src: URL("../font/PocketMonk.ttf") format("truetype");
-}
 @import "./variables.scss";
-@import "./mixins.scss";
-@import "./footer.scss";
 
 .cartesHead {
     padding: 2%;
@@ -32,40 +26,22 @@
     }
 }
 
-.pokeBall {
-    //Changement de la police en pokemon
-    font-family: "pocketMonk";
-    color: $jaunepoke;
-    -webkit-text-stroke: 2px $bleunuit;
-    font-size: 34px;
-    //Ajout d'une pokeball devant le titre
-    &:before {
-        @include icon(35px, "../images/images_home/pokeball.png");
-        margin-right: 1%;
-    }
-    margin-top: 1%;
-}
 .superBall {
     //Changement de la police en pokemon
     font-family: "pocketMonk";
     color: $jaunepoke;
     -webkit-text-stroke: 2px $bleunuit;
     //Ajout d'une pokeball devant le titre
-    &:before {
-        @include icon(50px, "../images/imagesCartes/superBall.png");
-        padding-right: 3%;
-    }
+    // @include icon(50px, "../images/imagesCartes/superBall.png");
 }
 //Ajout d'un dos de carte devant les noms de set
 .backCard {
     display: flex;
     justify-content: center;
+    // @include icon(50px, "../images/imagesCartes/boosterSetDeBase.webp");
     &:before {
-        @include icon(50px, "../images/imagesCartes/boosterSetDeBase.webp");
         background-size: 45px 70px;
         height: 70px;
-        margin-top: -5%;
-        margin-right: 2%;
     }
 }
 
@@ -110,7 +86,6 @@
     .pokeBall {
         font-size: 30px;
         &:before {
-            margin-bottom: -1%;
             width: 35px;
             height: 35px;
         }
@@ -136,7 +111,6 @@
     .pokeBall {
         font-size: 35px;
         &:before {
-            margin-bottom: -5px;
             width: 40px;
             height: 40px;
         }
@@ -146,7 +120,6 @@
         font-size: 25px;
         -webkit-text-stroke: 2px $bleunuit;
         &:before {
-            margin-bottom: -1%;
             width: 40px;
             height: 40px;
         }
@@ -162,7 +135,6 @@
     .pokeBall {
         font-size: 35px;
         &:before {
-            margin-bottom: -10px;
             width: 50px;
             height: 50px;
         }

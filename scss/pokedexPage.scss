@@ -3,36 +3,14 @@
 
 @import "./mixins.scss";
 
-@import "./navbar-burger-menu.scss";
-
-@import "./footer.scss";
-
-@font-face {
-    font-family: "pocketMonk";
-    src: URL("../font/PocketMonk.ttf") format("truetype");
-}
 .pokedexHead {
     padding: 2%;
     & > p {
         padding-top: 1%;
     }
 }
-.pokeBall {
-    //Changement de la police en pokemon
-    font-family: "pocketMonk";
-    color: $jaunepoke;
-    -webkit-text-stroke: 2px $bleunuit;
-    font-size: 35px;
-    //Ajout d'une pokeball devant le titre
-    &:before {
-        @include icon(40px, "../images/images_home/pokeball.png");
-        margin-right: 1%;
-        margin-bottom: -5px;
-    }
-}
 
 // Tout le css des "cartes" pour chaques pokémons du pokédex
-
 .card-pokedex {
     display: flex;
     justify-content: space-between;
