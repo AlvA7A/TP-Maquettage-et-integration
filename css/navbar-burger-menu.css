@@ -4149,13 +4149,27 @@ header section .link-nav {
   color: #3B5BA7;
   font-family: abel, sans-serif;
   font-size: 24px;
-  border-bottom: 2px solid rgba(255, 5, 5, 0);
   padding: 15px 15px;
   white-space: nowrap;
+  /* &:hover {
+      //border-bottom: 2px solid $bleunuit;
+      color: $bleunuit;
+  } */
 }
-header section .link-nav:hover {
-  border-bottom: 2px solid #3B5BA7;
-  color: #3B5BA7;
+header section .link-nav::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: 50% 50%;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(20, 9, 9, 0.8);
+  transition: transform 250ms;
+}
+header section .link-nav:hover::after {
+  transform: translateX(-50%) scaleX(1);
 }
 header .icon-menu {
   text-decoration: none;

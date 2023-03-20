@@ -138,9 +138,9 @@ h2 {
 
 .section-home {
   padding: 3em 0;
-  &:nth-child(even) {
+  &:nth-child(odd) {
     width: 100%;
-    background-color: #3b5ba715;
+    background-color: $lightgray;
   }
   .zoom-img {
     overflow: hidden;

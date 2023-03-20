@@ -4300,9 +4300,9 @@ h2::before {
 .section-home {
   padding: 3em 0;
 }
-.section-home:nth-child(even) {
+.section-home:nth-child(odd) {
   width: 100%;
-  background-color: rgba(59, 91, 167, 0.0823529412);
+  background-color: #EFF1F8;
 }
 .section-home .zoom-img {
   overflow: hidden;
@@ -4371,7 +4371,7 @@ footer {
   padding: 3em;
   text-align: center;
   color: #3B5BA7;
-  background-color: rgba(59, 91, 167, 0.0823529412);
+  background-color: #EFF1F8;
 }
 footer nav {
   max-width: 100%;
