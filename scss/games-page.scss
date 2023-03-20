@@ -1,7 +1,3 @@
-@font-face {
-  font-family: "pokemonSolid";
-  src: URL("../font/PocketMonk.ttf") format("truetype");
-}
 @import "./variables.scss";
 
 @import "./mixins.scss";
@@ -12,36 +8,28 @@ body{
   background: $verylightgray;
 }
 .poketitle {
-  font-family: "pokemonSolid";
+  font-family: "pocketMonk";
   color:$jaunepoke;
   -webkit-text-stroke: 1px $bleunuit;
   margin: 30px;
   font-size: 180%;
 }
 .mainBall{
-  @include icon (30px,"../images/images_home/pokeball.png");
-  &::before{
-    margin-right: 10px;
-    vertical-align: middle;
-  }
+  @include icon (50px,"../images/images_home/pokeball.png");
 }
 .secondBall{
   @include icon(25px, "../images/img_game/Mball.png");
-  &::before{
-    margin-right: 10px;
-    vertical-align: middle;
-  }
 }
 .textIntro{
   text-align: center;
 }
-#rondou{
+#rondou{ //Redimension de l'image rondoudou et changement du curseur
   max-width: 30px;
   max-height: 30px;
   cursor: pointer;
 }
 #tryme{
-  font-family: "pokemonSolid";
+  font-family: "pocketMonk";
   color:$jaunepoke;
   -webkit-text-stroke: 1px $bleunuit;
 }
