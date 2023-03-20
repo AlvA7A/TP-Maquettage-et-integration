@@ -65,7 +65,6 @@ h3 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 400px;
   background: #3b5ba7;
   border-radius: 25px;
   transition: all 0.15s ease-out;
@@ -86,6 +85,8 @@ h3 {
   left: 0;
   width: 100%;
   height: 100%;
+  max-height: 400px;
+  min-height: 400px;
   transition: all 0.15s ease-out;
   border-radius: 25px;
   mix-blend-mode: hard-light;
