@@ -17,26 +17,26 @@ body{
 .mainBall{ // Ajout de l'image pokeball devant le titre principal
   @include icon (50px,"../images/images_home/pokeball.png");
 }
-.secondBall{
+.secondBall{ // Ajout de l'image masterball devant le titre principal
   @include icon(25px, "../images/img_game/Mball.png");
 }
 .textIntro{
-  text-align: center;
+  text-align: center; //Centre le texte d'introduction
 }
 #rondou{ //Redimension de l'image rondoudou et changement du curseur
   max-width: 30px;
   max-height: 30px;
   cursor: pointer;
 }
-#tryme{
-  font-family: "pocketMonk";
-  color:$jaunepoke;
-  -webkit-text-stroke: 1px $bleunuit;
+#tryme{ 
+  font-family: "pocketMonk"; // Change la police de l'id indiqué
+  color:$jaunepoke; // Change la couleur du texte de l'id indiqué
+  -webkit-text-stroke: 1px $bleunuit; // Ajoute des bordures au texte de l'id indiqué
 }
-.jacketGames {
-  width: 60%;
-  height: auto;
-  border: 2px solid black;
+.jacketGames { 
+  width: 60%; // Définit la lageur pour la classe indiqué
+  height: auto; // Définit la hauteur pour la classe indiqué
+  border: 2px solid black; // Ajout de bordure pour la classe indiqué 
 }
 h3 {
   text-align: center;
