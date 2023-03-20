@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "pokemonMonk";
+    font-family: "pocketMonk";
     src: URL("../font/PocketMonk.ttf") format("truetype");
   }
 body {
@@ -18,14 +18,15 @@ main {
 
     // Titre h1 avec la pokeball devant, la pokeball est cachée dans la version  mobile, une autre pokeball apparait au dessus
     h1 {
-        font-family: pokemonMonk;
+        font-family: pocketMonk;
         color: $jaunepoke;
         -webkit-text-stroke: 1.5px $bleu;
         letter-spacing: 0px;
         font-size: 38px;
         margin-top: 14px;
+        
+ 
         &::before {
-            @include icon(40px, "../images/img_game/Pball.png");
             @include visually-hidden();
         }
     }
@@ -36,7 +37,7 @@ main {
 
     // pareil que pour le h1
     h2 {
-        font-family: pokemonMonk;
+        font-family: pocketMonk;
         color: $jaunepoke;
         -webkit-text-stroke: 1.5px $bleu;
         letter-spacing: 0px;
