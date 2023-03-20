@@ -8481,6 +8481,34 @@ footer img {
     flex-direction: row;
   }
 }
+@font-face {
+  font-family: "pocketMonk";
+  src: URL("../font/PocketMonk.ttf") format("truetype");
+}
+.pokedexHead {
+  padding: 2%;
+}
+.pokedexHead > p {
+  padding-top: 1%;
+}
+
+.pokeBall {
+  font-family: "pocketMonk";
+  color: #FFCB05;
+  -webkit-text-stroke: 2px #3B5BA7;
+  font-size: 35px;
+}
+.pokeBall:before {
+  content: "";
+  background: url("../images/images_home/pokeball.png") no-repeat;
+  background-size: 100%;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  margin-right: 1%;
+  margin-bottom: -5px;
+}
+
 .card-pokedex {
   display: flex;
   justify-content: space-between;
@@ -8781,6 +8809,14 @@ footer img {
   .cont-pokedex-05 {
     margin-left: 16px;
   }
+  .pokeBall {
+    font-size: 35px;
+  }
+  .pokeBall:before {
+    margin-bottom: -5px;
+    width: 40px;
+    height: 40px;
+  }
 }
 @media (max-width: 767.98px) {
   .card-pokedex {
@@ -8840,6 +8876,14 @@ footer img {
   .cont-pokedex-02 {
     width: 100px;
     height: 100px;
+  }
+  .pokeBall {
+    font-size: 30px;
+  }
+  .pokeBall:before {
+    margin-bottom: -5px;
+    width: 35px;
+    height: 35px;
   }
 }
 
