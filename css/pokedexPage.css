@@ -8550,11 +8550,11 @@ footer img {
 
 .cont-pokedex-03 {
   height: 90%;
-  margin-left: 12px;
+  margin-left: 40px;
 }
 
 .cont-pokedex-05 {
-  margin-left: 12px;
+  margin-left: 40px;
 }
 
 .nom-poke {
@@ -8572,7 +8572,7 @@ footer img {
 
 .para-pokedex-2 {
   font-size: 16px;
-  margin: 0px 0 0 0;
+  margin: 2px 0 0 0;
   text-align: center;
 }
 
@@ -8774,6 +8774,12 @@ footer img {
   }
   .cont-stats-pokedex {
     margin-top: 10px;
+  }
+  .cont-pokedex-03 {
+    margin-left: 16px;
+  }
+  .cont-pokedex-05 {
+    margin-left: 16px;
   }
 }
 @media (max-width: 767.98px) {
