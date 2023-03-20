@@ -18,13 +18,22 @@ body{
   margin: 30px;
   font-size: 180%;
 }
+.mainBall{
+  @include icon (30px,"../images/images_home/pokeball.png");
+  &::before{
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+}
+.secondBall{
+  @include icon(25px, "../images/img_game/Mball.png");
+  &::before{
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+}
 .textIntro{
   text-align: center;
-}
-#firstPokeBall {
-  max-width: 30px;
-  max-height: 30px;
-  margin-right: 10px;
 }
 #rondou{
   max-width: 30px;
@@ -36,12 +45,6 @@ body{
   color:$jaunepoke;
   -webkit-text-stroke: 1px $bleunuit;
 }
-.masterBall {
-  max-width: 25px;
-  max-height: 25px;
-  margin-right: 10px;
-}
-
 .jacketGames {
   width: 60%;
   height: auto;
