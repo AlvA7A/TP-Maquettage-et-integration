@@ -8273,13 +8273,25 @@ header section .link-nav {
   color: #3B5BA7;
   font-family: abel, sans-serif;
   font-size: 24px;
-  border-bottom: 2px solid rgba(255, 5, 5, 0);
   padding: 15px 15px;
   white-space: nowrap;
+  position: relative;
 }
-header section .link-nav:hover {
-  border-bottom: 2px solid #3B5BA7;
-  color: #3B5BA7;
+header section .link-nav::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: -3px;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 0;
+  background: transparent;
+  transition: all 0.8s ease;
+}
+header section .link-nav:hover:after {
+  width: 100%;
+  background: #3B5BA7;
 }
 header .icon-menu {
   text-decoration: none;
@@ -8450,7 +8462,7 @@ footer {
   padding: 3em;
   text-align: center;
   color: #3B5BA7;
-  background-color: rgba(59, 91, 167, 0.0823529412);
+  background-color: #EFF1F8;
 }
 footer nav {
   max-width: 100%;
