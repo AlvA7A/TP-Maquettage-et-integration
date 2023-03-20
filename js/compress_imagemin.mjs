@@ -27,3 +27,5 @@ const compressImages = async () => {
 };
 
 compressImages();
+
+//pour exécuter : node compress_imagemin.js
