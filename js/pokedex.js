@@ -51,27 +51,27 @@ function creaPokeHtml(pokemon, id) {
     let types = ``;
     // Voir operateur ternaire
     if (pokemon.pokedexId === 125) {
-        types += `<div>
-            <img src="https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/types/electrik.png">
-            <h4>Electrique</h4>
+        types += `<div class="cont-type-pokedex">
+            <img src="https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/types/electrik.png" class="img-type">
+            <h4 class="type-pokedex bg-electrique">Electrique</h4>
         </div>`;
     } else {
         for (const type of pokemon.types) {
-            types += `<div>
-            <img src=${type.image}>
-            <h4>${type.name}</h4>
+            types += `<div class="cont-type-pokedex">
+            <img src=${type.image} class="img-type">
+            <h4 class="type-pokedex">${type.name}</h4>
         </div>`;
         }
     }
     let talents = ``;
     if (pokemon.talents.length === 1) {
-        talents = `<h3>Talent</h3>
-        <p>${pokemon.talents[0].name}</p>`;
+        talents = `<h3 class="h3-pokedexT">Talent</h3>
+        <p class="para-pokedex">${pokemon.talents[0].name}</p>`;
     } else {
-        talents = `<h3>Talents</h3>`;
+        talents = `<h3 class="h3-pokedexT">Talents</h3>`;
         for (const talent of pokemon.talents) {
             talents += `
-            <p>${talent.name}</p>`;
+            <p class="para-pokedex">${talent.name}</p>`;
         }
     }
     article.innerHTML = `
@@ -94,14 +94,40 @@ function creaPokeHtml(pokemon, id) {
         </div>
     </section>
     <section>
-        <h3>Type</h3>
+        <h3 class="h3-pokedex">Type</h3>
         ${types}
     </section>
     <section>
         ${talents}
     </section>
-    <section>
-        <h3>Statistiques</h3>
+    <section class="cont-last-pokedex">
+        <h3 class="h3-pokedex">Statistiques de base</h3>
+        <div class="cont-stats-pokedex">
+            <div class="stat-pokedex">
+                <h4 class="h4-pokedex">PV</h4>
+                <span>${pokemon.stats.hp}</span>
+            </div>
+            <div class="stat-pokedex">
+                <h4 class="h4-pokedex">Atq</h4>
+                <span>${pokemon.stats.atk}</span>
+            </div>
+            <div class="stat-pokedex">
+                <h4 class="h4-pokedex">Def</h4>
+                <span>${pokemon.stats.def}</span>
+            </div>
+            <div class="stat-pokedex">
+                <h4 class="h4-pokedex">ASpé</h4>
+                <span>${pokemon.stats.spe_atk}</span>
+            </div>
+            <div class="stat-pokedex">
+                <h4 class="h4-pokedex">DSpé</h4>
+                <span>${pokemon.stats.spe_def}</span>
+            </div>
+            <div class="stat-pokedex">
+                <h4 class="h4-pokedex">Vit</h4>
+                <span>${pokemon.stats.vit}</span>
+            </div>
+        </div>
     </section>`;
 }
 const sectionPoke = createMarkup("section", "", document.querySelector("main"), []);
