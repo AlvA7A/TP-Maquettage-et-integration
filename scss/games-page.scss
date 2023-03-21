@@ -57,6 +57,7 @@ h3 {
       color: black; // Au hover la couleur du texte devient noir
       background: $jaunepoke; // Au hover la couleur du background du texte devient jaune
     }
+    z-index: 1;
   }
 }
 .jacketResize {

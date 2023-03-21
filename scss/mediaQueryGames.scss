@@ -4,6 +4,13 @@
         flex-direction: column;
         align-items: center;
       }
+      .contentCardGame {
+        transform: none !important;
+      }
+      .glow {
+        transform: none;
+        visibility: hidden;
+      }
 }
 @include media-breakpoint-up(md) {
     .cardGames {

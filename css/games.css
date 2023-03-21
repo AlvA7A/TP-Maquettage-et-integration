@@ -8593,6 +8593,13 @@ h3 {
     flex-direction: column;
     align-items: center;
   }
+  .contentCardGame {
+    transform: none !important;
+  }
+  .glow {
+    transform: none;
+    visibility: hidden;
+  }
 }
 @media (min-width: 768px) {
   .cardGames {
@@ -8609,6 +8616,9 @@ h3 {
   color: transparent;
   padding: 15px;
   margin-top: 10px;
+}
+.cardGame:hover {
+  z-index: 1;
 }
 .cardGame:hover p {
   color: black;
