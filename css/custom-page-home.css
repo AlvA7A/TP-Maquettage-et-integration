@@ -4179,9 +4179,6 @@
   border-color: #3b5ba7;
 }
 
-/* .titre{
-  // /margin-left: 5%
-} */
 .title_favorite {
   clear: both;
   text-align: center;
@@ -4210,9 +4207,11 @@
   font-size: 22px;
   font-weight: bold;
   text-transform: uppercase;
+  margin-left: 1em;
 }
 .card-container .card .card-description {
   font-size: 15px;
+  margin-left: 1.5em;
 }
 .card-container .card-alvin {
   background-image: url(../assets/images/Deoxys.png);
@@ -4238,6 +4237,9 @@
 .section-home:nth-child(odd) {
   width: 100%;
   background-color: #eff1f8;
+}
+.section-home p {
+  margin-bottom: 2em;
 }
 .section-home .internal-links {
   padding: 0.7em 1em;
@@ -4283,8 +4285,8 @@
 .section-home .zoom-img {
   overflow: hidden;
   text-align: center;
-  width: 30em;
-  height: 20em;
+  width: 22em;
+  height: 15em;
 }
 .section-home .zoom-img img {
   width: 100%;

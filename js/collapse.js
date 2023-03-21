@@ -17,10 +17,10 @@ function toggleCollapse(buttonClass, contentClass) {
     button.addEventListener("click", () => {
       if (content.style.display === "none" || content.style.display === "") {
         content.style.display = "block";
-        buttons.textContent = "Voir moins -";
+        button.textContent = "Voir moins -";
       } else {
         content.style.display = "none";
-        buttons.textContent = "Voir plus +";
+        button.textContent = "Voir plus +";
       }
     });
   });
