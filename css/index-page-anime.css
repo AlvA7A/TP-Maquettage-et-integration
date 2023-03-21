@@ -4259,13 +4259,7 @@ main h3 {
   margin: 40px auto;
 }
 .cont-saison2 a {
-  text-decoration: none;
   font-weight: 600;
-  padding: 10px 10px 8px 14px;
-  border-radius: 5px;
-  color: #357acc;
-  transition: all 0.3s ease;
-  width: 200px;
 }
 
 .cont-saison1 {
@@ -4273,12 +4267,7 @@ main h3 {
   width: 90%;
 }
 .cont-saison1 a {
-  text-decoration: none;
   font-weight: 600;
-  padding: 10px 10px 8px 10px;
-  border-radius: 5px;
-  color: #357acc;
-  transition: all 0.3s ease;
 }
 
 .button-ep {
@@ -4317,8 +4306,8 @@ main h3 {
   color: #ffcb05;
 }
 .button-ep:hover::after, .button-ep:hover::before {
-  width: 10.6em;
-  height: 2.8em;
+  width: 104%;
+  height: 108%;
   border-color: #ffcb05;
 }
 
