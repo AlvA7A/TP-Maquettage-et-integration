@@ -12,6 +12,7 @@
 import imagemin from "imagemin";
 import imageminPngquant from "imagemin-pngquant";
 import imageminMozjpeg from "imagemin-mozjpeg";
+import imageminWebp from 'imagemin-webp';
 
 const compressImages = async () => {
   //récupère toutes les images des sous-dossiers "images"
@@ -21,7 +22,7 @@ const compressImages = async () => {
       imageminMozjpeg(),
       imageminPngquant({
         quality: [0.5, 0.6],
-      }),
+      })
     ],
   });
 };
