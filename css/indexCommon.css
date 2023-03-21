@@ -8478,6 +8478,7 @@ footer nav a {
   font-family: abel, sans-serif;
   font-size: 22px;
   padding: 0.2em 1em;
+  transition: color 0.4s ease-in-out;
 }
 footer nav a:hover {
   color: #ffcb05;
@@ -8518,7 +8519,7 @@ footer img {
 }
 
 main {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
 }
 
 /*# sourceMappingURL=indexCommon.css.map */
