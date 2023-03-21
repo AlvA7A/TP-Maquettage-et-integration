@@ -15,6 +15,7 @@ footer{
             font-family: abel, sans-serif;
             font-size: 22px;
             padding: 0.2em 1em;
+            transition: color 0.4s ease-in-out;
             &:hover{
             color: $jaunepoke;
             }
