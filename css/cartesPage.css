@@ -11,7 +11,7 @@
 }
 
 .cardBanner {
-  background-image: url("../images/imagesCartes/backCard.png");
+  background-image: url("../assets/images/backCard.png");
   background-size: contain;
   background-repeat: repeat;
   display: flex;
@@ -33,7 +33,7 @@
 }
 .superBall::before {
   content: "";
-  background: url("../images/imagesCartes/superBall.png") no-repeat;
+  background: url("../assets/images/superBall.png") no-repeat;
   background-size: 100%;
   width: 50px;
   height: 50px;
@@ -52,7 +52,7 @@
 }
 .backCard::before {
   content: "";
-  background: url("../images/imagesCartes/boosterSetDeBase.webp") no-repeat;
+  background: url("../assets/images/boosterSetDeBase.webp") no-repeat;
   background-size: 100%;
   width: 50px;
   height: 50px;
