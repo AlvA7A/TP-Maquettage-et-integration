@@ -1,3 +1,4 @@
+// sass --watch .\scss\indexCommon.scss .\css\indexCommon.css
 @import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
 @import "../node_modules/bootstrap/scss/bootstrap-grid.scss";
 @import "./variables.scss";
@@ -18,4 +19,7 @@
 }
 .pokeball {
     @include icon(50px, "../images/images_home/pokeball.png");
+}
+main {
+    font-family: "Roboto";
 }
