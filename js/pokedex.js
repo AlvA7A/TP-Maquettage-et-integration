@@ -20,6 +20,9 @@ function createMarkup(markup_name, text, parent, attributes) {
     }
     return markup;
 }
+let numActuel = 1;
+// Nombre de pokemon affichés
+const pagiMax = 10;
 // Fonction pour formater les id à 3 characteres
 function pad(num, size) {
     let s = "00" + num;
@@ -129,11 +132,29 @@ function creaPokeHtmlPagination(pokedex, numStart, numIteration) {
     for (let i = numStart; i < numStart + numIteration; i++) {
         creaPokeHtml(pokedex[i - 1]);
     }
+    numActuel = numStart + numIteration;
+    const backArrow = createMarkup("button", "<=", sectionPoke, [
+        { name: "class", value: "backArrow" },
+    ]);
+    const nextArrow = createMarkup("button", "=>", sectionPoke, [
+        { name: "class", value: "nextArrow" },
+    ]);
+    backArrow.onclick = function () {
+        if (numActuel >= 20) {
+            sectionPoke.innerHTML = "";
+            numActuel -= 20;
+            creaPokeHtmlPagination(pokedex, numActuel, pagiMax);
+        }
+    };
+    nextArrow.onclick = function () {
+        sectionPoke.innerHTML = "";
+        creaPokeHtmlPagination(pokedex, numActuel, pagiMax);
+    };
 }
 
 // Création de la section hote
 const sectionPoke = createMarkup("section", "", document.querySelector("main"), []);
-// Fetech de toutes les données sur api-pokemon-fr
+// Fetch de toutes les données sur api-pokemon-fr
 const pokedex = fetch("https://api-pokemon-fr.vercel.app/api/v1/gen/1")
     .then(function (response) {
         if (response.status !== 200) {
