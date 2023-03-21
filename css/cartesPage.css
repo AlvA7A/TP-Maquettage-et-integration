@@ -31,14 +31,43 @@
   color: #ffcb05;
   -webkit-text-stroke: 2px #3b5ba7;
 }
+.superBall::before {
+  content: "";
+  background: url("../images/imagesCartes/superBall.png") no-repeat;
+  background-size: 100%;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  transition: transform 1s;
+  vertical-align: middle;
+  margin-right: 0.5em;
+}
+.superBall:hover::before {
+  transform: rotate(360deg) translateZ(0);
+}
 
 .backCard {
   display: flex;
   justify-content: center;
 }
+.backCard::before {
+  content: "";
+  background: url("../images/imagesCartes/boosterSetDeBase.webp") no-repeat;
+  background-size: 100%;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  transition: transform 1s;
+  vertical-align: middle;
+  margin-right: 0.5em;
+}
+.backCard:hover::before {
+  transform: rotate(360deg) translateZ(0);
+}
 .backCard:before {
   background-size: 45px 70px;
   height: 70px;
+  margin-top: -15px;
 }
 
 .imgDisplay {
@@ -83,11 +112,15 @@
   }
   .superBall {
     font-size: 20px;
-    -webkit-text-stroke: 1px #3b5ba7;
   }
   .superBall:before {
     width: 30px;
     height: 30px;
+  }
+  .backCard:before {
+    background-size: 35px 60px;
+    height: 60px;
+    margin-top: -8px;
   }
 }
 @media screen and (min-width: 577px) {
@@ -103,11 +136,16 @@
   }
   .superBall {
     font-size: 25px;
-    -webkit-text-stroke: 2px #3b5ba7;
+    -webkit-text-stroke: 1px #3b5ba7;
   }
   .superBall:before {
     width: 40px;
     height: 40px;
+  }
+  .backCard:before {
+    background-size: 35px 60px;
+    height: 60px;
+    margin-top: -8px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -123,10 +161,16 @@
   }
   .superBall {
     font-size: 30px;
+    -webkit-text-stroke: 2px #3b5ba7;
   }
   .superBall:before {
     width: 50px;
     height: 50px;
+  }
+  .backCard:before {
+    background-size: 45px 70px;
+    height: 70px;
+    margin-top: -15px;
   }
 }
 
