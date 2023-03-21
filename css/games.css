@@ -8587,7 +8587,7 @@ body {
   border: 2px solid black;
 }
 
-h3 {
+h2 {
   text-align: center;
 }
 
@@ -8646,10 +8646,11 @@ h3 {
   border: 5px solid #ffcb05;
   box-shadow: 0 0 1em rgb(12, 12, 12);
 }
-.contentCardGame h4 {
+.contentCardGame h3 {
   text-align: center;
   padding: 10px;
   color: #ffcb05;
+  text-decoration: #ffcb05 underline;
 }
 
 .glow {
