@@ -40,7 +40,7 @@
 .backCard {
     display: flex;
     justify-content: center;
-    @include icon(50px, "../assets/images/boosterSetDeBase.webp");
+    @include icon(50px, "../assets/images/boosterSetDeBase.png");
     &:before {
         background-size: 45px 70px;
         height: 70px;
