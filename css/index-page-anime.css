@@ -4124,41 +4124,6 @@
   font-family: "pocketMonk";
   src: URL("../font/PocketMonk.ttf") format("truetype");
 }
-footer {
-  padding: 3em;
-  text-align: center;
-  color: #3b5ba7;
-  background-color: #eff1f8;
-}
-footer nav {
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-footer nav a {
-  text-decoration: none;
-  color: #3b5ba7;
-  font-family: abel, sans-serif;
-  font-size: 22px;
-  padding: 0.2em 1em;
-}
-footer nav a:hover {
-  color: #ffcb05;
-}
-footer p {
-  margin-bottom: 0;
-}
-footer img {
-  width: 8em;
-  margin: 1em;
-}
-
-@media (min-width: 768px) {
-  footer nav {
-    flex-direction: row;
-  }
-}
 @font-face {
   font-family: "pocketMonk";
   src: URL("../font/PocketMonk.ttf") format("truetype");
@@ -4271,12 +4236,12 @@ main p {
   text-align: center;
 }
 main h3 {
-  font-size: 20px;
+  font-size: 19px;
   color: #357acc;
   width: 206px;
   border-right: 2px solid #ffcb05;
   border-left: 2px solid #ffcb05;
-  padding: 0px 8px 5px 10px;
+  padding: 4px 8px 5px 12px;
   margin: 20px auto;
 }
 
@@ -4296,11 +4261,11 @@ main h3 {
 .cont-saison2 a {
   text-decoration: none;
   font-weight: 600;
-  padding: 5px 10px 8px 12px;
+  padding: 10px 10px 8px 14px;
   border-radius: 5px;
   color: #357acc;
   transition: all 0.3s ease;
-  width: 170px;
+  width: 200px;
 }
 
 .cont-saison1 {
@@ -4310,20 +4275,21 @@ main h3 {
 .cont-saison1 a {
   text-decoration: none;
   font-weight: 600;
-  padding: 5px 10px 8px 10px;
+  padding: 10px 10px 8px 10px;
   border-radius: 5px;
   color: #357acc;
   transition: all 0.3s ease;
 }
 
 .button-ep {
-  padding: 0.5em 1em;
+  padding: 0.7em 1em;
   margin: 2em 0;
   text-transform: uppercase;
   border: none;
   position: relative;
   color: #3b5ba7;
   background-color: transparent;
+  text-decoration: none;
 }
 .button-ep::before {
   position: absolute;
@@ -4351,8 +4317,8 @@ main h3 {
   color: #ffcb05;
 }
 .button-ep:hover::after, .button-ep:hover::before {
-  width: 104%;
-  height: 109%;
+  width: 10.6em;
+  height: 2.8em;
   border-color: #ffcb05;
 }
 
