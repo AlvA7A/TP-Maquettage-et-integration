@@ -21,10 +21,6 @@ fs.readdirSync("../js").forEach((file) => {
     const code = UglifyJS.minify(fs.readFileSync(inputFilePath, "utf8"), {
       //permet de renommer les noms de variables afin de les raccourcir et rendre le code plus compact
       mangle: true,
-      //conserve tous les commentaires
-      output: {
-        comments: true,
-      },
     });
     /**
      * Méthode qui permet d'écrire des données dans un fichier de manière synchrone

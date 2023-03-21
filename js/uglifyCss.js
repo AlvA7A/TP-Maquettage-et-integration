@@ -22,8 +22,6 @@ fs.readdirSync("../css").forEach((file) => {
       maxLineLen: 500,
       //indique que les variables doivent être développées
       expandVars: true,
-      //conserve tous les commentaires
-      uglyComments: true,
     });
     /**
      * Méthode qui permet d'écrire des données dans un fichier de manière synchrone
