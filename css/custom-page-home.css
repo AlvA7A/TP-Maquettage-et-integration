@@ -8479,6 +8479,7 @@ footer nav a {
   font-family: abel, sans-serif;
   font-size: 22px;
   padding: 0.2em 1em;
+  transition: color 0.4s ease-in-out;
 }
 footer nav a:hover {
   color: #ffcb05;
@@ -8573,6 +8574,9 @@ footer img {
   border-color: #3b5ba7;
 }
 
+/* .titre{
+  // /margin-left: 5%
+} */
 .title_favorite {
   clear: both;
   text-align: center;
@@ -8610,8 +8614,8 @@ footer img {
   background-position: top center;
 }
 .card-container .card-loic {
-  background-image: url(https://www.eclypsia.com/wp-content/uploads/eclypsia/2022/12/Salameche_LetsGo.jpg);
-  background-position: top center;
+  background-image: url(../images/images_home/evoli.png);
+  background-position: center center;
 }
 .card-container .card-jordan {
   background-image: url(../images/images_home/lucario.webp);
@@ -8683,9 +8687,7 @@ footer img {
 }
 .section-home .zoom-img img:hover {
   width: 100%;
-  -webkit-transform: scale(1.3);
   transform: scale(1.1);
-  -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
 }
 
