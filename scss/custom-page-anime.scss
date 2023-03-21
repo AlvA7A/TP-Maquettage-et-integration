@@ -11,6 +11,31 @@ body {
 }
 .cont-2 {
     padding: 0 !important;
+     .img-super {
+        transition: transform 1s;
+     }
+
+    &:hover > .img-super {
+        transform: rotate(360deg) translateZ(0);
+    }
+}
+.cont-3 {
+     .img-super {
+        transition: transform 1s;
+     }
+
+    &:hover > .img-super {
+        transform: rotate(360deg) translateZ(0);
+    }
+}
+.cont-4 {
+    .img-super {
+       transition: transform 1s;
+    }
+
+   &:hover > .img-super {
+       transform: rotate(360deg) translateZ(0);
+   }
 }
 
 main {
