@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
-/*!
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap"); /*!
  * Bootstrap Grid v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
  * Copyright 2011-2022 Twitter, Inc.
@@ -8479,6 +8478,7 @@ footer nav a {
   font-family: abel, sans-serif;
   font-size: 22px;
   padding: 0.2em 1em;
+  transition: color 0.4s ease-in-out;
 }
 footer nav a:hover {
   color: #ffcb05;
@@ -8516,6 +8516,10 @@ footer img {
 }
 .pokeball:hover::before {
   transform: rotate(360deg) translateZ(0);
+}
+
+main {
+  font-family: "Roboto";
 }
 
 body {
