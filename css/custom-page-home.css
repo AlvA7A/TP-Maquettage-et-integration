@@ -4179,10 +4179,9 @@
   border-color: #3b5ba7;
 }
 
-.titre {
-  margin-left: 5%;
-}
-
+/* .titre{
+  // /margin-left: 5%
+} */
 .title_favorite {
   clear: both;
   text-align: center;
@@ -4277,8 +4276,8 @@
   color: #ffcb05;
 }
 .section-home .internal-links:hover::after, .section-home .internal-links:hover::before {
-  width: 10.6em;
-  height: 2.8em;
+  width: 104%;
+  height: 108%;
   border-color: #ffcb05;
 }
 .section-home .zoom-img {
