@@ -20,6 +20,8 @@ function createMarkup(markup_name, text, parent, attributes) {
     }
     return markup;
 }
+
+// ID de depart
 let numActuel = 1;
 // Nombre de pokemon affichés
 const pagiMax = 10;
@@ -128,28 +130,17 @@ function creaPokeHtml(pokemon) {
         </div>
     </section>`;
 }
+// Fonction pour creer les sections d'un nombre de pokemons donnés
 function creaPokeHtmlPagination(pokedex, numStart, numIteration) {
-    for (let i = numStart; i < numStart + numIteration; i++) {
-        creaPokeHtml(pokedex[i - 1]);
-    }
-    numActuel = numStart + numIteration;
-    const backArrow = createMarkup("button", "<=", sectionPoke, [
-        { name: "class", value: "backArrow" },
-    ]);
-    const nextArrow = createMarkup("button", "=>", sectionPoke, [
-        { name: "class", value: "nextArrow" },
-    ]);
-    backArrow.onclick = function () {
-        if (numActuel >= 20) {
-            sectionPoke.innerHTML = "";
-            numActuel -= 20;
-            creaPokeHtmlPagination(pokedex, numActuel, pagiMax);
+    if (numStart === 151) {
+        creaPokeHtml(pokedex[150]);
+        numActuel = 1;
+    } else {
+        for (let i = numStart; i < numStart + numIteration; i++) {
+            creaPokeHtml(pokedex[i - 1]);
         }
-    };
-    nextArrow.onclick = function () {
-        sectionPoke.innerHTML = "";
-        creaPokeHtmlPagination(pokedex, numActuel, pagiMax);
-    };
+        numActuel = numStart + numIteration;
+    }
 }
 
 // Création de la section hote
@@ -167,12 +158,16 @@ const pokedex = fetch("https://api-pokemon-fr.vercel.app/api/v1/gen/1")
         // for (let pokemon of pokedex) {
         //     creaPokeHtml(pokemon);
         // }
-        // ID de depart
-        let numActuel = 1;
-        // Nombre de pokemon affichés
-        const pagiMax = 10;
         // Création des sections HTML
         creaPokeHtmlPagination(pokedex, numActuel, pagiMax);
+
+        const handleInfiniteScroll = () => {
+            const endOfPage = window.innerHeight + window.pageYOffset >= document.body.offsetHeight;
+            if (endOfPage) {
+                creaPokeHtmlPagination(pokedex, numActuel, pagiMax);
+            }
+        };
+        window.addEventListener("scroll", handleInfiniteScroll);
         return pokedex;
     })
 

@@ -2,6 +2,7 @@
 
 @import "./variables.scss";
 
+@import "./mixins.scss";
 .cartesHead {
     padding: 2%;
     background-color: $verylightgray;
@@ -9,7 +10,7 @@
         padding-top: 1%;
     }
 }
-// Titre banner : ajout background et mise en forme
+// Titre 2 banner : ajout background et mise en forme
 .cardBanner {
     background-image: url("../images/imagesCartes/backCard.png");
     background-size: contain;
@@ -32,20 +33,22 @@
     color: $jaunepoke;
     -webkit-text-stroke: 2px $bleunuit;
     //Ajout d'une pokeball devant le titre
-    // @include icon(50px, "../images/imagesCartes/superBall.png");
+    @include icon(50px, "../images/imagesCartes/superBall.png");
 }
+
 //Ajout d'un dos de carte devant les noms de set
 .backCard {
     display: flex;
     justify-content: center;
-    // @include icon(50px, "../images/imagesCartes/boosterSetDeBase.webp");
+    @include icon(50px, "../images/imagesCartes/boosterSetDeBase.webp");
     &:before {
         background-size: 45px 70px;
         height: 70px;
+        margin-top: -15px;
     }
 }
 
-// L'image prends toute la largeur de son contenant
+// L'image prends toute la largeur de son contenant et zoom au hover
 .imgDisplay {
     width: 100%;
     // Merci Loëvane pour le zoom
@@ -64,6 +67,7 @@
     background-color: #e9edfa;
     padding: 3%;
 }
+
 // Arrangements de chaque section display
 .display {
     background-color: white;
@@ -93,11 +97,16 @@
     // Gestion de taille titre 2
     .superBall {
         font-size: 20px;
-        -webkit-text-stroke: 1px $bleunuit;
+
         &:before {
             width: 30px;
             height: 30px;
         }
+    }
+    .backCard:before {
+        background-size: 35px 60px;
+        height: 60px;
+        margin-top: -8px;
     }
 }
 
@@ -118,11 +127,16 @@
     // Gestion de taille titre 2
     .superBall {
         font-size: 25px;
-        -webkit-text-stroke: 2px $bleunuit;
+        -webkit-text-stroke: 1px $bleunuit;
         &:before {
             width: 40px;
             height: 40px;
         }
+    }
+    .backCard:before {
+        background-size: 35px 60px;
+        height: 60px;
+        margin-top: -8px;
     }
 }
 //Taille grand écran
@@ -142,9 +156,15 @@
     // Gestion de taille titre 2
     .superBall {
         font-size: 30px;
+        -webkit-text-stroke: 2px $bleunuit;
         &:before {
             width: 50px;
             height: 50px;
         }
+    }
+    .backCard:before {
+        background-size: 45px 70px;
+        height: 70px;
+        margin-top: -15px;
     }
 }
