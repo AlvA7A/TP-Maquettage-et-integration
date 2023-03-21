@@ -125,6 +125,11 @@ function creaPokeHtml(pokemon) {
         </div>
     </section>`;
 }
+function creaPokeHtmlPagination(pokedex, numStart, numIteration) {
+    for (let i = numStart; i < numStart + numIteration; i++) {
+        creaPokeHtml(pokedex[i - 1]);
+    }
+}
 
 // Création de la section hote
 const sectionPoke = createMarkup("section", "", document.querySelector("main"), []);
@@ -137,9 +142,16 @@ const pokedex = fetch("https://api-pokemon-fr.vercel.app/api/v1/gen/1")
     })
     .then(function (pokedex) {
         // console.log("Pokedex : ", pokedex);
-        for (let pokemon of pokedex) {
-            creaPokeHtml(pokemon);
-        }
+        // Tout le pokedex
+        // for (let pokemon of pokedex) {
+        //     creaPokeHtml(pokemon);
+        // }
+        // ID de depart
+        let numActuel = 1;
+        // Nombre de pokemon affichés
+        const pagiMax = 10;
+        // Création des sections HTML
+        creaPokeHtmlPagination(pokedex, numActuel, pagiMax);
         return pokedex;
     })
 
