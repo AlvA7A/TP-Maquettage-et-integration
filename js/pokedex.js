@@ -132,15 +132,27 @@ function creaPokeHtml(pokemon) {
 }
 // Fonction pour creer les sections d'un nombre de pokemons donnés
 function creaPokeHtmlPagination(pokedex, numStart, numIteration) {
-    if (numStart === 151) {
-        creaPokeHtml(pokedex[150]);
-        numActuel = 1;
-    } else {
-        for (let i = numStart; i < numStart + numIteration; i++) {
-            creaPokeHtml(pokedex[i - 1]);
+    // Methode 1
+    // if (numStart === 151) {
+    //     creaPokeHtml(pokedex[150]);
+    //     numActuel = 1;
+    // } else {
+    //     for (let i = numStart; i < numStart + numIteration; i++) {
+    //         creaPokeHtml(pokedex[i - 1]);
+    //     }
+    //     numActuel = numStart + numIteration;
+    // }
+
+    // Methode plus opti
+    while (numIteration !== 0) {
+        if (numStart === 152) {
+            numStart = 1;
         }
-        numActuel = numStart + numIteration;
+        creaPokeHtml(pokedex[numStart - 1]);
+        numStart++;
+        numIteration--;
     }
+    numActuel = numStart;
 }
 
 // Création de la section hote
@@ -158,9 +170,11 @@ const pokedex = fetch("https://api-pokemon-fr.vercel.app/api/v1/gen/1")
         // for (let pokemon of pokedex) {
         //     creaPokeHtml(pokemon);
         // }
+
         // Création des sections HTML
         creaPokeHtmlPagination(pokedex, numActuel, pagiMax);
 
+        // Gestion de l'infinite scroll
         const handleInfiniteScroll = () => {
             const endOfPage = window.innerHeight + window.pageYOffset >= document.body.offsetHeight;
             if (endOfPage) {
