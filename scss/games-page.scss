@@ -1,95 +1,102 @@
 @import "./indexCommon.scss";
 
-body{
-  background: $verylightgray; 
+body {
+  background: $verylightgray;
 }
 .poketitle {
-  font-family: "pocketMonk"; 
-  color:$jaunepoke; 
-  -webkit-text-stroke: 1px $bleunuit; // Ajoute des bordures au texte 
-  margin: 30px; 
-  font-size: 180%; 
+  font-family: "pocketMonk";
+  color: $jaunepoke;
+  -webkit-text-stroke: 1px $bleunuit; // Ajoute des bordures au texte
+  margin: 30px;
+  font-size: 250%;
+  text-align: center;
 }
-.mainBall{ // Ajout de l'image pokeball devant le titre principal
-  @include icon (50px,"../images/images_home/pokeball.png");
+.mainBall {
+  // Ajout de l'image pokeball devant le titre principal
+  @include icon(50px, "../images/images_home/pokeball.png");
 }
-.secondBall{ // Ajout de l'image masterball devant le titre principal
-  @include icon(25px, "../images/img_game/Mball.png");
+.secondBall {
+  // Ajout de l'image masterball devant le titre principal
+  @include icon(40px, "../images/img_game/Mball.png");
 }
-.textIntro{
-  text-align: center; 
+.textIntro {
+  text-align: center;
 }
-#rondou{ //Redimension de l'image rondoudou et changement du curseur
+#rondou {
+  //Redimension de l'image rondoudou et changement du curseur
   max-width: 30px;
   max-height: 30px;
   cursor: pointer;
 }
-#tryme{ 
-  font-family: "pocketMonk"; 
-  color:$jaunepoke; 
-  -webkit-text-stroke: 1px $bleunuit; 
+#tryme {
+  font-family: "pocketMonk";
+  color: $jaunepoke;
+  -webkit-text-stroke: 1px $bleunuit;
 }
-.jacketGames { 
-  width: 60%; 
-  height: auto; 
-  border: 2px solid black; 
+.jacketGames {
+  width: 60%;
+  height: auto;
+  border: 2px solid black;
 }
 h3 {
-  text-align: center; 
+  text-align: center;
 }
-
 
 @import "./mediaQueryGames.scss";
 
 .cardGame {
   perspective: 1000px; // Crée virtuellement une dimension
-  p{
-    text-align: center; 
+  p {
+    text-align: center;
     color: transparent; // Définit une couleur transparante au paragraphe
-    padding: 15px; 
-    margin-top: 10px; 
+    padding: 15px;
+    margin-top: 10px;
   }
-  &:hover{
-    p{
+  &:hover {
+    p {
       color: black; // Au hover la couleur du texte devient noir
       background: $jaunepoke; // Au hover la couleur du background du texte devient jaune
     }
   }
 }
-.jacketResize{
+.jacketResize {
   max-height: 200px; // Définit la hauteur maximum de la boîte de contenu d'un élément
 }
 .contentCardGame {
-  display: flex; 
-  flex-direction: column; 
-  align-items: center; 
-  justify-content: center; 
-  background: #3b5ba7; 
-  border-radius: 25px; 
-  transition: all 0.15s ease-out; // Définit un effet de transition 
-  width: 315px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #3b5ba7;
+  border-radius: 25px;
+  transition: all 0.15s ease-out; // Définit un effet de transition
+  width: 315px;
   height: 400px;
-  border: 5px solid $jaunepoke; 
+  border: 5px solid $jaunepoke;
   box-shadow: 0 0 1em rgb(12, 12, 12); // Ajout des ombres à la boîte d'un élément
-  h4{
-    text-align: center; 
-    padding: 10px; 
-    color: $jaunepoke; 
+  h4 {
+    text-align: center;
+    padding: 10px;
+    color: $jaunepoke;
   }
 }
 
-.glow{
-  position: absolute; 
-  top: 0; 
-  left: 0; 
+.glow {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 400px;
-  transition: all 0.15s ease-out; // Définit un effet de transition 
+  transition: all 0.15s ease-out; // Définit un effet de transition
   border-radius: 25px;
   mix-blend-mode: hard-light; // Atténu la luminosité avec le blend mode
-  background: radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.5), transparent);
+  background: radial-gradient(
+    circle at 50% 0%,
+    rgba(255, 255, 255, 0.5),
+    transparent
+  );
   opacity: 0; // Définit la transparence à 0
-  &:hover{
+  &:hover {
     opacity: 1; // Au survol de la classe définit la transparence à 1
   }
 }
