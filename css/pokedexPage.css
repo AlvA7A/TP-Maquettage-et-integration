@@ -4394,6 +4394,30 @@
   padding: 4px 4px;
 }
 
+.backArrow,
+.nextArrow {
+  border: none;
+  height: 2em;
+  width: 2em;
+  margin: 1em 0;
+}
+.backArrow:hover,
+.nextArrow:hover {
+  height: 2.2em;
+  width: 2.2em;
+  margin: 0.8em 0;
+}
+
+.nextArrow {
+  background: url(../images/img_pokedex/arrow-circle-right.svg) no-repeat;
+  background-size: cover;
+}
+
+.backArrow {
+  background: url(../images/img_pokedex/arrow-circle-left.svg) no-repeat;
+  background-size: cover;
+}
+
 @media (max-width: 991.98px) {
   .card-pokedex {
     width: 750px;
