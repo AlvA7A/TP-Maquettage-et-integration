@@ -18,8 +18,8 @@ cardGame.forEach((ev) => {
     let glowX = (x / evRect.width) * 100; // Position en x de la souris qui va modifier la position de mon effet glow (*100 pour obtenir un ratio)
     let glowY = (y / evRect.height) * 100; // Position en y de la souris qui va modifier la position de mon effet glow (*100 pour obtenir un ratio)
 
-    ev.children[0].style.transform = `rotateX(${angleX}deg) rotateY(${angleY}deg) scale(1.1)`; // On applique les angles au premier enfant en modifiant la propriété transform pour jouer sur nos rotations (Agrandissement du contenu avec le "scale")
-    ev.children[1].style.transform = `rotateX(${angleX}deg) rotateY(${angleY}deg) scale(1.1)`; // On applique les angles au deuxième enfant en modifiant la propriété transform pour jouer sur nos rotations (Agrandissement du contenu avec le "scale")
+    ev.children[0].style.transform = `rotateX(${angleX}deg) rotateY(${angleY}deg) scale(1.5)`; // On applique les angles au premier enfant en modifiant la propriété transform pour jouer sur nos rotations (Agrandissement du contenu avec le "scale")
+    ev.children[1].style.transform = `rotateX(${angleX}deg) rotateY(${angleY}deg) scale(1.5)`; // On applique les angles au deuxième enfant en modifiant la propriété transform pour jouer sur nos rotations (Agrandissement du contenu avec le "scale")
     ev.children[1].style.background = `radial-gradient(circle at ${glowX}% ${glowY}%, rgb(255, 255, 255,0.8), transparent)`; // On applique la position de la souris au deuxième enfant en modifiant la propriété background pour jouer sa position
   });
   ev.addEventListener("mouseleave", () => {
