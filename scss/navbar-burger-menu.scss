@@ -134,7 +134,7 @@ ul.open {
     z-index: 100;
 }
 ul li {
-    font-family: abel, sans-serif;
+    font-family: abel, sans-serif !important;
     background-color: $bleu;
     font-size: 20px;
     width: 100%;
