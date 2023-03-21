@@ -1,14 +1,14 @@
-@import "./indexCommon.scss"; // Importation de l'index scss
+@import "./indexCommon.scss";
 
 body{
-  background: $verylightgray; // Définit un background à body
+  background: $verylightgray; 
 }
 .poketitle {
-  font-family: "pocketMonk"; // Change la police
-  color:$jaunepoke; // Change la couleur du texte
+  font-family: "pocketMonk"; 
+  color:$jaunepoke; 
   -webkit-text-stroke: 1px $bleunuit; // Ajoute des bordures au texte 
-  margin: 30px; // Définit la taille des marges sur les quatre côtés 
-  font-size: 180%; // Définit la taille de font utilisée pour le texte 
+  margin: 30px; 
+  font-size: 180%; 
 }
 .mainBall{ // Ajout de l'image pokeball devant le titre principal
   @include icon (50px,"../images/images_home/pokeball.png");
@@ -17,7 +17,7 @@ body{
   @include icon(25px, "../images/img_game/Mball.png");
 }
 .textIntro{
-  text-align: center; //Centre le texte d'introduction
+  text-align: center; 
 }
 #rondou{ //Redimension de l'image rondoudou et changement du curseur
   max-width: 30px;
@@ -25,17 +25,17 @@ body{
   cursor: pointer;
 }
 #tryme{ 
-  font-family: "pocketMonk"; // Change la police de l'id indiqué
-  color:$jaunepoke; // Change la couleur du texte de l'id indiqué
-  -webkit-text-stroke: 1px $bleunuit; // Ajoute des bordures au texte de l'id indiqué
+  font-family: "pocketMonk"; 
+  color:$jaunepoke; 
+  -webkit-text-stroke: 1px $bleunuit; 
 }
 .jacketGames { 
-  width: 60%; // Définit la lageur pour la classe indiqué
-  height: auto; // Définit la hauteur pour la classe indiqué
-  border: 2px solid black; // Ajout de bordure pour la classe indiqué 
+  width: 60%; 
+  height: auto; 
+  border: 2px solid black; 
 }
 h3 {
-  text-align: center; // Définit l'alignement des h3 au centre
+  text-align: center; 
 }
 
 
@@ -44,10 +44,10 @@ h3 {
 .cardGame {
   perspective: 1000px; // Crée virtuellement une dimension
   p{
-    text-align: center; //Centre le texte pour chaque card
+    text-align: center; 
     color: transparent; // Définit une couleur transparante au paragraphe
-    padding: 15px; // Définiy les différents écarts de remplissage sur les quatre côtés de mon paragraphe
-    margin-top: 10px; // Définit la taille de la marge sur le haut
+    padding: 15px; 
+    margin-top: 10px; 
   }
   &:hover{
     p{
@@ -60,34 +60,34 @@ h3 {
   max-height: 200px; // Définit la hauteur maximum de la boîte de contenu d'un élément
 }
 .contentCardGame {
-  display: flex; // Définit un conteneur flexible 
-  flex-direction: column; // L'axe principal est défini en colonne
-  align-items: center; // Permet d'aligner les objets flexibles au centre 
-  justify-content: center; // Indique la façon dont l'espace doit être réparti entre et autour des éléments selon l'axe principal
-  background: #3b5ba7; // Définit un background à la classe indiqué 
-  border-radius: 25px; // Définit des coins arrondis pour la bordure d'un élément
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  background: #3b5ba7; 
+  border-radius: 25px; 
   transition: all 0.15s ease-out; // Définit un effet de transition 
-  width: 315px; // Définit la lageur pour la classe indiqué
-  height: 400px; // Définit la hauteur pour la classe indiqué
-  border: 5px solid $jaunepoke; // Ajout de bordure pour la classe indiqué 
+  width: 315px; 
+  height: 400px;
+  border: 5px solid $jaunepoke; 
   box-shadow: 0 0 1em rgb(12, 12, 12); // Ajout des ombres à la boîte d'un élément
   h4{
-    text-align: center; //Centre le texte h4
-    padding: 10px; // Définiy les différents écarts de remplissage sur les quatre côtés de mon h4
-    color: $jaunepoke; // Change la couleur de h4
+    text-align: center; 
+    padding: 10px; 
+    color: $jaunepoke; 
   }
 }
 
 .glow{
-  position: absolute; // Définit une postion absolue pour la classe indiqué 
-  top: 0; // Définit la position en haut de l'élément 
-  left: 0; // Définit la position à gauche de l'élément 
-  width: 100%; // Définit la lageur pour la classe indiqué
-  height: 400px; // Définit la hauteur pour la classe indiqué
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%;
+  height: 400px;
   transition: all 0.15s ease-out; // Définit un effet de transition 
-  border-radius: 25px; // Définit des coins arrondis pour la bordure d'un élément
+  border-radius: 25px;
   mix-blend-mode: hard-light; // Atténu la luminosité avec le blend mode
-  background: radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.5), transparent); // Ajoute un background 
+  background: radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.5), transparent);
   opacity: 0; // Définit la transparence à 0
   &:hover{
     opacity: 1; // Au survol de la classe définit la transparence à 1
