@@ -133,10 +133,10 @@ function creaPokeHtmlPagination(pokedex, numStart, numIteration) {
         creaPokeHtml(pokedex[i - 1]);
     }
     numActuel = numStart + numIteration;
-    const backArrow = createMarkup("button", "<=", sectionPoke, [
+    const backArrow = createMarkup("button", "", sectionPoke, [
         { name: "class", value: "backArrow" },
     ]);
-    const nextArrow = createMarkup("button", "=>", sectionPoke, [
+    const nextArrow = createMarkup("button", "", sectionPoke, [
         { name: "class", value: "nextArrow" },
     ]);
     backArrow.onclick = function () {

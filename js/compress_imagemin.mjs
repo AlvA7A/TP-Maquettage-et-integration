@@ -7,22 +7,22 @@
  * @param {string} dest - chemin vers le dossier de destination pour les images compressées.
  * @param {number} [options.mozjpeg] qualité de l'image compressée
  * @returns les images compressés vers la destination.
- **/
+**/
 
 import imagemin from "imagemin";
 import imageminPngquant from "imagemin-pngquant";
 import imageminMozjpeg from "imagemin-mozjpeg";
 
 const compressImages = async () => {
-  	//récupère toutes les images des sous-dossiers "images"
-  	const files = await imagemin(["../images/**/*.(jpg|png)"], {
-		destination: "../assets/images",
-		plugins: [
-			imageminMozjpeg(),
-			imageminPngquant({
-				quality: [0.5, 0.6],
-			}),
-		],
+  //récupère toutes les images des sous-dossiers "images"
+  const files = await imagemin(["../images/**/*.(jpg|png)"], {
+    destination: "../assets/images",
+    plugins: [
+      imageminMozjpeg(),
+      imageminPngquant({
+        quality: [0.5, 0.6],
+      }),
+    ],
   });
 };
 

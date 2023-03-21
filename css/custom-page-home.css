@@ -8525,46 +8525,6 @@ footer img {
   max-width: 100%;
 }
 
-.button {
-  padding: 0.5em 1em;
-  margin: 2em 0;
-  text-transform: uppercase;
-  border: none;
-  position: relative;
-  color: #3b5ba7;
-  background-color: transparent;
-}
-.button::before {
-  position: absolute;
-  content: "";
-  border-top: solid 3px #3b5ba7;
-  border-left: solid 3px #3b5ba7;
-  width: 10%;
-  height: 30%;
-  top: -3px;
-  left: -3px;
-  transition: 0.3s all ease-in-out;
-}
-.button::after {
-  position: absolute;
-  content: "";
-  border-bottom: solid 3px #3b5ba7;
-  border-right: solid 3px #3b5ba7;
-  width: 10%;
-  height: 30%;
-  bottom: -3px;
-  right: -3px;
-  transition: 0.3s all ease-in-out;
-}
-.button:hover {
-  color: #ffcb05;
-}
-.button:hover::after, .button:hover::before {
-  width: 104%;
-  height: 109%;
-  border-color: #ffcb05;
-}
-
 .presentation {
   padding: 1em 15%;
   text-align: center;
@@ -8664,10 +8624,52 @@ footer img {
 
 .section-home {
   padding: 3em 0;
+  height: 100%;
 }
 .section-home:nth-child(odd) {
   width: 100%;
   background-color: #eff1f8;
+}
+.section-home .internal-links {
+  padding: 0.7em 1em;
+  margin: 2em 0;
+  text-transform: uppercase;
+  border: none;
+  position: relative;
+  color: #3b5ba7;
+  background-color: transparent;
+  text-decoration: none;
+  margin-top: 3em;
+}
+.section-home .internal-links::before {
+  position: absolute;
+  content: "";
+  border-top: solid 3px #3b5ba7;
+  border-left: solid 3px #3b5ba7;
+  width: 10%;
+  height: 30%;
+  top: -3px;
+  left: -3px;
+  transition: 0.3s all ease-in-out;
+}
+.section-home .internal-links::after {
+  position: absolute;
+  content: "";
+  border-bottom: solid 3px #3b5ba7;
+  border-right: solid 3px #3b5ba7;
+  width: 10%;
+  height: 30%;
+  bottom: -3px;
+  right: -3px;
+  transition: 0.3s all ease-in-out;
+}
+.section-home .internal-links:hover {
+  color: #ffcb05;
+}
+.section-home .internal-links:hover::after, .section-home .internal-links:hover::before {
+  width: 10.6em;
+  height: 2.8em;
+  border-color: #ffcb05;
 }
 .section-home .zoom-img {
   overflow: hidden;
@@ -8688,12 +8690,6 @@ footer img {
 }
 
 @media (min-width: 768px) {
-  h2 {
-    text-align: start;
-  }
-  h2::before {
-    margin-left: 4em;
-  }
   .img_home_head {
     max-width: 65%;
     height: auto;
@@ -8730,6 +8726,9 @@ footer img {
     clip: rect(0, 0, 0, 0) !important;
     white-space: nowrap !important;
     border: 0 !important;
+  }
+  .titre {
+    text-align: center;
   }
 }
 
