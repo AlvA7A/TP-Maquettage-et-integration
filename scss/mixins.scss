@@ -2,13 +2,14 @@
 @import "../node_modules/bootstrap/scss/mixins/visually-hidden";
 
 @mixin button {
-  padding: 0.5em 1em;
+  padding: 0.7em 1em;
   margin: 2em 0;
   text-transform: uppercase;
   border: none;
   position: relative;
   color: $bleunuit;
   background-color: transparent;
+  text-decoration: none;
   &::before {
     position: absolute;
     content: "";
@@ -36,8 +37,8 @@
   }
   &:hover::after,
   &:hover::before {
-    width: 104%;
-    height: 109%;
+    width: 10.6em;
+    height: 2.8em;
     border-color: $jaunepoke;
   }
 }
@@ -53,7 +54,7 @@
 }
 
 @mixin icon($size, $url) {
-  &::before{
+  &::before {
     content: "";
     background: url($url) no-repeat;
     background-size: 100%;
@@ -64,8 +65,7 @@
     vertical-align: middle;
     margin-right: 0.5em;
   }
-  &:hover::before{
+  &:hover::before {
     transform: rotate(360deg) translateZ(0);
   }
 }
-

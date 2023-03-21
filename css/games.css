@@ -8527,7 +8527,8 @@ body {
   color: #ffcb05;
   -webkit-text-stroke: 1px #3b5ba7;
   margin: 30px;
-  font-size: 180%;
+  font-size: 250%;
+  text-align: center;
 }
 
 .mainBall::before {
@@ -8549,8 +8550,8 @@ body {
   content: "";
   background: url("../images/img_game/Mball.png") no-repeat;
   background-size: 100%;
-  width: 25px;
-  height: 25px;
+  width: 40px;
+  height: 40px;
   display: inline-block;
   transition: transform 1s;
   vertical-align: middle;
@@ -8592,6 +8593,13 @@ h3 {
     flex-direction: column;
     align-items: center;
   }
+  .contentCardGame {
+    transform: none !important;
+  }
+  .glow {
+    transform: none;
+    visibility: hidden;
+  }
 }
 @media (min-width: 768px) {
   .cardGames {
@@ -8608,6 +8616,9 @@ h3 {
   color: transparent;
   padding: 15px;
   margin-top: 10px;
+}
+.cardGame:hover {
+  z-index: 1;
 }
 .cardGame:hover p {
   color: black;

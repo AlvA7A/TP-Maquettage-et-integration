@@ -20,8 +20,6 @@ function createMarkup(markup_name, text, parent, attributes) {
     }
     return markup;
 }
-
-// ID de depart
 let numActuel = 1;
 // Nombre de pokemon affichés
 const pagiMax = 10;
