@@ -26,18 +26,22 @@ cardGame.forEach((ev) => { // Parcours toute les cartes de Jeu
   });
 });
 
-const myaudio = document.querySelector("audio")
-let isPlaying = false;
 
-function tooglePlay() {
+const myaudio = document.querySelector("audio")
+let isPlaying = false; 
+
+
+//Fonction pour savoir si l'audio est sur pause ou sur play
+function tooglePlay() { 
   isPlaying ? myaudio.pause() : myaudio.play()
 }
 
+//Fonction pour jouer la musique et régler le volume
 myaudio.onplaying = function () {
   myaudio.volume=0.1;
   isPlaying = true;
 }
-
+// Fonction pour mettre en pause la musique 
 myaudio.onpause = function () {
   isPlaying = false;
 }
