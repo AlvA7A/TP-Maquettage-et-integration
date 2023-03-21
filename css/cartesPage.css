@@ -52,7 +52,7 @@
 }
 .backCard::before {
   content: "";
-  background: url("../assets/images/boosterSetDeBase.webp") no-repeat;
+  background: url("../assets/images/boosterSetDeBase.png") no-repeat;
   background-size: 100%;
   width: 50px;
   height: 50px;

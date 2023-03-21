@@ -1,4 +1,5 @@
-@import "./indexCommon.scss";
+@import "./variables.scss";
+@import "./mixins.scss";
 
 body {
   background: $verylightgray;
